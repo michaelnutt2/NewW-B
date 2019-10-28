@@ -8,7 +8,8 @@ describe('Finding records', function(){
 
     beforeEach(function(done){
         user = new User({
-            u_id : 'crm'
+            u_id : 'crm',
+            pw : 'crm123'
         });
 
         user.save().then(function(){
