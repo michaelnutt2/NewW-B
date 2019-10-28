@@ -1,5 +1,5 @@
 const assert = require('assert');
-const myUsers = require('../proj_modules/myUsers');
+const myUsers = require('../modules/myUsers');
 
 var myUsersInstance = new myUsers()
 
