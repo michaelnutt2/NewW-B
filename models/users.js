@@ -12,7 +12,7 @@ const UserSchema =  new Schema({
     create_date : String,
     rank : Number,
     follows : [Tag.schema],
-    favorites : [mongoose.Schema.Types.ObjectId],
+    favorites : [{type: mongoose.Schema.Types.ObjectId, ref:'Article'}],
     voted_on : [
         {article: mongoose.Schema.Types.ObjectId,
          vote : Number}],
