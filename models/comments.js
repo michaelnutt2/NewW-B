@@ -10,7 +10,7 @@ const CommentSchema =  new Schema({
     date : String, 
     txt : String,
     rank : Number
-})
+});
 
 const Comment = mongoose.model('comments', CommentSchema);
 module.exports = Comment;
