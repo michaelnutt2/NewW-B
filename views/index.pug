@@ -3,3 +3,17 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  h2 Some Test Calls
+
+  if error
+    p Error getting the calls
+  else
+    p There are the following counts:
+
+    ul
+      li #[strong Articles:] !{data.article_count}
+      li #[strong Users:] !{data.user_count}
+      li #[strong Comments:] !{data.comment_count}
+      li #[strong Tags:] !{data.tag_count}
+
