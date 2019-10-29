@@ -9,6 +9,12 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+var mongoose = require('mongoose');
+var mongoDB = 'mongodb://newsDev:newB@10.125.187.72:9002/news';
+mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB Connection Error:'));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
