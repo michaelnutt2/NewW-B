@@ -20,13 +20,15 @@
   },
   "homepage": "https://github.com/michaelnutt2/NewW-B#readme",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
     "mocha": "^6.2.2",
     "mongoose": "^5.7.7",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.4",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "eslint": "^6.6.0"
