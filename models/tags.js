@@ -5,6 +5,12 @@ const TagSchema = new Schema({
     tag:String
 });
 
+TagSchema
+.virtual('url')
+.get(function() {
+    return '/articles/tags/' + this._id;
+});
+
 const Tag = mongoose.model('tags',TagSchema);
 
 module.exports = Tag;

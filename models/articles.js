@@ -9,7 +9,8 @@ const ArticleSchema =  new Schema({
     author : String,
     date : String,
     URL : String,
-    tags : [Tag.schema],
+    summary: String,
+    tags : [{type: Schema.Types.ObjectId, ref: 'tags'}],
     rank : Number,
     comments : [Comment.schema]
 });
