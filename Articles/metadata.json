@@ -1,1 +1,162 @@
-[{"newsgroup": "Ars Technica", "title": "Video: DOD cancels redesigned \u201ckill vehicle\u201d program for ballistic missile defense", "author": "Sean Gallagher", "date": "Tue, 17 Sep 2019 17:28:24 +0000", "description": "DOD takes its search for a multi-target interceptor into recompete.", "category": "Biz & IT"}, {"newsgroup": "Ars Technica", "title": "This is what it\u2019s like driving a Bugatti Chiron at 305mph", "author": "Jonathan M. Gitlin", "date": "Tue, 17 Sep 2019 17:09:29 +0000", "description": "We caught up with Bugatti's Le Mans-winning test driver at the Frankfurt auto show.", "category": "Cars"}, {"newsgroup": "Ars Technica", "title": "Richard Stallman leaves MIT after controversial remarks on rape", "author": "Timothy B. Lee", "date": "Tue, 17 Sep 2019 16:57:28 +0000", "description": "Free software pioneer has history of controversial comments about underage sex.", "category": "Policy"}, {"newsgroup": "Ars Technica", "title": "NBC Peacock is Comcast\u2019s dive into the crazy streaming-video fray", "author": "Sam Machkovech", "date": "Tue, 17 Sep 2019 16:34:45 +0000", "description": "Exclusive series, classic TV reboots, and <em>Saved by the Bell</em> with a possible new Zack.", "category": "Gaming & Culture"}, {"newsgroup": "Ars Technica", "title": "Aquaculture may be the future of seafood, but its past is ancient", "author": "Kiona N. Smith", "date": "Tue, 17 Sep 2019 16:22:02 +0000", "description": "A study suggests that people in ancient China started farming carp around 6200 BCE.", "category": "Science"}, {"newsgroup": "Ars Technica", "title": "Oh, frak: There\u2019s another Battlestar Galactica reboot coming", "author": "Kate Cox", "date": "Tue, 17 Sep 2019 16:00:18 +0000", "description": "All of this has happened before, and all of this will happen again...", "category": "Gaming & Culture"}, {"newsgroup": "Ars Technica", "title": "Splitting water to make cement could clean up a dirty industry", "author": "Scott K. Johnson", "date": "Tue, 17 Sep 2019 15:55:35 +0000", "description": "Cement production is about 8% of CO<sub>2</sub> emissions.", "category": "Science"}, {"newsgroup": "Ars Technica", "title": "The worst US tropical system this year may not even have a name", "author": "Eric Berger", "date": "Tue, 17 Sep 2019 14:28:56 +0000", "description": "The Houston metro area falls into the highest risk category.", "category": "Science"}, {"newsgroup": "Ars Technica", "title": "Instigator of fatal Kansas swatting receives prison sentence", "author": "Kate Cox", "date": "Tue, 17 Sep 2019 13:25:56 +0000", "description": "Viner arranged the swatting after losing a reported $1.50 bet.", "category": "Policy"}, {"newsgroup": "Ars Technica", "title": "Missiles and drones that hit Saudi oil fields: Made in Iran, but fired by whom?", "author": "Sean Gallagher", "date": "Mon, 16 Sep 2019 23:10:27 +0000", "description": "Evidence shows Iran supplied cruise missiles, \"loitering munitions\" used previously.", "category": "Biz & IT"}, {"newsgroup": "Ars Technica", "title": "Audible fires back at book publishers, says captions are fair use", "author": "Timothy B. Lee", "date": "Mon, 16 Sep 2019 20:41:50 +0000", "description": "\"Audible Captions is not a book of any kind,\" Audible writes in court filing.", "category": "Policy"}, {"newsgroup": "Ars Technica", "title": "Google\u2019s next flagship smartphone launches October 15", "author": "Ron Amadeo", "date": "Mon, 16 Sep 2019 20:28:12 +0000", "description": "We'll see the Pixel 4 and probably a bunch of other Google hardware.", "category": "Tech"}, {"newsgroup": "Ars Technica", "title": "Password-exposing bug purged from LastPass extensions", "author": "Dan Goodin", "date": "Mon, 16 Sep 2019 20:12:08 +0000", "description": "Google Project Zero finds and reports flaw in widely used password manager.", "category": "Biz & IT"}, {"newsgroup": "Ars Technica", "title": "Knives made of frozen feces don\u2019t make the cut, disproving well-known legend", "author": "Jennifer Ouellette", "date": "Mon, 16 Sep 2019 19:29:53 +0000", "description": "The knives simply melted upon contact, leaving behind streaks of melted poop.", "category": "Science"}, {"newsgroup": "Ars Technica", "title": "WSJ: Amazon changed search results to boost profits despite internal dissent", "author": "Jon Brodkin", "date": "Mon, 16 Sep 2019 18:30:15 +0000", "description": "Amazon denies report; WSJ says algorithm uses factors associated with profitability.", "category": "Biz & IT"}, {"newsgroup": "Ars Technica", "title": "Spouse of Ring exec among lawmakers trying to weaken Calif. privacy law", "author": "Kate Cox", "date": "Mon, 16 Sep 2019 17:25:49 +0000", "description": "The assemblywoman said her husband's job has nothing whatsoever to do with it.", "category": "Policy"}, {"newsgroup": "Ars Technica", "title": "Disney CEO Bob Iger resigns from his Apple board seat", "author": "Samuel Axon", "date": "Mon, 16 Sep 2019 17:18:05 +0000", "description": "The news came in an SEC filing on Friday.", "category": "Tech"}, {"newsgroup": "Ars Technica", "title": "It\u2019s real and it\u2019s spectacular: Netflix buys exclusive rights to stream Seinfeld", "author": "Sam Machkovech", "date": "Mon, 16 Sep 2019 17:00:19 +0000", "description": "5-year \"global\" deal begins in 2021; lands as services battle over classic series.", "category": "Gaming & Culture"}, {"newsgroup": "Ars Technica", "title": "Dear Honda, this adorable electric car needs to come to the US", "author": "Jonathan M. Gitlin", "date": "Mon, 16 Sep 2019 16:49:20 +0000", "description": "This battery-electric hatchback was the best thing at the Frankfurt auto show.", "category": "Cars"}, {"newsgroup": "Ars Technica", "title": "After Sacklers shift at least $1 billion around, Purdue files for bankruptcy", "author": "Beth Mole", "date": "Mon, 16 Sep 2019 16:39:18 +0000", "description": "The OxyContin-maker filed for bankruptcy as part of a proposed $10-$12 billion deal.", "category": "Science"}]
+[
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Video: DOD cancels redesigned \u201ckill vehicle\u201d program for ballistic missile defense",
+        "author": "Sean Gallagher",
+        "date": "Tue, 17 Sep 2019 17:28:24 +0000",
+        "description": "DOD takes its search for a multi-target interceptor into recompete.",
+        "category": "Biz & IT"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "This is what it\u2019s like driving a Bugatti Chiron at 305mph",
+        "author": "Jonathan M. Gitlin",
+        "date": "Tue, 17 Sep 2019 17:09:29 +0000",
+        "description": "We caught up with Bugatti's Le Mans-winning test driver at the Frankfurt auto show.",
+        "category": "Cars"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Richard Stallman leaves MIT after controversial remarks on rape",
+        "author": "Timothy B. Lee",
+        "date": "Tue, 17 Sep 2019 16:57:28 +0000",
+        "description": "Free software pioneer has history of controversial comments about underage sex.",
+        "category": "Policy"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "NBC Peacock is Comcast\u2019s dive into the crazy streaming-video fray",
+        "author": "Sam Machkovech",
+        "date": "Tue, 17 Sep 2019 16:34:45 +0000",
+        "description": "Exclusive series, classic TV reboots, and <em>Saved by the Bell</em> with a possible new Zack.",
+        "category": "Gaming & Culture"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Aquaculture may be the future of seafood, but its past is ancient",
+        "author": "Kiona N. Smith",
+        "date": "Tue, 17 Sep 2019 16:22:02 +0000",
+        "description": "A study suggests that people in ancient China started farming carp around 6200 BCE.",
+        "category": "Science"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Oh, frak: There\u2019s another Battlestar Galactica reboot coming",
+        "author": "Kate Cox",
+        "date": "Tue, 17 Sep 2019 16:00:18 +0000",
+        "description": "All of this has happened before, and all of this will happen again...",
+        "category": "Gaming & Culture"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Splitting water to make cement could clean up a dirty industry",
+        "author": "Scott K. Johnson",
+        "date": "Tue, 17 Sep 2019 15:55:35 +0000",
+        "description": "Cement production is about 8% of CO<sub>2</sub> emissions.",
+        "category": "Science"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "The worst US tropical system this year may not even have a name",
+        "author": "Eric Berger",
+        "date": "Tue, 17 Sep 2019 14:28:56 +0000",
+        "description": "The Houston metro area falls into the highest risk category.",
+        "category": "Science"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Instigator of fatal Kansas swatting receives prison sentence",
+        "author": "Kate Cox",
+        "date": "Tue, 17 Sep 2019 13:25:56 +0000",
+        "description": "Viner arranged the swatting after losing a reported $1.50 bet.",
+        "category": "Policy"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Missiles and drones that hit Saudi oil fields: Made in Iran, but fired by whom?",
+        "author": "Sean Gallagher",
+        "date": "Mon, 16 Sep 2019 23:10:27 +0000",
+        "description": "Evidence shows Iran supplied cruise missiles, \"loitering munitions\" used previously.",
+        "category": "Biz & IT"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Audible fires back at book publishers, says captions are fair use",
+        "author": "Timothy B. Lee",
+        "date": "Mon, 16 Sep 2019 20:41:50 +0000",
+        "description": "\"Audible Captions is not a book of any kind,\" Audible writes in court filing.",
+        "category": "Policy"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Google\u2019s next flagship smartphone launches October 15",
+        "author": "Ron Amadeo",
+        "date": "Mon, 16 Sep 2019 20:28:12 +0000",
+        "description": "We'll see the Pixel 4 and probably a bunch of other Google hardware.",
+        "category": "Tech"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Password-exposing bug purged from LastPass extensions",
+        "author": "Dan Goodin",
+        "date": "Mon, 16 Sep 2019 20:12:08 +0000",
+        "description": "Google Project Zero finds and reports flaw in widely used password manager.",
+        "category": "Biz & IT"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Knives made of frozen feces don\u2019t make the cut, disproving well-known legend",
+        "author": "Jennifer Ouellette",
+        "date": "Mon, 16 Sep 2019 19:29:53 +0000",
+        "description": "The knives simply melted upon contact, leaving behind streaks of melted poop.",
+        "category": "Science"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "WSJ: Amazon changed search results to boost profits despite internal dissent",
+        "author": "Jon Brodkin",
+        "date": "Mon, 16 Sep 2019 18:30:15 +0000",
+        "description": "Amazon denies report; WSJ says algorithm uses factors associated with profitability.",
+        "category": "Biz & IT"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Spouse of Ring exec among lawmakers trying to weaken Calif. privacy law",
+        "author": "Kate Cox",
+        "date": "Mon, 16 Sep 2019 17:25:49 +0000",
+        "description": "The assemblywoman said her husband's job has nothing whatsoever to do with it.",
+        "category": "Policy"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Disney CEO Bob Iger resigns from his Apple board seat",
+        "author": "Samuel Axon",
+        "date": "Mon, 16 Sep 2019 17:18:05 +0000",
+        "description": "The news came in an SEC filing on Friday.",
+        "category": "Tech"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "It\u2019s real and it\u2019s spectacular: Netflix buys exclusive rights to stream Seinfeld",
+        "author": "Sam Machkovech",
+        "date": "Mon, 16 Sep 2019 17:00:19 +0000",
+        "description": "5-year \"global\" deal begins in 2021; lands as services battle over classic series.",
+        "category": "Gaming & Culture"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "Dear Honda, this adorable electric car needs to come to the US",
+        "author": "Jonathan M. Gitlin",
+        "date": "Mon, 16 Sep 2019 16:49:20 +0000",
+        "description": "This battery-electric hatchback was the best thing at the Frankfurt auto show.",
+        "category": "Cars"
+    },
+    {
+        "newsgroup": "Ars Technica",
+        "title": "After Sacklers shift at least $1 billion around, Purdue files for bankruptcy",
+        "author": "Beth Mole",
+        "date": "Mon, 16 Sep 2019 16:39:18 +0000",
+        "description": "The OxyContin-maker filed for bankruptcy as part of a proposed $10-$12 billion deal.",
+        "category": "Science"
+    }
+]

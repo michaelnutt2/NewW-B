@@ -6,14 +6,10 @@ var Comments = require('../models/comments');
 var async = require('async');
 
 exports.index = function(req, res) {
-    async.parallel({
-        article_count: function(callback) {
-            Article.countDocuments({}, callback);
-        },
-        user_count: function(callback) {
-            Users.countDocuments({}, callback);
-        }
-    }, function(err, results){
-        res.render('index', {title: 'NewW-B News Aggregator', error: err, data: results});
-    });
+        Tags.find()
+        .sort([['tag', 'ascending']])
+        .exec(function(err, list_tags) {
+            if(err) {return next(err);}
+            res.render('index', {title: 'NewW-B News Aggregator', tag_list: list_tags});
+        });
 };
