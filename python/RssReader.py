@@ -6,6 +6,10 @@ from requests.exceptions import HTTPError
 import feedparser
 import json
 import xml.etree.ElementTree as etree
+import io
+import os
+
+print(os.getcwd())
 
 def main():
     while(True):
@@ -33,7 +37,6 @@ def loadRSS():
 
     try:
         r = requests.get(url)
-        
         r.raise_for_status()
     except HTTPError as http_err:
         print(f'HTTP error occurred: {http_err}')
@@ -42,7 +45,7 @@ def loadRSS():
     else:
         print("Success!")
 
-    with open('news.xml', 'w') as f:
+    with io.open('../Articles/news.xml', "w", encoding="utf-8") as f:
         f.write(r.text)
 
 def parseXML(xmlfile):
@@ -73,8 +76,7 @@ def parseXML(xmlfile):
     print(articles[0])
 
 def parseRSS():
-    xml = r'news.xml'
-    f = feedparser.parse(xml)
+    f = feedparser.parse(r'../Articles/news.xml')
 
     articles = []
 
@@ -82,38 +84,54 @@ def parseRSS():
         article = {
             'newsgroup': f.feed.title,
             'title': entry.title,
+            'url': entry.link,
             'author': entry.author,
             'date': entry.published,
             'description': entry.summary,
             'content': entry.content[0].value,
-            'category': entry.tags[0]['term']
+            'category': entry.tags[0]['term'],
+            'tags':  [tag['term'] for tag in entry.tags[1:]]
         }
         articles.append(article)
+    print(articles)
 
     exportData(articles)
 
 def exportData(articles):
     metadata = []
     for article in articles:
+
+        stripped_title = "".join([c for c in article['title'] if c.isalpha() or c.isdigit() or c==' ']).rstrip()
+        filename = "../Articles/" + stripped_title + ".html"
         metadata.append({
             'newsgroup': article['newsgroup'],
             'title': article['title'],
             'author': article['author'],
             'date': article['date'],
-            'description': article['description'],
-            'category': article['category']
+            'url': article['url'],
+            'filepath': filename,
+            'summary': article['description'],
+            'tags': article['category'],
+            'keywords': article['tags'],
+            'rank':  0,
+            'text': article['content']
         })
-        filename = "Pages/" + article['title'] + ".html"
-        with open(filename, 'w') as fp:
-            fp.write(article['content'])
+        with io.open(filename, "w", encoding="utf-8") as f:
+            f.write(article['content'])
+        #with open(filename, 'w') as fp:
+        #    fp.write(article['content'])
 
-    with open('metadata.json', 'r') as fp:
-        data = json.load(fp)
+    with open('../Articles/metadata.json', 'a') as fp:
+        json.dump(metadata,fp)
 
-    data.append(metadata)
+    # with open('metadata.json', 'r') as fp:
+    #     data = json.load(fp)
 
-    with open('metadata.json', 'w') as fp:
-        json.dump(metadata, fp)
+
+    # data.append(metadata)
+
+    # with open('metadata.json', 'w') as fp:
+    #     json.dump(metadata, fp)
     
 if __name__ == "__main__":
     main()

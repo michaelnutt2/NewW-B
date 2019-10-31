@@ -6,10 +6,10 @@ console.log('This script populates some test articles, users, comments and tags'
 var userArgs = process.argv.slice(2);
 
 var async = require('async')
-var Article = require('./models/articles')
-var User = require('./models/users')
-var Comments = require('./models/comments')
-var Tags = require('./models/tags')
+var Article = require('../models/articles')
+var User = require('../models/users')
+var Comments = require('../models/comments')
+var Tags = require('../models/tags')
 
 var mongoose = require('mongoose');
 var mongoDB = userArgs[0];

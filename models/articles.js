@@ -5,14 +5,18 @@ const Schema =  mongoose.Schema;
 // Create Schema and Model
 
 const ArticleSchema =  new Schema({
+    newsgroup: String,
     title : String,
     author : String,
     date : String,
-    URL : String,
+    url : String,
+    filename : String,
     summary: String,
     tags : [{type: Schema.Types.ObjectId, ref: 'tags'}],
+    keywords: [String],
     rank : Number,
-    comments : [Comment.schema]
+    comments : [Comment.schema], 
+    text : String
 });
 
 const Article = mongoose.model('articles', ArticleSchema);
