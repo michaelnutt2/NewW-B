@@ -16,7 +16,8 @@ const ArticleSchema =  new Schema({
     keywords: [String],
     rank : Number,
     comments : [Comment.schema], 
-    text : String
+    text : String,
+    img : String
 });
 
 const Article = mongoose.model('articles', ArticleSchema);

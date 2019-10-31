@@ -8,6 +8,8 @@ import json
 import xml.etree.ElementTree as etree
 import io
 import os
+from bs4 import BeautifulSoup
+
 
 print(os.getcwd())
 
@@ -90,11 +92,10 @@ def parseRSS():
             'description': entry.summary,
             'content': entry.content[0].value,
             'category': entry.tags[0]['term'],
-            'tags':  [tag['term'] for tag in entry.tags[1:]]
+            'tags':  [tag['term'] for tag in entry.tags[1:]],
+            'img': BeautifulSoup(entry.content[0].value, 'html.parser').img['src']
         }
         articles.append(article)
-    print(articles)
-
     exportData(articles)
 
 def exportData(articles):
@@ -114,24 +115,14 @@ def exportData(articles):
             'tags': article['category'],
             'keywords': article['tags'],
             'rank':  0,
-            'text': article['content']
+            'text': article['content'],
+            'img' : article['img']
         })
         with io.open(filename, "w", encoding="utf-8") as f:
             f.write(article['content'])
-        #with open(filename, 'w') as fp:
-        #    fp.write(article['content'])
 
     with open('../Articles/metadata.json', 'a') as fp:
         json.dump(metadata,fp)
-
-    # with open('metadata.json', 'r') as fp:
-    #     data = json.load(fp)
-
-
-    # data.append(metadata)
-
-    # with open('metadata.json', 'w') as fp:
-    #     json.dump(metadata, fp)
     
 if __name__ == "__main__":
     main()

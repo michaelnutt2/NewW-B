@@ -22,4 +22,8 @@ can be run with:
 * cd .\express-neww-b\
 * npm start
 
+## Populating DB
+* run python/genUsers.py and python/RssReader.py to generate Users, articles, and Tags
+* run node modules/populateDB.js to upload collections to DB (note it should drop all previous data)
+
 

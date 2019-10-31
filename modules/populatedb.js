@@ -1,58 +1,94 @@
-#! /usr/bin/env node
-
-console.log('This script populates some test articles, users, comments and tags');
-
-// Get arguments passed on command line
-var userArgs = process.argv.slice(2);
-
-var async = require('async')
-var Article = require('../models/articles')
-var User = require('../models/users')
-var Comments = require('../models/comments')
-var Tags = require('../models/tags')
-
 var mongoose = require('mongoose');
-var mongoDB = userArgs[0];
-mongoose.connect(mongoDB, {useNewUrlParser: true});
-mongoose.Promise = global.Promise;
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB Connection Error:'));
+var assert = require('assert')
+var Article = require('../models/articles');
+var Tag = require('../models/tags');
+var Article = require('../models/articles');
+var User = require('../models/users');
+var articles = require('../Articles/metadata.json');
+var users = require('../Users/users.json');
 
-var articles = []
-var users = []
-var comments = []
-var tags = []
+ var before = function(){
+            // Connect to mongodb
+            var db = mongoose.connect('mongodb://newsDev:newB@10.125.187.72:9002/news', {
+                useNewUrlParser:true, useUnifiedTopology:true, useFindAndModify:false});
 
-function tagsCreate(tag) {
-    tagdetail = {tag: tag}
+            mongoose.connection.once('open', function(){
+                console.log('Connection made...');
+            }).on('error',function(error){
+                console.log('Connection error:', error);
+            });
 
-    var tag = new Tags(tagdetail);
+            mongoose.connection.collections.articles.drop(function(){
+            });
 
-    tag.save(function(err) {
-        if(err) {
-            cb(err, null)
-            return
-        }
-        console.log('New Tag: ' + tag);
-        tags.push(tag)
-        cb(null, tag)
-    });
+            mongoose.connection.collections.tags.drop(function(){
+            });
+
+            mongoose.connection.collections.users.drop(function(){
+            });
+
+            return db;
+            };
+
+var addArticles = function(){
+
+    return Article.collection.insertMany(articles).then(function(records){
+            assert.equal(articles.length, records['result']['n']);
+            console.log('articles inserted');
+            }).catch('error insering articles');
+};
+
+var addTags = function(){
+
+    var makeTags = function(articles){
+        var tags = [];
+        for (obj in articles) {
+            var tag = articles[obj]['tags']
+            tags.push(tag)
+        };
+
+        var tags = [...new Set(tags)]
+
+        tag_dict = []
+        for (obj in tags) {
+            var tag = tags[obj];
+            tag_dict.push({'tag':tag});
+        };
+        return tag_dict;
+    };
+
+
+    var tags = makeTags(articles);
+    return Tag.collection.insertMany(tags).then(function(records){
+        assert.equal(tags.length, records['result']['n']);
+        console.log('tags inserted')
+    }).catch('error inserting tags');;
+};
+
+var addUsers = function(){
+    
+    return User.collection.insertMany(users).then(function(records){
+        assert.equal(users.length, records['result']['n']);
+        console.log('users inserted');
+        }).catch('error insering articles');
+
 }
 
-function commentCreate()
-
-function articleCreate(title, author, date, url, tags, rank, comments) {
-    articledetail = {title: title, author: author, date: date, URL: url, tags: tags, comments: comments}
-
-    var article = new Article(articledetail);
-
-    article.save(function (err) {
-        if(err) {
-            cb(err, null)
-            return
-        }
-        console.log('New Article: ' + article);
-        articles.push(article)
-        cb(null, article)
+before().then(function(){
+    addArticles().then(function(){
+        addTags().then(function(){
+            addUsers().then(function(){
+                mongoose.connection.close();
+            });
+        });  
     });
-}
+});
+
+//mongoose.connection.close();
+
+
+
+
+
+
+
