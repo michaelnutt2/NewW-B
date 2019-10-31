@@ -10,7 +10,7 @@ var article_controller = require('../controllers/articleController');
 router.get('/', article_controller.index);
 
 // GET tag page
-router.get('/article/tag/:id', article_controller.tag_detail);
+router.get('/article/tags/:id', article_controller.tag_detail);
 
 // GET article page
 router.get('/article/:id', article_controller.article_detail);

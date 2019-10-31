@@ -8,7 +8,7 @@ const TagSchema = new Schema({
 TagSchema
 .virtual('url')
 .get(function() {
-    return '/articles/tags/' + this._id;
+    return '/article/tags/' + this._id;
 });
 
 const Tag = mongoose.model('tags',TagSchema);

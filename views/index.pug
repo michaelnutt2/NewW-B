@@ -1,7 +1,12 @@
 extends layout
-include mixins/navbar.pug
+include mixins/navbar
+include mixins/cards
 
 block content
-  +navbar(tag_list)
-  p Welcome to #{title}
+  +navbar(tag_list, name)
+  div(style="display:flex;flex-direction:row;flex-wrap:wrap;")
+    each article in article_list
+      +cards(article)
+    else
+      p No articles today!
 

@@ -1,12 +1,12 @@
-mixin navbar(tag_list)
-  nav(class="navbar navbar-expand-lg navbar-light bg-light")
+mixin navbar(tag_list, name)
+  nav(class="navbar navbar-expand-lg navbar-dark bg-dark")
     a(class="navbar-brand" href="#") NewW-B
     button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation")
       span(class="navbar-toggler-icon")
     div(class="collapse navbar-collapse" id="navbarColor03")
       ul(class="navbar-nav mr-auto")
         li(class="nav-item")
-          a(href="index" class="nav-link") Home
+          a(href="/" class=(name==="/" ? "nav-link active" : "nav-link")) Home
         each tag in tag_list
           li(class="nav-item") 
-            a(href=tag.url class="nav-link") #{tag.tag}
+            a(href=tag.url class=(name===tag.tag ? "nav-link active" : "nav-link")) #{tag.tag}

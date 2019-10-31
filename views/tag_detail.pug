@@ -1,0 +1,12 @@
+extends layout
+include mixins/navbar.pug
+
+block content
+    +navbar(tag_list, name)
+    dl
+        each article in article_list
+            h2= article.title
+            p= article.summary
+            p= article.author
+        else
+            p No articles exist for this tag.

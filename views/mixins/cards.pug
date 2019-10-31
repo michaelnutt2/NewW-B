@@ -1,0 +1,13 @@
+mixin cards(article)
+    div(class="card mb-3" style="max-width:450px;margin:10px;")
+        img(style="height:200px;width:100%;display:block;" src=article.img)
+        h3(class="card-header")= article.title
+        div(class="card-body")
+            h5(class="card-title")= article.summary
+            h6(class="card-subtitle text-muted")= article.author
+            p(class="card-text")= article.tags.tag
+            ul(class="list-group list-group-flush")
+                li(class="list-group-item")= article.keywords
+        div(class="card-footer")
+            a(href=article.url class="card-link") Original Page
+        
