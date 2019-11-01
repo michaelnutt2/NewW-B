@@ -12,7 +12,7 @@ const ArticleSchema =  new Schema({
     url : String,
     filename : String,
     summary: String,
-    tags : [{type: Schema.Types.ObjectId, ref: 'tags'}],
+    tags : String,
     keywords: [String],
     rank : Number,
     comments : [Comment.schema], 
