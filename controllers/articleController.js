@@ -23,7 +23,7 @@ exports.index = function(req, res, next) {
         }
     }, function(err, result) {
         if(err) { return next(err);}
-        res.render('index', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, name: "/"})
+        res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, name: "/"})
     });
 };
 
@@ -34,8 +34,19 @@ exports.tag_detail = function(req, res, next) {
             .exec(callback);
         },
         list_articles: function(callback) {
-            Article.find({tags: req.params.id})
-            .exec(callback);
+            var tag_promise = new Promise(function(resolve, reject) {
+                Tags.findById(req.params.id)
+                .exec(function(err, tag){
+                    err
+                        ? reject(err)
+                        : resolve(tag);
+                });
+            });
+            tag_promise.then(function(tag) {
+                console.log(tag.tag);
+                Article.find({tags: tag.tag})
+                .exec(callback);
+            });
         },
         list_tags: function(callback){
             findTags(callback);
@@ -47,23 +58,9 @@ exports.tag_detail = function(req, res, next) {
             err.status = 404;
             return next(err);
         }
-        res.render('tag_detail', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tag});
+        res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tag});
     });
 };
-
-exports.article_list_all = function(req, res, next) {
-    Article.find()
-    .exec(function(err, list_articles) {
-        if(err) { return next(err);}
-        if(list_articles == null){
-            
-        }
-    })
-};
-
-exports.article_list_tag = function(req, res, next) {
-
-}
 
 exports.article_detail = function(req, res, next) {
     res.send('NOT IMPLEMENTED: Display for individual article');
