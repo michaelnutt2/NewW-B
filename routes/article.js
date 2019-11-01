@@ -15,4 +15,7 @@ router.get('/article/tags/:id', article_controller.tag_detail);
 // GET article page
 router.get('/article/:id', article_controller.article_detail);
 
+// Login a user
+router.post('/', article_controller.login);
+
 module.exports = router;

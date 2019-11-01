@@ -1,6 +1,9 @@
 var Article = require('../models/articles');
 var Tags = require('../models/tags');
 
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+
 var async = require('async');
 
 function findTags(callback) {
@@ -64,4 +67,8 @@ exports.article_list_tag = function(req, res, next) {
 
 exports.article_detail = function(req, res, next) {
     res.send('NOT IMPLEMENTED: Display for individual article');
+};
+
+exports.login = function(req, res, next) {
+    res.send(req.body.InputUser+'Working on Login Authentication');
 };

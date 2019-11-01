@@ -23,7 +23,7 @@ can be run with:
 * npm start
 
 ## Populating DB
-* run python/genUsers.py and python/RssReader.py to generate Users, articles, and Tags
+* run python/genUsers.py and python/RssReader.py to generate Users, Articles, and Tags
 * run node modules/populateDB.js to upload collections to DB (note it should drop all previous data)
 
 

@@ -1,4 +1,32 @@
 mixin navbar(tag_list, name)
+  style.
+    .form-inline {  
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+
+    .form-inline label {
+      margin: 5px 10px 5px 0;
+    }
+
+    .form-inline input {
+      vertical-align: middle;
+      margin: 5px 10px 5px 0;
+      padding: 10px;
+    }
+
+    @media (max-width: 800px) {
+      .form-inline input {
+        margin: 10px 0;
+      }
+      
+      .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
   nav(class="navbar navbar-expand-lg navbar-dark bg-dark")
     a(class="navbar-brand" href="#") NewW-B
     button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation")
@@ -10,3 +38,14 @@ mixin navbar(tag_list, name)
         each tag in tag_list
           li(class="nav-item") 
             a(href=tag.url class=(name===tag.tag ? "nav-link active" : "nav-link")) #{tag.tag}
+    form(action="" class='form-inline' method="post")
+      div(class="form-group" style='margin-right:10px;')
+        label(for="InputUser")
+        input(type="text" class="form-control" id="user_name" placeholder="user name")
+      div(class="form-group")
+        label(for="InputPassword")
+        input(type="password" class="form-control" id="password" placeholder="password")
+      div(class="form-group")
+        input(type = 'submit', style='display:none')
+
+
