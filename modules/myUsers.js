@@ -17,6 +17,38 @@ function myUsers() {
         });
     };
 
+    this.verifyUser = function(u_name) {
+        return new Promise(
+            function(resolve, reject){
+                User.findOne({u_id:u_name}).then(function(record){
+                    if (record  !== null){
+                        resolve(true);
+                        return true
+                    }
+                    else{ 
+                        reject(false);
+                        return false
+                    };     
+                });
+            }).catch(function(reason){return reason});
+    };
+
+
+    this.verifyPassword = function(u_name, pw) {
+        return new Promise(
+            function(resolve, reject){
+                User.findOne({u_id:u_name}).then(function(record){
+                    if (record.pw === pw){
+                        resolve(true);
+                        return true;
+                    } else{
+                        reject(false);
+                        return false;
+                    }; 
+                });
+            }).catch(function(reason){return reason});
+    };
+
     this.changePassword = function(u_name, old_pass, new_pass1, new_pass2) {
         return new Promise(
             function(resolve, reject){
