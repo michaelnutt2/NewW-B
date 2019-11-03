@@ -23,11 +23,11 @@ function myUsers() {
                 User.findOne({u_id:u_name}).then(function(record){
                     if (record  !== null){
                         resolve(true);
-                        return true
+                        // return true
                     }
                     else{ 
                         reject(false);
-                        return false
+                        // return false
                     };     
                 });
             }).catch(function(reason){return reason});
@@ -40,10 +40,10 @@ function myUsers() {
                 User.findOne({u_id:u_name}).then(function(record){
                     if (record.pw === pw){
                         resolve(true);
-                        return true;
+                        // return true;
                     } else{
                         reject(false);
-                        return false;
+                        // return false;
                     }; 
                 });
             }).catch(function(reason){return reason});
@@ -66,7 +66,7 @@ function myUsers() {
                         reject('password invalid');
                     };
                 });
-        });
+        }).catch(function(reason){return reason});
     };
 
     this.modifyUser = function(uname, f_name, l_name, email){
@@ -85,11 +85,9 @@ function myUsers() {
                     record.save().then(function(record){
                         resolve(record)
 
-                    }).catch(function(){
-                        reject('problem with modifying user')
                     });
                 });
-        });
+        }).catch(function(reason){return reason});
     };
 };
 
