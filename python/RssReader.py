@@ -115,7 +115,6 @@ def exportData(articles):
             'tags': article['category'],
             'keywords': article['tags'],
             'rank':  0,
-            'text': article['content'],
             'img' : article['img']
         })
         with io.open(filename, "w", encoding="utf-8") as f:

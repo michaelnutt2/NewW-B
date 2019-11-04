@@ -64,7 +64,8 @@ app.use(flash());
 
 //Models and routes
 require('./models/users');
-require('./config/passport')
+require('./config/passport')(passport)
+require('./routes/article')
 
 
 app.use('/', homeRouter);
@@ -86,9 +87,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 
   // log the coockies
-  console.log(req.cookies);
-  console.log('=================');
-  console.log(req.session);
+  //console.log(req.cookies);
+  //console.log('=================');
+  //console.log(req.session);
 });
 
 

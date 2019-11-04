@@ -6,6 +6,7 @@ var Article = require('../models/articles');
 var User = require('../models/users');
 var articles = require('../Articles/metadata.json');
 var users = require('../Users/users.json');
+var 
 
  var before = function(){
             // Connect to mongodb
@@ -18,8 +19,8 @@ var users = require('../Users/users.json');
                 console.log('Connection error:', error);
             });
 
-            mongoose.connection.collections.articles.drop(function(){
-            });
+            // mongoose.connection.collections.articles.drop(function(){
+            // });
 
             mongoose.connection.collections.tags.drop(function(){
             });
@@ -66,11 +67,20 @@ var addTags = function(){
 };
 
 var addUsers = function(){
+
+    Article.find().then(function(articles){
+
     
-    return User.collection.insertMany(users).then(function(records){
-        assert.equal(users.length, records['result']['n']);
-        console.log('users inserted');
-        }).catch('error insering articles');
+        User.collection.insertMany(users).then(function(records){
+            assert.equal(users.length, records['result']['n']);
+            console.log('users inserted');
+            User.find().foreach(function(user){
+                user.favorites = 
+            })
+            }).catch('error insering articles')
+
+    })
+
 
 }
 

@@ -8,7 +8,7 @@ const ArticleSchema =  new Schema({
     newsgroup: String,
     title : String,
     author : String,
-    date : String,
+    date : Date,
     url : String,
     filename : String,
     summary: String,

@@ -9,7 +9,7 @@ const UserSchema =  new Schema({
     l_name : String,
     email : String,
     pw : {type: String, required: true},
-    create_date : String,
+    create_date : Date,
     rank : Number,
     follows : [Tag.schema],
     favorites : [{type: mongoose.Schema.Types.ObjectId, ref:'Article'}],
@@ -19,12 +19,14 @@ const UserSchema =  new Schema({
     comments : [mongoose.Schema.Types.ObjectId]
 });
 
-UserSchema..methods.generateHash = function(password) {
-    return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+UserSchema.methods.generateHash = function(password) {
+    //return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+    return password
 };
 
 UserSchema.methods.validPassword = function(password) {
-    return bcrypt.compareSync(password, this.local.password);
+    //return bcrypt.compareSync(password, this.pw);
+    return (this.pw === password)
 };
 
 const User = mongoose.model('users',UserSchema);

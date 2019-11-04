@@ -3,5 +3,5 @@ node_modules/
 Users/
 *.code-workspace
 start_lib
-package.json
+# package.json
 package-lock.json
