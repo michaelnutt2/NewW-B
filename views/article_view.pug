@@ -1,9 +1,11 @@
 extends layout
 include mixins/navbar
 include mixins/cards
+include mixins/sidebar
 
 block content
   +navbar(tag_list, name, username)
+  +sidebar
   div(style="display:flex;flex-direction:row;flex-wrap:wrap;")
     each article in article_list
       +cards(article)
