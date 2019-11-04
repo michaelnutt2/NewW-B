@@ -2,6 +2,8 @@ var Article = require('../models/articles');
 var Tags = require('../models/tags');
 
 var async = require('async');
+const Entities = require('html-entities').AllHtmlEntities
+const entities = new Entities();
 
 function findTags(callback) {
     Tags.find()
@@ -58,7 +60,7 @@ exports.tag_detail = function(req, res, next) {
             return next(err);
         }
         var username = 'Raymond';
-        res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tagm, username:username});
+        res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tag, username:username});
     });
 };
 
@@ -88,5 +90,21 @@ exports.author_list = function(req, res, next) {
 };
 
 exports.article_detail = function(req, res, next) {
-    res.send('NOT IMPLEMENTED: Display for individual article');
+    async.parallel({
+        tags: function(callback) {
+            findTags(callback);
+        },
+        details: function(callback) {
+            Article.findById(req.params.id)
+            .exec(callback);
+        },
+    }, function(err, results) {
+        if(err) {return next(err);}
+        res.render('article_detail', {
+            title: results.details.title, 
+            article_detail: results.detail,
+            tag_list: results.tags,
+            name: "/"
+        });
+    });
 };
