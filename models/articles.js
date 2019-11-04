@@ -10,7 +10,7 @@ const ArticleSchema =  new Schema({
     author : String,
     date : String,
     url : String,
-    filename : String,
+    filepath : String,
     summary: String,
     tags : String,
     keywords: [String],

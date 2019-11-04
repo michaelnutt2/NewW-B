@@ -19,7 +19,7 @@ const UserSchema =  new Schema({
     comments : [mongoose.Schema.Types.ObjectId]
 });
 
-UserSchema..methods.generateHash = function(password) {
+UserSchema.methods.generateHash = function(password) {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
 

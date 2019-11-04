@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var passport = require('passport');
 
 // Require controller module
 var article_controller = require('../controllers/articleController');

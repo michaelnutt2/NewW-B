@@ -1,6 +1,8 @@
 var Article = require('../models/articles');
 var Tags = require('../models/tags');
 
+var path = require('path');
+var fs = require('fs');
 var async = require('async');
 const Entities = require('html-entities').AllHtmlEntities
 const entities = new Entities();
@@ -100,9 +102,13 @@ exports.article_detail = function(req, res, next) {
         },
     }, function(err, results) {
         if(err) {return next(err);}
+        console.log(__dirname);
+        p = path.join(__dirname, results.details.filepath);
+        var contents = fs.readFileSync(p, 'utf8');
         res.render('article_detail', {
             title: results.details.title, 
             article_detail: results.detail,
+            article_text: contents,
             tag_list: results.tags,
             name: "/"
         });
