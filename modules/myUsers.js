@@ -17,17 +17,27 @@ function myUsers() {
         });
     };
 
+    
+    this.getUserName = function(u_name) {
+        return new Promise(function(resolve, reject){
+            User.findOne({u_id:u_name}).then(function(record){
+                if (record.uid !== null) {
+                    resolve(record.f_name);
+                };
+            }).catch(function(){reject('problem finding user')
+            });
+        });
+    };
+
     this.verifyUser = function(u_name) {
         return new Promise(
             function(resolve, reject){
                 User.findOne({u_id:u_name}).then(function(record){
                     if (record  !== null){
                         resolve(true);
-                        // return true
                     }
                     else{ 
                         reject(false);
-                        // return false
                     };     
                 });
             }).catch(function(reason){return reason});
@@ -40,10 +50,8 @@ function myUsers() {
                 User.findOne({u_id:u_name}).then(function(record){
                     if (record.pw === pw){
                         resolve(true);
-                        // return true;
                     } else{
                         reject(false);
-                        // return false;
                     }; 
                 });
             }).catch(function(reason){return reason});

@@ -9,6 +9,7 @@ function findTags(callback) {
     .exec(callback);
 }
 
+
 exports.index = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
@@ -20,7 +21,8 @@ exports.index = function(req, res, next) {
         }
     }, function(err, result) {
         if(err) { return next(err);}
-        res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, name: "/"})
+        var username = 'Raymond';
+        res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, username: username, name: "/"})
     });
 };
 
@@ -55,7 +57,8 @@ exports.tag_detail = function(req, res, next) {
             err.status = 404;
             return next(err);
         }
-        res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tag});
+        var username = 'Raymond';
+        res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tagm, username:username});
     });
 };
 

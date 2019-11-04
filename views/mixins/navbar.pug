@@ -38,15 +38,30 @@ mixin navbar(tag_list, name)
         each tag in tag_list
           li(class="nav-item") 
             a(href=tag.url class=(name===tag.tag ? "nav-link active" : "nav-link")) #{tag.tag}
-    form(action='/' class='form-inline' method="post")
-      div(class="form-group" style='margin-right:10px;')
-        label(for="username")
-        input#name.form-control(type="text" class="form-control" name="username" required value=(undefined === user ? 'user name' : user.name))
-      div(class="form-group")
-        label(for="passwords")
-        input(type="password" class="form-control" name="password" placeholder="password" required)
-        input(type = 'submit', style='display:none')
-      //- div(class="form-group")
-        input(type = 'submit', style='display:none')
+    script.
+      function setUsername() {
+          return document.cookie.split('=')[1]
+      };
+      var user = setUsername()
+      console.log(user);
+    - var user = username.username
+      if user == undefined
+        console.log('Loggged Out')
+        form(action='/' class='form-inline' method="post")
+          div(class="form-group" style='margin-right:10px;')
+            label(for="username")
+            input#name.form-control(type="text" class="form-control" name="username" placeholder="username" required value=(undefined === user ? '' : user.name))
+          div(class="form-group")
+            label(for="passwords")
+            input(type="password" class="form-control" name="password" placeholder="password" required)
+            input(type = 'submit', style='display:none')
+      else
+        console.log('Loggged In')
+        ul(class="navbar-nav mr-auto")
+          li(class="nav-item")
+            a(href="/user" class=(name==="/" ? "nav-link active" : "nav-link"), placeholder=user)='Hello' + user
+            //- p=user
+      //- p(class="text-primary" style='display:inline-block') Hello User
+
 
 
