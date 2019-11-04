@@ -3,7 +3,7 @@ include mixins/navbar
 include mixins/cards
 
 block content
-  +navbar(tag_list, name)
+  +navbar(tag_list, name, username)
   div(style="display:flex;flex-direction:row;flex-wrap:wrap;")
     each article in article_list
       +cards(article)

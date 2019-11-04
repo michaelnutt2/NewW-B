@@ -20,5 +20,16 @@ const ArticleSchema =  new Schema({
     img : String
 });
 
+ArticleSchema
+.virtual('author_url')
+.get(function(){
+    auth = this.author.split(" ");
+    author = auth[0];
+    for(var i = 1; i < auth.length; i++) {
+        author += "_" + auth[i];
+    }
+    return '/article/author/' + author;
+})
+
 const Article = mongoose.model('articles', ArticleSchema);
 module.exports = Article;

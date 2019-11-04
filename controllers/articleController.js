@@ -21,7 +21,7 @@ exports.index = function(req, res, next) {
         }
     }, function(err, result) {
         if(err) { return next(err);}
-        var username = 'Raymond';
+        var username = null;
         res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, username: username, name: "/"})
     });
 };
@@ -60,6 +60,31 @@ exports.tag_detail = function(req, res, next) {
         var username = 'Raymond';
         res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tagm, username:username});
     });
+};
+
+exports.author_detail = function(req, res, next) {
+    async.parallel({
+        tags: function(callback) {
+            findTags(callback);
+        },
+        article_list: function(callback) {
+            auth_split = req.params.id.split("_");
+            author = auth_split[0]
+            for(var i = 1; i < auth_split.length; i++) {
+                author += " " + auth_split[i];
+            }
+            console.log(author);
+            Article.find({author: author})
+            .exec(callback);
+        }
+    }, function(err, result) {
+        if(err) { return next(err); }
+        res.render('article_view', {title:'NewW-B News Aggregator', tag_list: result.tags, article_list: result.article_list, name: "/"})
+    })
+};
+
+exports.author_list = function(req, res, next) {
+    res.send('NOT IMPLEMENTED: Display for Author List');
 };
 
 exports.article_detail = function(req, res, next) {

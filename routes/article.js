@@ -13,6 +13,12 @@ router.get('/', [article_controller.index, user_controller.login_get]);
 // GET tag page
 router.get('/article/tags/:id', article_controller.tag_detail);
 
+// GET Author list
+router.get('/article/author/list', article_controller.author_list);
+
+// GET Author Page
+router.get('/article/author/:id', article_controller.author_detail);
+
 // GET article page
 router.get('/article/:id', article_controller.article_detail);
 
