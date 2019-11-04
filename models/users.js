@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Article = require('./articles');
+var bcrypt   = require('bcrypt-nodejs');
 const Tag = require('./tags');
 const Schema =  mongoose.Schema;
 
@@ -18,6 +18,14 @@ const UserSchema =  new Schema({
          vote : Number}],
     comments : [mongoose.Schema.Types.ObjectId]
 });
+
+UserSchema..methods.generateHash = function(password) {
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+};
+
+UserSchema.methods.validPassword = function(password) {
+    return bcrypt.compareSync(password, this.local.password);
+};
 
 const User = mongoose.model('users',UserSchema);
 

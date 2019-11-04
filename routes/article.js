@@ -20,6 +20,10 @@ router.get('/article/:id', article_controller.article_detail);
 //router.get('/user/login', user_controller.login_create)
 
 // Login a user
-router.post('/', user_controller.login_post);
+router.post('/', passport.authenticate('local-signup', {
+    successRedirect : '/', // redirect to the secure profile section
+    failureRedirect : '/', // redirect back to the signup page if there is an error
+    failureFlash : true // allow flash messages
+}));
 
 module.exports = router;

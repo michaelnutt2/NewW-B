@@ -29,8 +29,9 @@ store.on('error', function(error){
   console.log(error);
 });
 
-//require('./config/passport')(passport);
-//require('./routes/article')(passport);
+
+
+//app.use(require('./routes'));
 
 app.use(require('express-session')({
   secret: 'This is a secret',
@@ -60,6 +61,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+
+//Models and routes
+require('./models/users');
+require('./config/passport')
+
 
 app.use('/', homeRouter);
 // app.use('/users', usersRouter);
