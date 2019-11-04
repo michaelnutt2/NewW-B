@@ -21,6 +21,12 @@ const ArticleSchema =  new Schema({
 });
 
 ArticleSchema
+.virtual('article_url')
+.get(function() {
+    return '/article/' + this.id;
+})
+
+ArticleSchema
 .virtual('author_url')
 .get(function(){
     auth = this.author.split(" ");
@@ -29,7 +35,7 @@ ArticleSchema
         author += "_" + auth[i];
     }
     return '/article/author/' + author;
-})
+});
 
 const Article = mongoose.model('articles', ArticleSchema);
 module.exports = Article;

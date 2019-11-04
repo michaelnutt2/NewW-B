@@ -101,7 +101,7 @@ def parseRSS():
 def exportData(articles):
     metadata = []
     for article in articles:
-
+        print()
         stripped_title = "".join([c for c in article['title'] if c.isalpha() or c.isdigit() or c==' ']).rstrip()
         filename = "../Articles/" + stripped_title + ".html"
         metadata.append({

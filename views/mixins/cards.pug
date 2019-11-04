@@ -1,7 +1,8 @@
 mixin cards(article)
     div(class="card mb-3" style="max-width:450px;margin:10px;")
         img(style="height:200px;width:100%;display:block;" src=article.img)
-        h3(class="card-header")= article.title
+        h3(class="card-header")
+            a(href=article.article_url)= article.title
         div(class="card-body")
             h5(class="card-title")= article.summary
             h6(class="card-subtitle text-muted")

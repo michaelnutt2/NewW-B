@@ -2,6 +2,8 @@ var Article = require('../models/articles');
 var Tags = require('../models/tags');
 
 var async = require('async');
+const Entities = require('html-entities').AllHtmlEntities
+const entities = new Entities();
 
 function findTags(callback) {
     Tags.find()
@@ -87,5 +89,21 @@ exports.author_list = function(req, res, next) {
 };
 
 exports.article_detail = function(req, res, next) {
-    res.send('NOT IMPLEMENTED: Display for individual article');
+    async.parallel({
+        tags: function(callback) {
+            findTags(callback);
+        },
+        details: function(callback) {
+            Article.findById(req.params.id)
+            .exec(callback);
+        },
+    }, function(err, results) {
+        if(err) {return next(err);}
+        res.render('article_detail', {
+            title: results.details.title, 
+            article_detail: results.detail,
+            tag_list: results.tags,
+            name: "/"
+        });
+    });
 };
