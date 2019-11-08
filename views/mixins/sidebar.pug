@@ -4,10 +4,10 @@ mixin sidebar()
     div(id="sidebar" class="sidebar")
         a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") x
         p Keywords
-        each key in keys
-            a(href="/articles")
-        else
-            p No Keywords Today!
+        //- each key in keys
+        //-     a(href="/articles")
+        //- else
+        //-     p No Keywords Today!
 
     div(id="main")
         button(id="btn" class="openbtn" onclick="openNav()") &#9776;

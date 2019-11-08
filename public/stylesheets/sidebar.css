@@ -1,14 +1,14 @@
 .sidebar {
     height: 100%;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 9%;
     left: 0;
     background-color: #222 !important;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 64px;
 }
 
 .sidebar p{
@@ -47,6 +47,9 @@
 }
 
 #main {
+    position: fixed;
+    z-index: 1;
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 100px 0px 0px 0px;
+
 }
