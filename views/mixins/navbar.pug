@@ -25,9 +25,9 @@ mixin navbar(tag_list, name, user)
             input(type = 'submit', style='display:none')
       else
         console.log('Loggged In')
-        ul(class="navbar-nav mr-auto")
+        ul(class="navbar-nav")
           li(class="nav-item")
-            a(href="/user" class=(name==="/" ? "nav-link active" : "nav-link"), placeholder=user)='Hello' + user
+            a(href="/user" class=(name==="/" ? "nav-link active" : "nav-link"), placeholder=user)='Hello ' + user.f_name
             //- p=user
       //- p(class="text-primary" style='display:inline-block') Hello User
 

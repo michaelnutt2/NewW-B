@@ -22,13 +22,15 @@ tag_col = db.tags
 # create random document generator
 gen = DocumentGenerator()
 
-
 ## udpate the rss articles
 rss_reader
 
 with open('../Articles/metadata.json', 'r') as fp:
     new_articles = json.load(fp)
-#article_col.insert_many(new_articles)
+
+for article in new_articles:
+    article_col.update({'title':article['title']},article, upsert=True)
+    #article_col.insert_many(new_articles)
 
 # get the the eavilable tags from the db
 tags = []
@@ -127,5 +129,21 @@ for article in article_id:
     # article_col.find_one_and_update(
     #                 {'_id':ObjectId(article)}, 
     #                 {"$set": {'date':parser.parse(record['date'])}})
+
+
+# removing some duplicates
+remove_dups = [
+    {'$group': {'_id': {'title': '$title'}, 
+                'dups': {'$addToSet': '$_id'}, 
+                'count': {'$sum': 1}}
+    },
+    {'$match': {'count': {'$gt': 1}}
+    }
+]
+duplicates = list(article_col.aggregate(remove_dups))
+
+for d in duplicates:
+    print(d['dups'][0])
+    article_col.delete_one({'_id':d['dups'][0]})
          
       

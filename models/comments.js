@@ -7,7 +7,7 @@ const CommentSchema =  new Schema({
         type: mongoose.Schema.Types.ObjectId, 
         required: true
     },
-    date : String, 
+    date : Date, 
     txt : String,
     rank : Number
 });

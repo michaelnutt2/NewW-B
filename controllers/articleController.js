@@ -25,8 +25,8 @@ exports.index = function(req, res, next) {
         }
     }, function(err, result) {
         if(err) { return next(err);}
-        var username = null;
-        res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, username: username, name: "/"})
+        //var username = null;
+        res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, user: req.user, name: "/"})
     });
 };
 
@@ -61,8 +61,7 @@ exports.tag_detail = function(req, res, next) {
             err.status = 404;
             return next(err);
         }
-        var username = 'Raymond';
-        res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tag, username:username});
+        res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tagm, user: req.user});
     });
 };
 
