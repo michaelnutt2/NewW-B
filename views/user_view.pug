@@ -1,0 +1,8 @@
+extends layout
+include mixins/navbar
+include mixins/cards
+
+block content
+  +navbar(tag_list, name, user)
+      p User info will go here!
+

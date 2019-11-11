@@ -14,12 +14,9 @@ from dateutil import parser
 
 PATH = ('../Articles')
 
+class ArticleLoader():
 
-print(os.getcwd())
-
-def main():
-
-    def loadRSS():
+    def loadRSS(self):
         url = 'https://arstechnica.com/feed/?t=c951724f17882c293435a61d10002d8b'
 
         try:
@@ -35,7 +32,7 @@ def main():
         with io.open(PATH +'/news.xml', "w", encoding="utf-8") as f:
             f.write(r.text)
 
-    def parseRSS():
+    def parseRSS(self):
         f = feedparser.parse(r'../Articles/news.xml')
 
         articles = []
@@ -54,9 +51,9 @@ def main():
                 'img': BeautifulSoup(entry.content[0].value, 'html.parser').img['src']
             }
             articles.append(article)
-        exportData(articles)
+        return self.exportData(articles)
 
-    def exportData(articles):
+    def exportData(self,articles):
         metadata = []
         for article in articles:
 
@@ -78,11 +75,10 @@ def main():
             with io.open(filename, "w", encoding="utf-8") as f:
                 f.write(article['content'])
 
-        with open('../Articles/metadata.json', 'w+') as fp:
-            json.dump(metadata,fp)
-    
-    loadRSS()
-    parseRSS()
+        # with open('../Articles/metadata.json', 'w+') as fp:
+        #     json.dump(metadata,fp)
+        return metadata
 
-if __name__ == "__main__":
-    main()
+    def fetchNew(self):
+        self.loadRSS()
+        return self.parseRSS()
