@@ -1,7 +1,24 @@
 extends layout
 include mixins/navbar 
 include mixins/cards 
+include mixins/sidebar
 
 block content
     +navbar(tag_list, name, username)
-    include article.filename
+    +sidebar
+    style.
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .caption {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+        }
+
+    p !{article_text}
