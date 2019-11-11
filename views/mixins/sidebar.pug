@@ -11,7 +11,7 @@ mixin sidebar(keys)
         //-         var key_url = "/articles/keywords/" + key;
             //- a(href=key_url)= key
         each key in keys
-            - var key_url = "/articles/keywords/" + key
+            - var key_url = "/article/keywords/" + key
             a(href=key_url)= key
         else
             p No Keywords

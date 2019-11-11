@@ -136,3 +136,30 @@ exports.article_detail = function(req, res, next) {
         });
     });
 };
+
+exports.keyword_detail = function(req, res, next) {
+    var key = decodeURI(req.params.id);
+    async.parallel({
+        sidebar: function (callback) {
+            sidebar(callback);
+        },
+        tags: function(callback) {
+            findTags(callback);
+        },
+        details: function(callback) {
+            Article.find({keywords: key})
+            .exec(callback);
+        },
+    }, function(err, result) {
+        if(err) {return next(err)};
+        keys = formatSidebar(result.sidebar);
+        res.render('article_view', {
+            title: key,
+            sidebar: keys,
+            article_list: result.details,
+            tag_list: result.tags,
+            user: req.user,
+            name: "/"
+        });
+    });
+};

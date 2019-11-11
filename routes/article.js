@@ -23,6 +23,7 @@ router.get('/article/author/:id', article_controller.author_detail);
 // GET article page
 router.get('/article/:id', article_controller.article_detail);
 
+router.get('/article/keywords/:id', article_controller.keyword_detail);
 // GET User login From
 //router.get('/user/login', user_controller.login_create)
 
