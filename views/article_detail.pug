@@ -5,7 +5,7 @@ include mixins/sidebar
 
 block content
     +navbar(tag_list, name, username)
-    +sidebar
+    +sidebar(sidebar)
     style.
         img{
             display: block;
@@ -20,5 +20,5 @@ block content
             width: 50%;
             text-align: center;
         }
-
-    p !{article_text}
+    div(class="main article")
+        p !{article_text}

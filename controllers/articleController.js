@@ -4,13 +4,25 @@ var Tags = require('../models/tags');
 var path = require('path');
 var fs = require('fs');
 var async = require('async');
-const Entities = require('html-entities').AllHtmlEntities
-const entities = new Entities();
 
 function findTags(callback) {
     Tags.find()
     .sort([['tag', 'ascending']])
     .exec(callback);
+}
+
+function sidebar(callback) {
+    Article.distinct('keywords')
+    .exec(callback);
+}
+
+function formatSidebar(keywords) {
+    var keys = [10];
+    for(var i = 0; i < 10; i++) {
+        keys[i] = keywords[i];
+    }
+
+    return keys;
 }
 
 
@@ -19,6 +31,9 @@ exports.index = function(req, res, next) {
         tags: function(callback) {
             findTags(callback);
         },
+        sidebar: function(callback) {
+            sidebar(callback);
+        },
         list_articles: function(callback) {
             Article.find()
             .exec(callback);
@@ -26,7 +41,15 @@ exports.index = function(req, res, next) {
     }, function(err, result) {
         if(err) { return next(err);}
         //var username = null;
-        res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, user: req.user, name: "/"})
+        keys = formatSidebar(result.sidebar);
+        res.render('article_view', {
+            title: 'NewW-B News Aggregator', 
+            tag_list: result.tags, 
+            sidebar: keys,
+            article_list: result.list_articles, 
+            user: req.user, 
+            name: "/"
+        });
     });
 };
 
