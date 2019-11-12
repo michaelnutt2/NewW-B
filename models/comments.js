@@ -12,5 +12,11 @@ const CommentSchema =  new Schema({
     rank : Number
 });
 
+CommentSchema
+.virtual('user_url')
+.get(function() {
+    return "/user/" + this.u_id;
+})
+
 const Comment = mongoose.model('comments', CommentSchema);
 module.exports = Comment;
