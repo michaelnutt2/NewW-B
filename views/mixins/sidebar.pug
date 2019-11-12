@@ -1,13 +1,20 @@
-mixin sidebar()
-    style
-        include ../../public/stylesheets/sidebar.css
+mixin sidebar(keys)
+    //- style
+    //-     include ../../public/stylesheets/stylesheet.css
     div(id="sidebar" class="sidebar")
         a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") x
         p Keywords
-        //- each key in keys
-        //-     a(href="/articles")
-        //- else
-        //-     p No Keywords Today!
+        - var i = 0;
+        //- while i < 10
+        //-     script. 
+        //-         var key = keys[i];
+        //-         var key_url = "/articles/keywords/" + key;
+            //- a(href=key_url)= key
+        each key in keys
+            - var key_url = "/article/keywords/" + key
+            a(href=key_url)= key
+        else
+            p No Keywords
 
     div(id="main")
         button(id="btn" class="openbtn" onclick="openNav()") &#9776;

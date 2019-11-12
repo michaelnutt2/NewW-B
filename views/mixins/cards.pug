@@ -10,12 +10,14 @@ mixin cards(article)
             p(class="card-text")= article.tags.tag
             ul(class="list-group list-group-flush")
                 each key in article.keywords
-                    li(class="list-group-item")= key
+                    - var key_url = "/article/keywords/" + key
+                    li(class="list-group-item")
+                        a(href=key_url)= key
         div(class="card-footer")
-            div(class="btn-group btn-group-toggle" style="margin:10px;" data-toggle="buttons")
-                label(class="btn btn-primary") +
-                    input(type="radio" name="vote" id="upvote" autocomplete="off")
-                label(class="btn btn-primary") -
-                    input(type="radio" name="vote" id="downvote" autocomplete="off")
+            //- div(class="btn-group btn-group-toggle" style="margin:10px;" data-toggle="buttons")
+            //-     label(class="btn btn-primary") +
+            //-         input(type="radio" name="vote" id="upvote" autocomplete="off")
+            //-     label(class="btn btn-primary") -
+            //-         input(type="radio" name="vote" id="downvote" autocomplete="off")
             a(href=article.url class="card-link") Original Page
         

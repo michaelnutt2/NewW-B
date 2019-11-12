@@ -5,8 +5,6 @@ var Users = require('../models/users')
 var path = require('path');
 var fs = require('fs');
 var async = require('async');
-const Entities = require('html-entities').AllHtmlEntities
-const entities = new Entities();
 
 function findTags(callback,user) {
     Tags.find()
@@ -14,11 +12,28 @@ function findTags(callback,user) {
     .exec(callback);
 };
 
+function sidebar(callback) {
+    Article.distinct('keywords')
+    .exec(callback);
+}
+
+function formatSidebar(keywords) {
+    var keys = [10];
+    for(var i = 0; i < 10; i++) {
+        keys[i] = keywords[i];
+    }
+
+    return keys;
+}
+
 
 exports.index = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
             findTags(callback,req.user);
+        },
+        sidebar: function(callback) {
+            sidebar(callback);
         },
         list_articles: function(callback) {
             Article.find()
@@ -26,7 +41,16 @@ exports.index = function(req, res, next) {
         }
     }, function(err, result) {
         if(err) { return next(err);}
-        res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, user: req.user, name: "/"})
+        //var username = null;
+        keys = formatSidebar(result.sidebar);
+        res.render('article_view', {
+            title: 'NewW-B News Aggregator', 
+            tag_list: result.tags, 
+            sidebar: keys,
+            article_list: result.list_articles, 
+            user: req.user, 
+            name: "/"
+        });
     });
 };
 
@@ -109,6 +133,33 @@ exports.article_detail = function(req, res, next) {
             article_detail: results.detail,
             article_text: contents,
             tag_list: results.tags,
+            name: "/"
+        });
+    });
+};
+
+exports.keyword_detail = function(req, res, next) {
+    var key = decodeURI(req.params.id);
+    async.parallel({
+        sidebar: function (callback) {
+            sidebar(callback);
+        },
+        tags: function(callback) {
+            findTags(callback);
+        },
+        details: function(callback) {
+            Article.find({keywords: key})
+            .exec(callback);
+        },
+    }, function(err, result) {
+        if(err) {return next(err)};
+        keys = formatSidebar(result.sidebar);
+        res.render('article_view', {
+            title: key,
+            sidebar: keys,
+            article_list: result.details,
+            tag_list: result.tags,
+            user: req.user,
             name: "/"
         });
     });
