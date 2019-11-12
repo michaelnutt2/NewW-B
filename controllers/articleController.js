@@ -1,5 +1,6 @@
 var Article = require('../models/articles');
 var Tags = require('../models/tags');
+var Users = require('../models/users')
 
 var path = require('path');
 var fs = require('fs');
@@ -7,17 +8,17 @@ var async = require('async');
 const Entities = require('html-entities').AllHtmlEntities
 const entities = new Entities();
 
-function findTags(callback) {
+function findTags(callback,user) {
     Tags.find()
     .sort([['tag', 'ascending']])
     .exec(callback);
-}
+};
 
 
 exports.index = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
-            findTags(callback);
+            findTags(callback,req.user);
         },
         list_articles: function(callback) {
             Article.find()
@@ -25,7 +26,6 @@ exports.index = function(req, res, next) {
         }
     }, function(err, result) {
         if(err) { return next(err);}
-        //var username = null;
         res.render('article_view', {title: 'NewW-B News Aggregator', tag_list: result.tags, article_list: result.list_articles, user: req.user, name: "/"})
     });
 };
@@ -52,7 +52,7 @@ exports.tag_detail = function(req, res, next) {
             });
         },
         list_tags: function(callback){
-            findTags(callback);
+            findTags(callback, req.user);
         }
     }, function(err, results) {
         if(err) { return next(err);}
@@ -68,7 +68,7 @@ exports.tag_detail = function(req, res, next) {
 exports.author_detail = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
-            findTags(callback);
+            findTags(callback, req.user);
         },
         article_list: function(callback) {
             auth_split = req.params.id.split("_");
@@ -93,7 +93,7 @@ exports.author_list = function(req, res, next) {
 exports.article_detail = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
-            findTags(callback);
+            findTags(callback, req.user);
         },
         details: function(callback) {
             Article.findById(req.params.id)

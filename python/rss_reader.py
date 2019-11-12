@@ -73,7 +73,14 @@ class ArticleLoader():
                 'img' : article['img']
             })
             with io.open(filename, "w", encoding="utf-8") as f:
-                f.write(article['content'])
+                f.write(article['content'][:-1])
+            # remove last line
+            readFile = open(filename, errors='ignore')
+            lines = readFile.readlines()
+            readFile.close()
+            w = open(filename,'w')
+            w.writelines([item for item in lines[:-1]])
+            w.close()
 
         # with open('../Articles/metadata.json', 'w+') as fp:
         #     json.dump(metadata,fp)
