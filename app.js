@@ -8,7 +8,7 @@ var logger = require('morgan');
 var passport = require('passport');
 var flash = require('connect-flash');
 
-var usersRouter = require('./routes/user');
+var usersRouter = require('./routes/users');
 var homeRouter = require('./routes/article');
 
 var app = express();
@@ -61,7 +61,7 @@ require('./routes/user')
 
 
 app.use('/', homeRouter);
-app.use('/user', usersRouter);
+app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

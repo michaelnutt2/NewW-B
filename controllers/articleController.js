@@ -1,16 +1,16 @@
 var Article = require('../models/articles');
 var Tags = require('../models/tags');
-var User = require('../models/users');
+var Users = require('../models/users')
 
 var path = require('path');
 var fs = require('fs');
 var async = require('async');
 
-function findTags(callback) {
+function findTags(callback,user) {
     Tags.find()
     .sort([['tag', 'ascending']])
     .exec(callback);
-}
+};
 
 function sidebar(callback) {
     Article.distinct('keywords')
@@ -30,7 +30,7 @@ function formatSidebar(keywords) {
 exports.index = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
-            findTags(callback);
+            findTags(callback,req.user);
         },
         sidebar: function(callback) {
             sidebar(callback);
@@ -76,7 +76,7 @@ exports.tag_detail = function(req, res, next) {
             });
         },
         list_tags: function(callback){
-            findTags(callback);
+            findTags(callback, req.user);
         }
     }, function(err, results) {
         if(err) { return next(err);}
@@ -92,7 +92,7 @@ exports.tag_detail = function(req, res, next) {
 exports.author_detail = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
-            findTags(callback);
+            findTags(callback, req.user);
         },
         article_list: function(callback) {
             auth_split = req.params.id.split("_");
@@ -117,7 +117,7 @@ exports.author_list = function(req, res, next) {
 exports.article_detail = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
-            findTags(callback);
+            findTags(callback, req.user);
         },
         details: function(callback) {
             Article.findById(req.params.id)

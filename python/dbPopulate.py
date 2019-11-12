@@ -121,11 +121,11 @@ def articleCommentAndRank(article_ids, users, drop_comm=True):
                     article_col.find_one_and_update(
                         {'_id':ObjectId(c_article)}, 
                         {"$push": {'comments':
-                            [{'u_id': user['_id'], 
+                            {'u_id': user['_id'], 
                             'text': comment,
                             'rank':randint(-10,10),
                             'date':datetime.utcnow()
-                            }]
+                            }
                             }
                         })
             # check each user and update rank vote if there are any
@@ -168,4 +168,5 @@ if __name__ == "__main__":
     update_articles()
     articles, tags = getArticlesAndTags()
     users = genUsers(articles, tags,n_users=50, drop_users=False,test_user=False)
-    articleCommentAndRank(articles, users,drop_comm=False)
+    users = user_col.find({})
+    articleCommentAndRank(articles, users,drop_comm=True)

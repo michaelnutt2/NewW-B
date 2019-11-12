@@ -5,7 +5,7 @@ var router = express.Router();
 var user_controller = require('../controllers/userController');
 
 // GET home page and user login form defualts
-router.get('/user', user_controller.index);
-router.post('/user', user_controller.index);
+router.get('/users', user_controller.user_profile);
+router.post('/users', user_controller.user_profile);
 
 module.exports = router;

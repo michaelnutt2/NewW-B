@@ -4,9 +4,9 @@ include mixins/cards
 include mixins/sidebar
 
 block content
-  +navbar(tag_list, name, username)
-  +sidebar(sidebar)
-  div(style="display:flex;flex-direction:row;flex-wrap:wrap;" class="main")
+  +navbar(tag_list, name, user)
+  +sidebar
+  div(style="display:flex;flex-direction:row;flex-wrap:wrap;")
     each article in article_list
       +cards(article)
     else

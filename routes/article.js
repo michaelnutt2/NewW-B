@@ -29,9 +29,10 @@ router.get('/article/keywords/:id', article_controller.keyword_detail);
 
 // Login a user
 router.post('/', passport.authenticate('local-login', {
-    successRedirect : '/', // redirect to the secure profile section
-    failureRedirect : '/', // redirect back to the signup page if there is an error
+    successRedirect : '/', // redirect back but logged in
+    failureRedirect : '/', // redirect back but not logged in
     failureFlash : true // allow flash messages
 }));
+
 
 module.exports = router;
