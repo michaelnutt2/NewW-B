@@ -32,8 +32,9 @@ block content
       .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
         .card-body
           h4.card-title Favorites
-          for fav in user.favorites
-            p.card-text= fav
+          for fav in favorite_list
+            p.card-text
+            a(href='/article/'+fav._id)= fav.title
       .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
         .card-body
           h4.card-title Voted On
@@ -44,13 +45,15 @@ block content
                 th.text-white(scope="col") Vote
             tbody
               tr
-                for votes in user.voted_on
-                  th.text-white(style="font-weight:normal")=votes.article
-                  td.text-white(style="font-weight:normal")= votes.vote
+                for votes in voted_on_list
+                  th.text-white(style="font-weight:normal")
+                    a(href='/article/'+votes._id)=votes.title 
+                  td.text-white(style="font-weight:normal")= votes.title
                   tr
       .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
         .card-body
-          h4.card-title Comments
-          for comment in user.commented_on
-            p.card-text= comment
+          h4.card-title Commented On
+          for comment in commented_on_list
+            p.card-text
+            a(href='/article/'+comment._id)= comment.title
 

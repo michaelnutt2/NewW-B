@@ -11,7 +11,7 @@ mixin navbar(tag_list, name, user)
         li(class="nav-item")
           a(href="/" class=(name==="/" ? "nav-link active" : "nav-link")) Home
         each tag in tag_list
-          - console.log(tag)
+          //- - console.log(tag)
           li(class="nav-item") 
             a(href=tag.url class=(name===tag.tag ? "nav-link active" : "nav-link")) #{tag.tag}
       if user == undefined

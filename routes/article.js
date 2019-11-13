@@ -15,7 +15,7 @@ router.get('/', article_controller.index);
 router.get('/tags/:id', article_controller.tag_detail);
 
 // GET Author list
-router.get('/author/list', article_controller.author_list);
+//router.get('/author/list', article_controller.author_list);
 
 // GET Author Page
 router.get('/author/:id', article_controller.author_detail);
