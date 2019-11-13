@@ -7,9 +7,17 @@ var fs = require('fs');
 var async = require('async');
 
 function findTags(callback,user) {
-    Tags.find()
-    .sort([['tag', 'ascending']])
-    .exec(callback);
+    if (user === undefined){
+        Tags.find()
+        .sort([['tag', 'ascending']])
+        .exec(callback);
+    } else {
+        Users.findOne({'u_id':user.u_id}, {'follows':1}).then(function(follows){
+            Tags.find({'tag': { $in: follows.follows}})
+            .sort([['tag', 'ascending']])
+            .exec(callback);
+        });
+    };
 };
 
 function sidebar(callback) {
@@ -85,6 +93,7 @@ exports.tag_detail = function(req, res, next) {
             err.status = 404;
             return next(err);
         }
+        //console.log(results.list_tags)
         res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tagm, user: req.user});
     });
 };
@@ -106,6 +115,7 @@ exports.author_detail = function(req, res, next) {
         }
     }, function(err, result) {
         if(err) { return next(err); }
+        console.log(results.list_tags)
         res.render('article_view', {title:'NewW-B News Aggregator', tag_list: result.tags, article_list: result.article_list, name: "/"})
     })
 };

@@ -57,7 +57,7 @@ app.use(flash());
 require('./models/users');
 require('./config/passport')(passport)
 require('./routes/article')
-require('./routes/user')
+require('./routes/users')
 
 
 app.use('/', homeRouter);
