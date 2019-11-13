@@ -16,7 +16,7 @@ mixin navbar(tag_list, name, user)
             a(href=tag.url class=(name===tag.tag ? "nav-link active" : "nav-link")) #{tag.tag}
       if user == undefined
         - console.log('Loggged Out')
-        form(action='/' class='form-inline' method="post")
+        form(action='/article' class='form-inline' method="post")
           div(class="form-group" style='margin-right:10px;')
             label(for="username")
             input(type="text" class="form-control" name="username" placeholder="username" autocomplete="username" required)
