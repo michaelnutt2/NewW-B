@@ -123,6 +123,30 @@ exports.article_detail = function(req, res, next) {
             Article.findById(req.params.id)
             .exec(callback);
         },
+        comments: function(callback) {
+            article_promise = new Promise(function(resolve, reject) {
+                Article.findById(req.params.id)
+                .exec(function(err, article){
+                    err
+                        ? reject(err)
+                        : resolve(article)
+                });
+            });
+            article_promise.then(function(article) {
+                callback = [];
+                console.log("Article: " + article);
+                for (comment of article.comments) {
+                    User.findById(comment.u_id)
+                    .exec(function(err, user){
+                        if(err) {return next(err);}
+                        callback.push([user.u_id, comment]);
+                    });
+                }
+            });
+        },
+        sidebar: function(callback) {
+            sidebar(callback);
+        }
     }, function(err, results) {
         if(err) {return next(err);}
         console.log(__dirname);
@@ -130,9 +154,10 @@ exports.article_detail = function(req, res, next) {
         var contents = fs.readFileSync(p, 'utf8');
         res.render('article_detail', {
             title: results.details.title, 
-            article_detail: results.detail,
+            comments: results.comments,
             article_text: contents,
             tag_list: results.tags,
+            sidebar: results.sidebar,
             name: "/"
         });
     });

@@ -2,6 +2,7 @@ extends layout
 include mixins/navbar 
 include mixins/cards 
 include mixins/sidebar
+include mixins/comments
 
 block content
     +navbar(tag_list, name, user)
@@ -22,3 +23,5 @@ block content
         }
     div(class="main article")
         p !{article_text}
+
+    +comments(comments)

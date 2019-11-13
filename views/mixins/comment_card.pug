@@ -1,0 +1,11 @@
+
+mixin comment_card(comment)
+    div(class="card border-secondary mb-3" style="max-width:75%;margin:auto")
+        - console.log("comment: " + comment)
+        div(class="card-header")= comment[1].date
+        div(class="card-body")
+            h5(class="card-title")= comment[1].text
+            a(href=comment.user_url class="card-text")= comment[0].u_id
+
+
+    
