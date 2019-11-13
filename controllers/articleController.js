@@ -5,6 +5,7 @@ var Users = require('../models/users')
 var path = require('path');
 var fs = require('fs');
 var async = require('async');
+const validator = require('express-validator');
 
 function findTags(callback,user) {
     if (user === undefined){
@@ -68,6 +69,9 @@ exports.tag_detail = function(req, res, next) {
             Tags.findById(req.params.id)
             .exec(callback);
         },
+        sidebar: function(callback) {
+            sidebar(callback);
+        },
         list_articles: function(callback) {
             var tag_promise = new Promise(function(resolve, reject) {
                 Tags.findById(req.params.id)
@@ -93,8 +97,16 @@ exports.tag_detail = function(req, res, next) {
             err.status = 404;
             return next(err);
         }
-        //console.log(results.list_tags)
-        res.render('article_view', {title: results.tag.tag, tag: results.tag, article_list: results.list_articles, tag_list: results.list_tags, name: results.tag.tagm, user: req.user});
+        keys = formatSidebar(results.sidebar);
+        res.render('article_view', {
+            title: results.tag.tag, 
+            tag: results.tag, 
+            sidebar: keys,
+            article_list: results.list_articles, 
+            tag_list: results.list_tags, 
+            name: results.tag.tag, 
+            user: req.user
+        });
     });
 };
 
@@ -102,6 +114,9 @@ exports.author_detail = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
             findTags(callback, req.user);
+        },
+        sidebar: function(callback) {
+            sidebar(callback);
         },
         article_list: function(callback) {
             auth_split = req.params.id.split("_");
@@ -115,9 +130,15 @@ exports.author_detail = function(req, res, next) {
         }
     }, function(err, result) {
         if(err) { return next(err); }
-        console.log(results.list_tags)
-        res.render('article_view', {title:'NewW-B News Aggregator', tag_list: result.tags, article_list: result.article_list, name: "/"})
-    })
+        keys = formatSidebar(result.sidebar);
+        res.render('article_view', {
+            title:'NewW-B News Aggregator',
+            sidebar: keys, 
+            tag_list: result.tags, 
+            article_list: result.article_list, 
+            name: "/"
+        });
+    });
 };
 
 exports.author_list = function(req, res, next) {
@@ -130,44 +151,45 @@ exports.article_detail = function(req, res, next) {
             findTags(callback, req.user);
         },
         details: function(callback) {
-            Article.findById(req.params.id)
+            Article.findById(req.params.id, {'title': 1, 'filepath':1, 'comments': 1})
             .exec(callback);
         },
-        comments: function(callback) {
-            article_promise = new Promise(function(resolve, reject) {
-                Article.findById(req.params.id)
-                .exec(function(err, article){
-                    err
-                        ? reject(err)
-                        : resolve(article)
-                });
-            });
-            article_promise.then(function(article) {
-                callback = [];
-                console.log("Article: " + article);
-                for (comment of article.comments) {
-                    User.findById(comment.u_id)
-                    .exec(function(err, user){
-                        if(err) {return next(err);}
-                        callback.push([user.u_id, comment]);
-                    });
+        users: function(callback) {
+            Article.findById(req.params.id, {'comments':1})
+            .then(function(comments){
+                var uids = [];
+                for(comment of comments.comments) {
+                    uids.push(comment.u_id);
                 }
+                Users.find({'_id': { $in: uids}}, {'u_id': 1})
+                .exec(callback);
             });
         },
         sidebar: function(callback) {
             sidebar(callback);
         }
     }, function(err, results) {
-        if(err) {return next(err);}
-        console.log(__dirname);
-        p = path.join(__dirname, results.details.filepath);
+        if(err) {
+            console.log(err);
+            return next(err);
+        }
+        var details = results.details;
+        var u = {};
+        for(user of results.users) {
+            u[user._id] = user.u_id;
+        }
+
+        p = path.join(__dirname, details.filepath);
         var contents = fs.readFileSync(p, 'utf8');
+        keys = formatSidebar(results.sidebar);
         res.render('article_detail', {
-            title: results.details.title, 
-            comments: results.comments,
+            title: details.title,
+            users: u,
+            user: req.user,
+            comments: details.comments,
             article_text: contents,
             tag_list: results.tags,
-            sidebar: results.sidebar,
+            sidebar: keys,
             name: "/"
         });
     });
@@ -199,3 +221,34 @@ exports.keyword_detail = function(req, res, next) {
         });
     });
 };
+
+exports.submit_comment = [
+    // Validate not an empty comment
+    validator.body('text', 'Enter text here').isLength({min: 1}).trim(),
+
+    // Sanitize the field
+    validator.sanitizeBody('text').escape(),
+
+    // Process the request
+    (req, res, next) => {
+        const errors = validator.validationResult(req);
+
+        var comment = new Comment(
+            {
+                text: req.body.text,
+                date: + Date.now(),
+                rank: 0
+            }
+        );
+        if(!errors.isEmpty()) {
+            res.render('');
+        } else {
+            Article.update({_id: req.params.id}, {
+                $push: comment
+            }).exec(function(err, article){
+                if(err) {return next(err);}
+                res.redirect('/article/'+req.param.id);
+            })
+        }
+    }
+]

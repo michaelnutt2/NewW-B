@@ -8,7 +8,7 @@ const CommentSchema =  new Schema({
         required: true
     },
     date : Date, 
-    txt : String,
+    text : String,
     rank : Number
 });
 
