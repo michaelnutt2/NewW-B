@@ -16,7 +16,7 @@ const UserSchema =  new Schema({
     voted_on : [
         {article: mongoose.Schema.Types.ObjectId,
          vote : Number}],
-    comments : [mongoose.Schema.Types.ObjectId]
+    commented_on : [mongoose.Schema.Types.ObjectId]
 });
 
 UserSchema.methods.generateHash = function(password) {

@@ -8,8 +8,9 @@ var logger = require('morgan');
 var passport = require('passport');
 var flash = require('connect-flash');
 
-var usersRouter = require('./routes/users');
-var homeRouter = require('./routes/article');
+var usersRouter = require('./routes/user');
+var articleRouter = require('./routes/article');
+var homeRouter = require('./routes/index');
 
 var app = express();
 
@@ -57,11 +58,14 @@ app.use(flash());
 require('./models/users');
 require('./config/passport')(passport)
 require('./routes/article')
-require('./routes/users')
+require('./routes/user')
+require('./routes/index')
 
 
 app.use('/', homeRouter);
-app.use('/users', usersRouter);
+app.use('/article', articleRouter);
+app.use('/user', usersRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

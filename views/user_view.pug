@@ -4,5 +4,53 @@ include mixins/cards
 
 block content
   +navbar(tag_list, name, user)
-  p User info will go here!
+  div(class="jumbotron main")
+    h1(class="display-4") User Profile
+    //- p(class="lead")
+    //-   a(class="btn btn-primary btn-sm" href="#" role="button") Modify Settings
+    div(class='user_details', style="display:flex;flex-direction:row;flex-wrap:wrap")
+      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+        .card-body
+          h4.card-title Username
+          p.card-text= user.u_id
+          h4.card-title Name 
+          p.card-text= user.f_name + ' ' + user.l_name
+          h4.card-title Email 
+          p.card-text= user.email
+          h4.card-title User Since 
+          p.card-text= user.create_date
+          div(class="btn-group-vertical" data-toggle="buttons")
+            a(class="btn btn-primary btn-sm" href="#" role="button", style='margin:2px') Modify User Details
+            a(class="btn btn-primary btn-sm" href="#" role="button", style='margin:2px') Change Password
+            a(class="btn btn-primary btn-sm" href="#" role="button", style='margin:2px') Delete Account
+      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+        .card-body
+          h4.card-title Subscriptions
+          for tag in user.follows
+            p.card-text= tag
+          a(class="btn btn-primary btn-sm" href="#" role="button") Modify Subscriptions
+      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+        .card-body
+          h4.card-title Favorites
+          for fav in user.favorites
+            p.card-text= fav
+      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+        .card-body
+          h4.card-title Voted On
+          table(class="table table-hover")
+            thead
+              tr
+                th.text-white(scope="col") Articles
+                th.text-white(scope="col") Vote
+            tbody
+              tr
+                for votes in user.voted_on
+                  th.text-white(style="font-weight:normal")=votes.article
+                  td.text-white(style="font-weight:normal")= votes.vote
+                  tr
+      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+        .card-body
+          h4.card-title Comments
+          for comment in user.commented_on
+            p.card-text= comment
 
