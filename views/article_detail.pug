@@ -8,22 +8,25 @@ include mixins/comment_form
 block content
     +navbar(tag_list, name, user)
     +sidebar(sidebar)
-    style.
-        img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        .caption {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            text-align: center;
-        }
-    div(class="main article")
-        p !{article_text}
-    if(user)
-        +comment_form
-    +comments(comments, users)
+    div(class="jumbotron")
+        style.
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            .caption {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                text-align: center;
+            }
+        div(class="main article")
+            h1
+                center= title
+            p !{article_text}
+        if(user)
+            +comment_form
+        +comments(comments, users)

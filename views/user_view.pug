@@ -45,10 +45,10 @@ block content
                 th.text-white(scope="col") Vote
             tbody
               tr
-                for votes in voted_on_list
+                for votes in voted_on_list.voted_on
                   th.text-white(style="font-weight:normal")
-                    a(href='/article/'+votes._id)=votes.title 
-                  td.text-white(style="font-weight:normal")= votes.title
+                    a(href='/article/'+votes.article._id)=votes.article.title 
+                  td.text-white(style="font-weight:normal")= votes.vote
                   tr
       .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
         .card-body

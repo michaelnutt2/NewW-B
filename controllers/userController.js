@@ -21,16 +21,9 @@ function findFavorites(callback,user) {
 };
 
 function findVotes(callback,user) {
-    Users.findOne({u_id:user.u_id}, {_id:0,voted_on:1}).then(function(voted_on){
-
-        var titles = [];
-                for(vote of voted_on.voted_on) {
-                    titles.push(vote.article);
-                }   
-        //console.log(titles)
-        Article.find({_id: { $in: titles}},{title:1})
-        .exec(callback);
-    });
+    Users.findOne({u_id:user.u_id},{voted_on:1})
+    .populate({path: 'voted_on.article', model: Article, select:'title'})
+    .exec(callback) 
 };
 
 function findComments(callback,user) {

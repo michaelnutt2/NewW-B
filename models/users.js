@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
-const Tag = require('./tags');
+
+const Article = require('./articles')
 const Schema =  mongoose.Schema;
 
 const UserSchema =  new Schema({
@@ -12,11 +13,11 @@ const UserSchema =  new Schema({
     create_date : Date,
     rank : Number,
     follows : [String],
-    favorites : [{type: mongoose.Schema.Types.ObjectId, ref:'Article'}],
+    favorites : [{type: Schema.Types.ObjectId, ref: "Article"}],
     voted_on : [
-        {article: mongoose.Schema.Types.ObjectId,
+        {article: {type:Schema.Types.ObjectId, ref: "Article"},
          vote : Number}],
-    commented_on : [mongoose.Schema.Types.ObjectId]
+    commented_on : [{type: Schema.Types.ObjectId, ref: "Article"}]
 });
 
 UserSchema.methods.generateHash = function(password) {
