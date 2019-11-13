@@ -11,7 +11,7 @@ const UserSchema =  new Schema({
     pw : {type: String, required: true},
     create_date : Date,
     rank : Number,
-    follows : [Tag.schema],
+    follows : [String],
     favorites : [{type: mongoose.Schema.Types.ObjectId, ref:'Article'}],
     voted_on : [
         {article: mongoose.Schema.Types.ObjectId,
