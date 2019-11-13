@@ -1,5 +1,6 @@
 include comment_card
 
-mixin comments(comments)
+mixin comments(comments, users)
     each comment in comments
-        +comment_card(comment)
+        - var user = users[comment.u_id.toString()];
+        +comment_card(comment, user)
