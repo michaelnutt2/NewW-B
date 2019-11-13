@@ -6,7 +6,7 @@ include mixins/comments
 
 block content
     +navbar(tag_list, name, user)
-    +sidebar
+    +sidebar(sidebar)
     style.
         img{
             display: block;
@@ -24,4 +24,10 @@ block content
     div(class="main article")
         p !{article_text}
 
-    +comments(comments)
+    
+    //- a(href=comments type="button" class="btn btn-primary btn-lg" style="width:20%; margin-left: 40%; margin-right:40%; margin-top: 16px; margin-bottom: 32px;") Read Comments
+    
+    //- - var comments = [[{'u_id':'test'}, {'date': 'today', 'text': 'test'}], [{'u_id': 'test2'}, {'date': 'today', 'text': 'test2'}]];
+    //- - console.log(comments);
+
+    //- +comments(comments)
