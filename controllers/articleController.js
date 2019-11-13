@@ -5,6 +5,7 @@ var Users = require('../models/users')
 var path = require('path');
 var fs = require('fs');
 var async = require('async');
+const validator = require('express-validator');
 
 function findTags(callback,user) {
     if (user === undefined){
@@ -220,3 +221,34 @@ exports.keyword_detail = function(req, res, next) {
         });
     });
 };
+
+exports.submit_comment = [
+    // Validate not an empty comment
+    validator.body('text', 'Enter text here').isLength({min: 1}).trim(),
+
+    // Sanitize the field
+    validator.sanitizeBody('text').escape(),
+
+    // Process the request
+    (req, res, next) => {
+        const errors = validator.validationResult(req);
+
+        var comment = new Comment(
+            {
+                text: req.body.text,
+                date: + Date.now(),
+                rank: 0
+            }
+        );
+        if(!errors.isEmpty()) {
+            res.render('');
+        } else {
+            Article.update({_id: req.params.id}, {
+                $push: comment
+            }).exec(function(err, article){
+                if(err) {return next(err);}
+                res.redirect('/article/'+req.param.id);
+            })
+        }
+    }
+]

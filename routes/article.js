@@ -27,6 +27,8 @@ router.get('/article/keywords/:id', article_controller.keyword_detail);
 // GET User login From
 //router.get('/user/login', user_controller.login_create)
 
+router.post('/article/:id', article_controller.submit_comment);
+
 // Login a user
 router.post('/', passport.authenticate('local-login', {
     successRedirect : '/', // redirect back but logged in

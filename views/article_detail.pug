@@ -3,6 +3,7 @@ include mixins/navbar
 include mixins/cards 
 include mixins/sidebar
 include mixins/comments
+include mixins/comment_form
 
 block content
     +navbar(tag_list, name, user)
@@ -23,4 +24,6 @@ block content
         }
     div(class="main article")
         p !{article_text}
+    if(user)
+        +comment_form
     +comments(comments, users)
