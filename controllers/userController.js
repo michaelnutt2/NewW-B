@@ -61,3 +61,8 @@ exports.user_profile = function(req, res, next) {
         });
     });
 };
+
+exports.add_favorite = function(req, res, next) {
+    res.send("Work in progress");
+    // Users.findOneAndUpdate
+}

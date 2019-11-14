@@ -8,4 +8,5 @@ var user_controller = require('../controllers/userController');
 router.get('/', user_controller.user_profile);
 router.post('/', user_controller.user_profile);
 
+router.post('/favorites/:id/favorited', user_controller.add_favorite);
 module.exports = router;
