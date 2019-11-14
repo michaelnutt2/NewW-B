@@ -3,6 +3,13 @@ mixin sidebar(keys)
     //-     include ../../public/stylesheets/stylesheet.css
     div(id="sidebar" class="sidebar")
         a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") x
+        form(action='/article/search' method='POST' class='form-inline')
+            div(class="form-group" style="max-width:75%; margin:auto;")
+                label(for="search" style="color:white;font-size:16px;") Search
+                input(style="color:white;}" type="search" class="form-control" name="search" placeholder="Search")
+            div(class="form-group")
+                input(type="submit" style="display:none")
+        p 
         p Keywords
         - var i = 0;
         //- while i < 10
@@ -11,8 +18,8 @@ mixin sidebar(keys)
         //-         var key_url = "/articles/keywords/" + key;
             //- a(href=key_url)= key
         each key in keys
-            - var key_url = "/article/keywords/" + key
-            a(href=key_url)= key
+            - var key_url = "/article/keywords/" + key._id
+            a(href=key_url style="font-size:16px;")= key._id
         else
             p No Keywords
 

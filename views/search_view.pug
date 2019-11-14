@@ -1,0 +1,14 @@
+extends layout
+include mixins/navbar
+include mixins/cards
+include mixins/sidebar
+
+block content
+    +navbar(tag_list, name, user)
+    +sidebar(sidebar)
+    h1 Search Results:
+        div(class="main" style="display:flex;flex-direction:row;flex-wrap:wrap;")
+            each article in article_list
+                +cards(article)
+            else
+                p No articles found!
