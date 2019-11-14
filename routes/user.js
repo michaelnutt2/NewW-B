@@ -11,5 +11,6 @@ router.post('/mod_user', user_controller.mod_user);
 router.post('/change_pass', user_controller.change_pass);
 router.post('/delete', user_controller.delete);
 
-router.post('/favorites/:id/favorited', user_controller.add_favorite);
+router.post('/favorited/:id', user_controller.add_favorite);
+router.post('/unfavorited/:id', user_controller.remove_favorite);
 module.exports = router;
