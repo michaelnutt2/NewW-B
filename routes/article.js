@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var passport = require('passport');
-require('../config/passport')(passport)
 
 // Require controller module
 var article_controller = require('../controllers/articleController');
@@ -28,13 +26,6 @@ router.get('/keywords/:id', article_controller.keyword_detail);
 //router.get('/user/login', user_controller.login_create)
 
 router.post('/:id', article_controller.submit_comment);
-
-// Login a user
-router.post('/', passport.authenticate('local-login', {
-    successRedirect : '/ ', // redirect back but logged in
-    failureRedirect : '/', // redirect back but not logged in
-    failureFlash : true // allow flash messages
-}));
 
 
 module.exports = router;
