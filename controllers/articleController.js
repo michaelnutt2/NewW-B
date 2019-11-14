@@ -264,7 +264,7 @@ exports.search = [
             },
             list_articles: function(callback) {
                 console.log(req.body.search);
-                Article.find({'text': {$regex: req.body.search}})
+                Article.find({$or: [{'text': {$regex: req.body.search}}, {'title': {$regex: req.body.search}}, {'keywords': req.body.search}]})
                 .sort([['rank', 'ascending']])
                 .exec(callback);
             }
