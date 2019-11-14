@@ -33,6 +33,31 @@ function findComments(callback,user) {
     });
 };
 
+function updateUser(callback, req){
+    Users.findOneAndUpdate({u_id:req.user.u_id},
+                           {f_name:req.body.f_name, 
+                            l_name:req.body.l_name, 
+                            email:req.body.email}).exec(callback)
+};
+
+function changePass(callback,req, res) {
+    Users.findOne({u_id:req.user.u_id}).then(function(record){
+        var err = []
+        if (record.pw === req.body.old_pass) {
+            if (req.body.new_pass1 === req.body.new_pass2) {
+                Users.findOneAndUpdate({u_id:req.user.u_id},{pw:req.body.new_pass1})
+                .exec(callback)
+            }else{
+                err.push('New passwords do not match');
+            };
+        }else{
+            err.push('Old Passwords do not match');
+        };
+        console.log(err);
+        return err
+    });
+};
+
 
 exports.user_profile = function(req, res, next) {
     async.parallel({
@@ -57,6 +82,53 @@ exports.user_profile = function(req, res, next) {
             favorite_list: result.favorites , 
             voted_on_list: result.votes,
             commented_on_list: result.comments, 
+            name: "/"
+          });
+    });
+};
+
+
+exports.mod_user = function(req, res, next){
+    async.parallel({
+        update: function(callback) {
+            updateUser(callback, req, res)
+        }
+    }, function(err, result) {
+        if(err) { return next(err);}
+        req.session.save( function(err) {
+            req.session.reload( function (err) {
+                res.redirect('/user');
+            });    
+        });
+    });
+};
+
+exports.change_pass = function(req, res, next){
+    async.parallel({
+        update: function(callback) {
+            changePass(callback, req, res)
+        }
+    }, function(err) {
+        if(err) { return next(err);}
+        req.session.save( function(err) {
+            req.session.reload( function (err) {
+                res.redirect('/user')
+            });    
+        });
+    });
+};
+
+exports.delete = function(req, res, next){
+    async.parallel({
+        tags: function(callback) {
+            findTags(callback,req.user);
+        }  
+    }, function(err, result) {
+        if(err) { return next(err);}
+        res.render('delete_user_view', {
+            title: 'NewW-B News Aggregator', 
+            tag_list: result.tags, 
+            user: req.user,
             name: "/"
         });
     });
