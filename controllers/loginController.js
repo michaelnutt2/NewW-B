@@ -9,12 +9,9 @@ exports.logout= function(req, res){
 
 function createUser(callback, req){
 
-    var query = Users.findOne({u_id:req.body.username}).then(function(result){
-        console.log(result)
+  Users.findOne({u_id:req.body.username}).then(function(result){
         if (result === null) {
-            console.log('User is unique');
             if (req.body.new_pass1==req.body.new_pass2){
-                console.log('Creating Password')
                 var user = new Users({u_id: req.body.username, 
                                         f_name:req.body.f_name, 
                                         l_name:req.body.l_name, 
@@ -22,11 +19,9 @@ function createUser(callback, req){
                                         pw:req.body.new_pass1});
                 user.save();
                 } else{
-                    console.log('passwords do not match');
                     req.flash('error_messages','Passwords do not match');
                 };
         }else{
-            console.log('user already exists');
             req.flash('error_messages','User already exists'); 
         };
         callback();
@@ -36,8 +31,6 @@ function createUser(callback, req){
 function deleteUser(callback, req){
     Users.deleteOne({u_id:req.user.u_id}).exec(callback);
 }
-
-
 
 exports.create_user = function(req, res, next){
     async.parallel({
