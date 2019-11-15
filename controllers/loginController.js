@@ -33,12 +33,31 @@ function createUser(callback, req){
     });
 };
 
+function deleteUser(callback, req){
+    Users.deleteOne({u_id:req.user.u_id}).exec(callback);
+}
+
 
 
 exports.create_user = function(req, res, next){
     async.parallel({
         update: function(callback) {
             createUser(callback, req, res)
+        }
+    }, function(err, result) {
+        if(err) { return next(err);}
+        req.session.save( function(err) {
+            req.session.reload( function (err) {
+                res.redirect('/article');
+            });    
+        });
+    });
+};
+
+exports.delete_user = function(req, res, next){
+    async.parallel({
+        update: function(callback) {
+            deleteUser(callback, req, res)
         }
     }, function(err, result) {
         if(err) { return next(err);}

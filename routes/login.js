@@ -16,6 +16,7 @@ router.post('/login', passport.authenticate('local-login', {
 // logout
 router.post('/logout', login_controller.logout);
 router.post('/create_user', login_controller.create_user)
+router.post('/delete_user', login_controller.delete_user)
 
 
 module.exports = router;
