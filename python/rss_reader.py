@@ -58,7 +58,7 @@ class ArticleLoader():
         for article in articles:
 
             stripped_title = "".join([c for c in article['title'] if c.isalpha() or c.isdigit() or c==' ']).rstrip()
-            filename = "../Articles/" + stripped_title + ".html"
+            filename = PATH + stripped_title + ".html"
             metadata.append({
                 'newsgroup': article['newsgroup'],
                 'title': article['title'],

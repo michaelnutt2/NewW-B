@@ -7,7 +7,6 @@ block content
   +navbar(tag_list, name, user)
   +sidebar(sidebar)
   div(class="main" style="display:flex;flex-direction:row;flex-wrap:wrap;")
-    - console.log(user.favorites);
     each article in article_list
       +cards(article, user)
     else

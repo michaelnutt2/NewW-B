@@ -103,40 +103,44 @@ def genUsers(article_ids, tags, n_users=100, drop_users=True,test_user=False):
     return users
 
 
-def articleCommentAndRank(article_ids, users, drop_comm=True):
+def articleCommentAndRank(article_ids, users, comments= True,  drop_comm=True):
 
     # first drop existing comments
     if drop_comm:
         article_col.update({}, {'$unset': {'comments':""}},multi=True)
 
-    # generating random comments
+    # generating random comments and votes
     for article in article_ids:
         rank = 0
         for user in users:
             # check each user and comment if there are any
-            for c_article in user['commented_on']:
-                if c_article==ObjectId(article):
-                    user = user_col.find_one({'u_id': user['u_id']})
-                    comment = gen.sentence()
-                    article_col.find_one_and_update(
-                        {'_id':ObjectId(c_article)}, 
-                        {"$push": {'comments':
-                            {'u_id': user['_id'], 
-                            'text': comment,
-                            'rank':randint(-10,10),
-                            'date':datetime.utcnow()
-                            }
-                            }
-                        })
+            if comments:
+                for c_article in user['commented_on']:
+                    if c_article==ObjectId(article):
+                        user = user_col.find_one({'u_id': user['u_id']})
+                        comment = gen.sentence()
+                        article_col.find_one_and_update(
+                            {'_id':ObjectId(c_article)}, 
+                            {"$push": {'comments':
+                                {'u_id': user['_id'], 
+                                'text': comment,
+                                'rank':randint(-10,10),
+                                'date':datetime.utcnow()
+                                }
+                                }
+                            })
             # check each user and update rank vote if there are any
             for v_article in user['voted_on']:
+                #print(v_article)
                 if v_article['article']==ObjectId(article):
                     rank += v_article['vote']
+        if rank>0:
+            print(f'{article} rank to update', rank)
 
         # update rank
         article_col.find_one_and_update(
                         {'_id':ObjectId(article)}, 
-                        {"$set": {'rank':rank}})
+                        { '$set' : {'rank':rank}})
 
 def fixDate(article_ids):
     # fix datetime column
@@ -167,6 +171,6 @@ def removeDuplicates():
 if __name__ == "__main__":
     update_articles()
     articles, tags = getArticlesAndTags()
-    users = genUsers(articles, tags,n_users=50, drop_users=False,test_user=False)
-    users = user_col.find({})
-    articleCommentAndRank(articles, users,drop_comm=True)
+    #users = genUsers(articles, tags,n_users=50, drop_users=False,test_user=False)
+    users = list(user_col.find({}))
+    articleCommentAndRank(articles, users,comments=True, drop_comm=True)

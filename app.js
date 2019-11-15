@@ -58,6 +58,13 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
+
+app.use(function(req, res, next){
+  res.locals.success_messages = req.flash('success_messages');
+  res.locals.error_messages = req.flash('error_messages');
+  next();
+});
+
 //Models and routes
 require('./models/users');
 require('./config/passport')(passport)

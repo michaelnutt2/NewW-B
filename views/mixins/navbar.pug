@@ -13,7 +13,7 @@ mixin navbar(tag_list, name, user)
             a(href=tag.url class=(name===tag.tag ? "nav-link active" : "nav-link")) #{tag.tag}
       if user == undefined
         - console.log('Logged Out')
-        form(action='/login/login' class='form-inline' method="post")
+        form(action='/login/login' id='login-form' class='form-inline' method="post")
           div(class="form-group" style='margin-right:10px;')
             label(for="username")
             input(type="text" class="form-control" name="username" placeholder="username" autocomplete="username" required)
@@ -22,19 +22,68 @@ mixin navbar(tag_list, name, user)
             input(type="password" class="form-control" name="password" placeholder="password" autocomplete="current-password" required)
             input(type = 'submit', style='display:none')
         ul(class="navbar-nav")
-          li(class="nav-item") 
-              a(href="/create_account" class=(name==="/create_account" ? "nav-link active" : "nav-link")) Create Account
+          li(class="nav-item")
+              button(class="btn btn-secondary my-2 my-sm-0" type="submit" form='login-form') Login
+              button(class="btn btn-secondary my-2 my-sm-0" type="submit" onclick="document.getElementById('mod01').style.display='block'") Create Account
+              //- a(onclick="document.getElementById('mod01').style.display='block'", class=(name==="/login/create_account" ? "nav-link active" : "nav-link")) Create Account
       else
         - console.log('Logged In')
         ul(class="navbar-nav")
           li(class="nav-item")
             //- - console.log("Navbar Print");
             //- - console.log(user);
-            a(href="/user" placeholder=user)='Hello ' + user.f_name
+            a(href="/user" placeholder=user class=(name==="/user" ? "nav-link active" : "nav-link"))='Hello ' + user.f_name
           form(action='/login/logout' class= 'form-inline my-2 my-lg-0' method="post")
             li(class="nav-item") 
               //- a(href="/logout" class=(name==="/logout" ? "nav-link active" : "nav-link")) Logout
             button(class="btn btn-secondary my-2 my-sm-0" type="submit") Logout
+  -console.log(error_messages)
+  if(error_messages.length > 0)
+    script(type='text/javascript').
+      $(document).ready(function(){
+        $('#mod01').modal('show');
+      });
+
+  div(id='mod01' class="modal")
+    div(class="modal-dialog" role="document")
+      div(class="modal-content")
+        div(class="modal-header")
+          h5(class="modal-title") Create User
+          button(type="button" class="close" 
+                  onclick="document.getElementById('mod01').style.display='none'" 
+                  data-dismiss="modal" 
+                  aria-label="Close")
+            span(aria-hidden="true") &times;
+        if(error_messages.length > 0)
+          div(class="alert alert-danger")
+            strong Oh snap! !{error_messages}. Change a few things up and try submitting again.
+        div(class="modal-body")
+          form(action='/login/create_user' class='form-inline' method="post")
+            fieldset
+              div(class="form-group row")
+                //- label(for="f_name" class="col-sm-2 col-form-label") First Name
+                input(type="text" class="form-control-plaintext" name="f_name" placeholder='First Name')
+                
+                //- label(for="l_name" class="col-sm-2 col-form-label") Last Name
+                input(type="text" class="form-control-plaintext" name="l_name" placeholder='Last Name')
+                
+                //- label(for="email" class="col-sm-2 col-form-label") Email
+                input(type="text" class="form-control-plaintext" name="email" placeholder='email' required)
+                
+                //- label(for="email" class="col-sm-2 col-form-label") Username
+                input(type="text" class="form-control-plaintext" name="username" placeholder='username' required)
+                
+                //- label(for="email" class="col-sm-2 col-form-label") Password
+                input(type="password" class="form-control-plaintext" name="new_pass1" placeholder='password' required)
+                
+                //- label(for="email" class="col-sm-2 col-form-label") Repeat Password
+                input(type="password" class="form-control-plaintext" name="new_pass2" placeholder='repeat password' required)
+                input(type = 'submit', style='display:none')
+        div(class="modal-footer")
+          button(type="button" class="btn btn-primary") Save changes
+          button(type="button" class="btn btn-secondary" 
+                  onclick="document.getElementById('mod01').style.display='none'" 
+                  data-dismiss="modal") Close
           
 
 

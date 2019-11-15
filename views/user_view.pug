@@ -2,14 +2,16 @@ extends layout
 include mixins/navbar
 include mixins/cards
 
+
 block content
   +navbar(tag_list, name, user)
   div(class="jumbotron main")
+
     h1(class="display-4") User Profile
     //- p(class="lead")
     //-   a(class="btn btn-primary btn-sm" href="#" role="button") Modify Settings
     div(class='user_details', style="display:flex;flex-direction:row;flex-wrap:wrap")
-      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+      .card.text-white.bg-dark.mb-3(style='max-width:400px;margin:10px;')
         .card-body
           h4.card-title Username
           p.card-text= user.u_id
@@ -29,7 +31,7 @@ block content
             a(class="btn btn-primary btn-sm",
               onclick="document.getElementById('mod02').style.display='block'",
               role="button", style='margin:2px') Delete Account
-      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+      .card.text-white.bg-dark.mb-3(style='max-width:400px;margin:10px;')
         .card-body
           h4.card-title Subscriptions
           for tag in user.follows
@@ -37,13 +39,13 @@ block content
           a(class="btn btn-primary btn-sm",
             onclick="document.getElementById('mod04').style.display='block'",
             role="button") Modify Subscriptions
-      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+      .card.text-white.bg-dark.mb-3(style='max-width:400px;margin:10px;')
         .card-body
           h4.card-title Favorites
           for fav in favorite_list
             p.card-text
-            a(href='/article/'+fav._id)= fav.title
-      .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
+            a.text-white.bg-dark.mb-3(href='/article/'+fav._id)= fav.title
+      .card.text-white.bg-dark.mb-3(style='max-width:400px;margin:10px;')
         .card-body
           h4.card-title Voted On
           table(class="table table-hover")
@@ -55,7 +57,7 @@ block content
               tr
                 for votes in voted_on_list.voted_on
                   th.text-white(style="font-weight:normal")
-                    a(href='/article/'+votes.article._id)=votes.article.title 
+                    a.text-white.bg-dark.mb-3(href='/article/'+votes.article._id)=votes.article.title 
                   td.text-white(style="font-weight:normal")= votes.vote
                   tr
       .card.text-white.bg-dark.mb-3(style='max-width: 20rem;margin:10px;')
@@ -63,8 +65,13 @@ block content
           h4.card-title Commented On
           for comment in commented_on_list
             p.card-text
-            a(href='/article/'+comment._id)= comment.title
+            a.text-white.bg-dark.mb-3(href='/article/'+comment._id)= comment.title
     
+    if(error_messages.length > 0)
+      script(type='text/javascript').
+        $(document).ready(function(){
+          $('#mod02').modal('show');
+        });
 
   div(id='mod01' class="modal")
     div(class="modal-dialog" role="document")
@@ -105,7 +112,10 @@ block content
                   onclick="document.getElementById('mod02').style.display='none'" 
                   data-dismiss="modal" 
                   aria-label="Close")
-            span(aria-hidden="true") &times; 
+            span(aria-hidden="true") &times;
+        if(error_messages.length > 0)
+          div(class="alert alert-danger")
+            strong Oh snap! !{error_messages}. Change a few things up and try submitting again.
         div(class="modal-body")
           form(action='/user/change_pass' class='form-inline' method="post")
             fieldset
@@ -175,3 +185,8 @@ block content
           button(type="button" class="btn btn-secondary" 
                   onclick="document.getElementById('mod04').style.display='none'" 
                   data-dismiss="modal") Close
+
+
+
+
+  
