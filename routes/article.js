@@ -25,7 +25,8 @@ router.get('/keywords/:id', article_controller.keyword_detail);
 // GET User login From
 //router.get('/user/login', user_controller.login_create)
 
-router.post('/:id', article_controller.submit_comment);
+router.post('/search', article_controller.search);
 
+router.post('/:id', article_controller.submit_comment);
 
 module.exports = router;

@@ -151,4 +151,20 @@ exports.change_subs = function(req, res, next) {
     });
 };
 
+exports.add_favorite = function(req, res, next) {
+    Users.updateOne({_id: req.user.id}, {
+        $push: { favorites: req.params.id}
+    }).exec(function(err, user) {
+        if(err) {return next(err);}
+        res.sendStatus(200);
+    })
+}
 
+exports.remove_favorite = function(req, res, next) {
+    Users.updateOne({_id: req.user.id}, {
+        $pull: { favorites: req.params.id}
+    }).exec(function(err, user) {
+        if(err) {return next(err);}
+        res.sendStatus(200);
+    });
+}

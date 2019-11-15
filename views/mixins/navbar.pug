@@ -1,7 +1,4 @@
 mixin navbar(tag_list, name, user)
-  //- style
-  //-   include ../../public/stylesheets/stylesheet.css
-
   nav(class="navbar navbar-expand-lg navbar-dark bg-dark")
     a(class="navbar-brand" href="#") NewW-B
     button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation")
@@ -33,7 +30,7 @@ mixin navbar(tag_list, name, user)
           li(class="nav-item")
             //- - console.log("Navbar Print");
             //- - console.log(user);
-            a(href="/user" class=(name==="/" ? "nav-link active" : "nav-link"), placeholder=user)='Hello ' + user.f_name
+            a(href="/user" placeholder=user)='Hello ' + user.f_name
           form(action='/login/logout' class= 'form-inline my-2 my-lg-0' method="post")
             li(class="nav-item") 
               //- a(href="/logout" class=(name==="/logout" ? "nav-link active" : "nav-link")) Logout
