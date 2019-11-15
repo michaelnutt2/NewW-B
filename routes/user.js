@@ -9,6 +9,7 @@ router.get('/', user_controller.user_profile);
 router.post('/', user_controller.user_profile);
 router.post('/mod_user', user_controller.mod_user);
 router.post('/change_pass', user_controller.change_pass);
-router.post('/delete', user_controller.delete);
+//router.post('/delete', user_controller.delete);
+router.post('/change_subs', user_controller.change_subs);
 
 module.exports = router;
