@@ -46,17 +46,17 @@ function updateUser(callback, req){
                             email:req.body.email}).exec(callback)
 };
 
-function changePass(callback,req, res) {
+function changePass(callback,req) {
     Users.findOne({u_id:req.user.u_id}).then(function(record){
         if (record.pw === req.body.old_pass) {
             if (req.body.new_pass1 === req.body.new_pass2) {
                 return Users.findOneAndUpdate({u_id:req.user.u_id},{pw:req.body.new_pass1})
                        .exec(callback)
             }else{
-                req.flash('error_messages','New passwords do not match');
+                req.flash('pass_error','New passwords do not match');
             };
         }else{
-            req.flash('error_messages','Old Passwords do not match');
+            req.flash('pass_error','Old Passwords do not match');
         };
         callback()
     });
@@ -121,10 +121,10 @@ exports.mod_user = function(req, res, next){
 
 exports.change_pass = function(req, res, next){
     async.parallel({
-        function(callback) {
+        errors: function(callback) {
             changePass(callback, req, res)
         }
-    }, function(err) {
+    }, function(err, result) {
         if(err) { return next(err);}
         req.session.save( function(err) {
             req.session.reload( function (err) {

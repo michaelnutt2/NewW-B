@@ -19,11 +19,12 @@ function createUser(callback, req){
                                         pw:req.body.new_pass1});
                 user.save();
                 } else{
-                    req.flash('error_messages','Passwords do not match');
+                    req.flash('user_error','Passwords do not match');
                 };
         }else{
-            req.flash('error_messages','User already exists'); 
+            req.flash('user_error','User already exists'); 
         };
+        console.log(req.flash());
         callback();
     });
 };

@@ -3,6 +3,7 @@ include mixins/navbar
 include mixins/cards
 
 
+
 block content
   +navbar(tag_list, name, user)
   div(class="jumbotron main")
@@ -66,12 +67,6 @@ block content
           for comment in commented_on_list
             p.card-text
             a.text-white.bg-dark.mb-3(href='/article/'+comment._id)= comment.title
-    
-    if(error_messages.length > 0)
-      script(type='text/javascript').
-        $(document).ready(function(){
-          $('#mod02').modal('show');
-        });
 
   div(id='mod01' class="modal")
     div(class="modal-dialog" role="document")
@@ -113,9 +108,9 @@ block content
                   data-dismiss="modal" 
                   aria-label="Close")
             span(aria-hidden="true") &times;
-        if(error_messages.length > 0)
+        if(pass_error.length > 0)
           div(class="alert alert-danger")
-            strong Oh snap! !{error_messages}. Change a few things up and try submitting again.
+            strong Oh snap! !{pass_error}. Change a few things up and try submitting again.
         div(class="modal-body")
           form(action='/user/change_pass' id='mod_pass' class='form-inline' method="post")
             fieldset
@@ -188,5 +183,11 @@ block content
 
 
 
+  if(pass_error.length > 0)
+    script(type='text/javascript').
+      $(window).onload(function(){
+        $('#mod02').modal('show');
+      });
 
+ 
   

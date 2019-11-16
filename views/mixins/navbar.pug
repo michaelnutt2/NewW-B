@@ -31,7 +31,8 @@ mixin navbar(tag_list, name, user)
             li(class="nav-item") 
             button(class="btn btn-secondary my-2 my-sm-0" type="submit") Logout
   
-  if(error_messages.length > 0)
+  //- -console.log(user_error)
+  if(user_error.length > 0)
     script(type='text/javascript').
       $(document).ready(function(){
         $('#create_u_mod').modal('show');
@@ -47,9 +48,9 @@ mixin navbar(tag_list, name, user)
                   data-dismiss="modal" 
                   aria-label="Close")
             span(aria-hidden="true") &times;
-        if(error_messages.length > 0)
+        if(user_error.length > 0)
           div(class="alert alert-danger")
-            strong Oh snap! !{error_messages}. Change a few things up and try submitting again.
+            strong Oh snap! !{user_error}. Change a few things up and try submitting again.
         div(class="modal-body")
           form(action='/login/create_user' class='form-inline' method="post")
             fieldset
