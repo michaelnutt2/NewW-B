@@ -24,10 +24,13 @@ mixin cards(article, user)
                         input(type="radio" name="vote" id="downvote" autocomplete="off")
             a(href=article.url class="card-link" target="_blank") Original Page
             if user
+                - var id = article._id;
                 div(class="btn-group btn-group-toggle" style="margin:10px;" data-toggle="buttons")
                 if user.favorites.length > 0
-                    - var id = article._id;
+                    - console.log("Article: " + article);
                     - if (user.favorites.includes(id))
                         button(type="submit" class="btn btn-danger" id=id onclick="favorite('"+id+"')") Unfavorite
                     - else
                         button(type="submit" class="btn btn-success" id=id onclick="favorite('"+id+"')") Favorite
+                - else
+                    button(type="submit" class="btn btn-success" id=id onclick="favorite('"+id+"')") Favorite
