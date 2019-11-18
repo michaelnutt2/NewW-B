@@ -34,3 +34,33 @@ function favorite(id) {
         });
     }
 }
+
+function upvote(id) {
+    var rbtn = document.getElementById('rank-'+id);
+    fetch('/user/upvote/'+id, {method: 'POST'})
+    .then(function(response){
+        if(response.status == 203) {
+            rbtn.innerHTML++;
+        } else if(response.status == 201) {
+            rbtn.innerHTML--;
+        } else if(response.status == 202) {
+            rbtn.innerHTML++;
+            rbtn.innerHTML++;
+        }
+    });
+}
+
+function downvote(id) {
+    var rbtn = document.getElementById('rank-'+id);
+    fetch('/user/downvote/'+id, {method: 'POST'})
+    .then(function(response){
+        if(response.status == 203) {
+            rbtn.innerHTML--;
+        } else if(response.status == 201) {
+            rbtn.innerHTML++;
+        } else if(response.status == 202) {
+            rbtn.innerHTML--;
+            rbtn.innerHTML--;
+        }
+    });
+}

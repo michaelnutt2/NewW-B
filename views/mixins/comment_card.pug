@@ -1,7 +1,7 @@
 
 mixin comment_card(comment, user)
     div(class="card border-secondary mb-3" style="max-width:75%;margin:auto")
-        div(class="card-header")= comment.date
+        div(class="card-header")= comment.post_date
             div(class="btn-group btn-group-toggle" style="margin:10px;" data-toggle="buttons")
                 label(class="btn btn-primary") +
                     input(type="radio" name="vote" id="upvote" autocomplete="off")
