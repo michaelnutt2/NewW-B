@@ -115,7 +115,7 @@ exports.author_detail = function(req, res, next) {
             for(var i = 1; i < auth_split.length; i++) {
                 author += " " + auth_split[i];
             }
-            console.log(author);
+            //console.log(author);
             Article.find({author: author})
             .exec(callback);
         }
@@ -270,7 +270,7 @@ exports.search = [
             }
         }, function(err, result) {
             if(err) {return next(err);}
-            console.log(result.list_articles);
+            //console.log(result.list_articles);
             res.render('article_view',{
                 tag_list: result.tags,
                 sidebar: result.sidebar,
