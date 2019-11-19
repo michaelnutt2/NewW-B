@@ -17,6 +17,7 @@ var loginRouter = require('./routes/login');
 var homeRouter = require('./routes/index');
 
 var app = express();
+app.listen(8000,'0.0.0.0')
 
 var mongoose = require('mongoose');
 var mongoDB = 'mongodb://newsDev:newB@10.125.187.72:9002/news';
