@@ -14,4 +14,8 @@ router.post('/change_subs', user_controller.change_subs);
 
 router.post('/favorited/:id', user_controller.add_favorite);
 router.post('/unfavorited/:id', user_controller.remove_favorite);
+
+router.post('/upvote/:id', user_controller.upvote);
+router.post('/downvote/:id', user_controller.downvote);
+router.post('/removevote/:id', user_controller.removevote);
 module.exports = router;

@@ -15,10 +15,24 @@ const UserSchema =  new Schema({
     follows : [String],
     favorites : [{type: Schema.Types.ObjectId, ref: "Article"}],
     voted_on : [
-        {article: {type:Schema.Types.ObjectId, ref: "Article"},
-         vote : Number}],
+        {
+            article: {type:Schema.Types.ObjectId, ref: "Article"},
+            vote : Number
+        }
+    ],
     commented_on : [{type: Schema.Types.ObjectId, ref: "Article"}]
 });
+
+// UserSchema
+// .virtual('votes')
+// .get(function() {
+//     votes = {};
+//     for(article of voted_on) {
+//         votes[article.article] = article.vote;
+//     }
+
+//     return votes;
+// })
 
 UserSchema.methods.generateHash = function(password) {
     //return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);

@@ -1,10 +1,11 @@
-mixin cards(article, user)
+mixin cards(article, user, votes)
     div(class="card mb-3" style="max-width:450px;margin:10px;")
         img(style="height:200px;width:100%;display:block;" src=article.img)
         h3(class="card-header")
             a(href=article.article_url) !{article.title}
         div(class="card-body")
             h5(class="card-title") !{article.summary}
+            h6(class="card-title")= article.post_date
             h6(class="card-subtitle text-muted")
                 a(href=article.author_url)= article.author
             -if (article.tags)
@@ -17,12 +18,9 @@ mixin cards(article, user)
         div(class="card-footer" style="text-align:center;")
             if user
                 div(class="btn-group btn-group-toggle" style="margin:10px;" data-toggle="buttons")
-                    label(class="btn btn-primary") +
-                        input(type="radio" name="vote" id="upvote" autocomplete="off")
-                    label(class="btn btn-primary")= article.rank
-                        input(type="radio" name="vote" id="upvote" autocomplete="off")
-                    label(class="btn btn-primary") -
-                        input(type="radio" name="vote" id="downvote" autocomplete="off")
+                    button(class="btn btn-success" name="upvote" id="upvote-"+article._id onclick="upvote('"+article._id+"')") +
+                    button(class="btn btn-outline-primary" name="vote" id="rank-"+article._id onclick="removevote('"+article._id+"')")= article.rank
+                    button(class="btn btn-danger" name="vote" id="downvote-"+article._id onclick="downvote('"+article._id+"')") -
             a(href=article.url class="card-link" target="_blank") Original Page
             if user
                 - var id = article._id;

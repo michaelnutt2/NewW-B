@@ -209,3 +209,156 @@ exports.remove_favorite = function(req, res, next) {
         res.sendStatus(200);
     });
 }
+
+exports.upvote = function(req, res, next) {
+    var found = false;
+    for(vote of req.user.voted_on) {
+        if(req.params.id == vote.article) {
+            found = true;
+            if(vote.vote == 1) {
+                async.parallel({
+                    update_user: function(callback) {
+                        Users.updateOne({"_id": req.user.id}, {
+                            $pull: {
+                                "voted_on": {
+                                    "article": req.params.id,
+                                    "vote": 1
+                                }
+                            }
+                        }).exec(callback);
+                    },
+                    update_article: function(callback) {
+                        Article.updateOne({"_id": req.params.id}, {
+                            $inc: {"rank": -1}
+                        }).exec(callback);
+                    }
+                }, function(err, result) {
+                    if(err) {return next(err);}
+                    return res.sendStatus(201);
+                });
+            } else {
+                console.log("Case 2: Changing Vote");
+                async.parallel({
+                    update_user: function(callback) {
+                        Users.updateOne({"_id": req.user.id}, {
+                            $pull: {
+                                "voted_on": {
+                                    "article": req.params.id,
+                                    "vote": -1
+                                }
+                            }
+                        }).then(function(){
+                            Users.updateOne({"_id": req.user.id}, {
+                                $push: {"voted_on": {"article": req.params.id, "vote": 1}}
+                            }).exec(callback);
+                        });
+                    },
+                    update_article: function(callback) {
+                        Article.updateOne({"_id": req.params.id}, {
+                            $inc: {"rank": 2}
+                        }).exec(callback);
+                    }
+                }, function(err, result) {
+                    if(err) {return next(err);}
+                    return res.sendStatus(202);
+                });
+            }
+        }
+    }
+
+    if(!found){
+        async.parallel({
+            update_user: function(callback) {
+                Users.updateOne({"_id": req.user.id}, {
+                    $push: {"voted_on": {"article": req.params.id, "vote": 1}}
+                }).exec(callback);
+            },
+            update_article: function(callback) {
+                Article.updateOne({"_id": req.params.id}, {
+                    $inc: {"rank": 1}
+                }).exec(callback);
+            }
+        }, function(err, result) {
+            if(err) {return next(err);}
+            return res.sendStatus(203);
+        });
+    }
+}
+
+exports.downvote = function(req, res, next) {
+    var found = false;
+    for(vote of req.user.voted_on) {
+        if(req.params.id == vote.article) {
+            found = true;
+            if(vote.vote == -1) {
+                async.parallel({
+                    update_user: function(callback) {
+                        Users.updateOne({"_id": req.user.id}, {
+                            $pull: {
+                                "voted_on": {
+                                    "article": req.params.id,
+                                    "vote": -1
+                                }
+                            }
+                        }).exec(callback);
+                    },
+                    update_article: function(callback) {
+                        Article.updateOne({"_id": req.params.id}, {
+                            $inc: {"rank": 1}
+                        }).exec(callback);
+                    }
+                }, function(err, result) {
+                    if(err) {return next(err);}
+                    return res.sendStatus(201);
+                });
+            } else if(vote.vote == 1){
+                async.parallel({
+                    update_user: function(callback) {
+                        Users.updateOne({"_id": req.user.id}, {
+                            $pull: {
+                                "voted_on": {
+                                    "article": req.params.id,
+                                    "vote": 1
+                                }
+                            }
+                        }).then(function(){
+                            Users.updateOne({"_id": req.user.id}, {
+                                $push: {"voted_on": {"article": req.params.id, "vote": -1}}
+                            }).exec(callback);
+                        });
+                    },
+                    update_article: function(callback) {
+                        Article.updateOne({"_id": req.params.id}, {
+                            $inc: {"rank": -2}
+                        }).exec(callback);
+                    }
+                }, function(err, result) {
+                    if(err) {return next(err);}
+                    return res.sendStatus(202);
+                });
+            }
+        }
+    }
+
+    if(!found) {
+        async.parallel({
+            update_user: function(callback) {
+                Users.updateOne({"_id": req.user.id}, {
+                    $push: {"voted_on": {"article": req.params.id, "vote": -1}}
+                }).exec(callback);
+            },
+            update_article: function(callback) {
+                Article.updateOne({"_id": req.params.id}, {
+                    $inc: {"rank": -1}
+                }).exec(callback);
+            }
+        }, function(err, result) {
+            if(err) {return next(err);}
+            return res.sendStatus(203);
+        });
+    }
+}
+
+exports.removevote = function(req, res, next) {
+    res.sendStatus(200);
+}
