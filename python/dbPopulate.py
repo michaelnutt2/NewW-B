@@ -173,4 +173,5 @@ if __name__ == "__main__":
     articles, tags = getArticlesAndTags()
     #users = genUsers(articles, tags,n_users=50, drop_users=False,test_user=False)
     users = list(user_col.find({}))
-    articleCommentAndRank(articles, users,comments=True, drop_comm=True)
+    articleCommentAndRank(articles, users,comments=True, drop_comm=False)
+    removeDuplicates()

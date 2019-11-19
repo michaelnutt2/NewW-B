@@ -4,6 +4,7 @@ var Users = require('../models/users');
 var async = require('async');
 const Entities = require('html-entities').AllHtmlEntities
 const entities = new Entities();
+const validator= require('express-validator');
 
 function findTags(callback,user) {
     Users.findOne({'u_id':user.u_id}, {'follows':1}).then(function(follows){
@@ -67,7 +68,7 @@ function changeSubs(callback, req, res) {
     for (tag in req.body){
         tag_list.push(tag)
     }
-    console.log(tag_list)
+    //console.log(tag_list)
     Users.findOneAndUpdate({u_id:req.user.u_id}, {follows:tag_list}).exec(callback)
 };
 
@@ -104,35 +105,77 @@ exports.user_profile = function(req, res, next) {
 };
 
 
-exports.mod_user = function(req, res, next){
-    async.parallel({
-        update: function(callback) {
-            updateUser(callback, req, res)
-        }
-    }, function(err, result) {
-        if(err) { return next(err);}
-        req.session.save( function(err) {
-            req.session.reload( function (err) {
-                res.redirect('/user');
-            });    
-        });
-    });
-};
+exports.mod_user = [
 
-exports.change_pass = function(req, res, next){
-    async.parallel({
-        errors: function(callback) {
-            changePass(callback, req, res)
-        }
-    }, function(err, result) {
-        if(err) { return next(err);}
-        req.session.save( function(err) {
-            req.session.reload( function (err) {
-                res.redirect('/user');
-            });    
-        });
-    });
-};
+    validator.body('f_name').trim(),
+    validator.body('l_name').trim(),
+    validator.body('email').trim(),
+    validator.sanitizeBody('*').escape(),
+    
+    (req, res, next) => {
+
+        const errors = validator.validationResult(req);
+
+        if (!errors.isEmpty()){ 
+            req.flash('pass_error', errors.errors);
+            req.session.save(function(){
+                req.session.reload(function(){
+                    res.redirect('/user');
+                });    
+            });
+
+        } else {
+            async.parallel({
+                update: function(callback) {
+                    updateUser(callback, req, res)
+                }
+            }, function(err) {
+                if(err) { return next(err);}
+                req.session.save( function(err) {
+                    req.session.reload( function(err) {
+                        res.redirect('/user');
+                    });    
+                });
+            });
+        };
+    }
+];
+
+exports.change_pass = [
+
+    validator.body('old_pass').trim(),
+    validator.body('new_pass1').trim(),
+    validator.body('new_pass2').trim(),
+    validator.sanitizeBody('*').escape(),
+    
+    (req, res, next) => {
+
+        const errors = validator.validationResult(req);
+
+        if (!errors.isEmpty()){ 
+            req.flash('pass_error', errors.errors);
+            req.session.save(function(){
+                req.session.reload(function(){
+                    res.redirect('/user');
+                });    
+            });
+
+        } else {
+            async.parallel({
+                errors: function(callback) {
+                    changePass(callback, req, res)
+                }
+            }, function(err, result) {
+                if(err) { return next(err);}
+                req.session.save( function(err) {
+                    req.session.reload( function (err) {
+                        res.redirect('/user');
+                    });    
+                });
+            });
+        };
+    }
+];
 
 exports.change_subs = function(req, res, next) {
     async.parallel({

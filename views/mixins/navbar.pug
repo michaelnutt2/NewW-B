@@ -31,13 +31,6 @@ mixin navbar(tag_list, name, user)
             li(class="nav-item") 
             button(class="btn btn-secondary my-2 my-sm-0" type="submit") Logout
   
-  //- -console.log(user_error)
-  if(user_error.length > 0)
-    script(type='text/javascript').
-      $(document).ready(function(){
-        $('#create_u_mod').modal('show');
-      });
-
   div(id='create_u_mod' class="modal")
     div(class="modal-dialog" role="document")
       div(class="modal-content")
@@ -56,22 +49,22 @@ mixin navbar(tag_list, name, user)
             fieldset
               div(class="form-group row")
                 //- label(for="f_name" class="col-sm-2 col-form-label") First Name
-                input(type="text" class="form-control-plaintext" name="f_name" placeholder='First Name')
+                input(type="text" class="form-control-plaintext" name="f_name" placeholder='First Name' autocomplete="given-name")
                 
                 //- label(for="l_name" class="col-sm-2 col-form-label") Last Name
-                input(type="text" class="form-control-plaintext" name="l_name" placeholder='Last Name')
+                input(type="text" class="form-control-plaintext" name="l_name" placeholder='Last Name' autocomplete='family-name')
                 
                 //- label(for="email" class="col-sm-2 col-form-label") Email
-                input(type="text" class="form-control-plaintext" name="email" placeholder='email' required)
+                input(type="text" class="form-control-plaintext" name="email" placeholder='email' required autocomplete='email')
                 
                 //- label(for="email" class="col-sm-2 col-form-label") Username
-                input(type="text" class="form-control-plaintext" name="username" placeholder='username' required)
+                input(type="text" class="form-control-plaintext" name="username" placeholder='username' required autocomplete='username')
                 
                 //- label(for="email" class="col-sm-2 col-form-label") Password
-                input(type="password" class="form-control-plaintext" name="new_pass1" placeholder='password' required)
+                input(type="password" class="form-control-plaintext" name="new_pass1" placeholder='password' required autocomplete='new-password')
                 
                 //- label(for="email" class="col-sm-2 col-form-label") Repeat Password
-                input(type="password" class="form-control-plaintext" name="new_pass2" placeholder='repeat password' required)
+                input(type="password" class="form-control-plaintext" name="new_pass2" placeholder='repeat password' required autocomplete='new-password')
                 input(type = 'submit', style='display:none')
         div(class="modal-footer")
           button(type="button" class="btn btn-primary") Save changes
@@ -79,6 +72,8 @@ mixin navbar(tag_list, name, user)
                   onclick="document.getElementById('create_u_mod').style.display='none'" 
                   data-dismiss="modal") Close
           
-
-
-
+  if(user_error.length > 0)
+    //- -console.log(user_error)
+    script(type='text/javascript').
+      $(document.getElementById('create_u_mod').style.display='block')
+ 

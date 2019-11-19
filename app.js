@@ -23,6 +23,7 @@ var mongoDB = 'mongodb://newsDev:newB@10.125.187.72:9002/news';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB Connection Error:'));
+mongoose.set('useFindAndModify', false);
 
 var store = new MongoDBStore({
   uri: 'mongodb://newsDev:newB@10.125.187.72:9002/news',
