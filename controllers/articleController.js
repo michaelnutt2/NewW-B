@@ -155,7 +155,7 @@ exports.article_detail = function(req, res, next) {
             findTags(callback, req.user);
         },
         details: function(callback) {
-            Article.findById(req.params.id, {'title': 1, 'filepath':1, 'comments': 1})
+            Article.findById(req.params.id)
             .exec(callback);
         },
         users: function(callback) {
@@ -190,6 +190,7 @@ exports.article_detail = function(req, res, next) {
             users: u,
             user: req.user,
             comments: details.comments,
+            article: details,
             article_text: contents,
             tag_list: results.tags,
             sidebar: results.sidebar,
