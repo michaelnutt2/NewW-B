@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Tag = require('./tags');
 const Comment = require('./comments')
 const Schema =  mongoose.Schema;
+var moment = require('moment');
 // Create Schema and Model
 
 const ArticleSchema =  new Schema({
@@ -24,6 +25,12 @@ ArticleSchema
 .virtual('article_url')
 .get(function() {
     return '/article/' + this.id;
+})
+
+ArticleSchema
+.virtual('post_date')
+.get(function() {
+    return moment(this.date).format('MMMM Do, YYYY');
 })
 
 ArticleSchema

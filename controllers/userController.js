@@ -4,6 +4,7 @@ var Users = require('../models/users');
 var async = require('async');
 const Entities = require('html-entities').AllHtmlEntities
 const entities = new Entities();
+const validator= require('express-validator');
 
 function findTags(callback,user) {
     Users.findOne({'u_id':user.u_id}, {'follows':1}).then(function(follows){
@@ -67,7 +68,7 @@ function changeSubs(callback, req, res) {
     for (tag in req.body){
         tag_list.push(tag)
     }
-    console.log(tag_list)
+    //console.log(tag_list)
     Users.findOneAndUpdate({u_id:req.user.u_id}, {follows:tag_list}).exec(callback)
 };
 
@@ -104,35 +105,77 @@ exports.user_profile = function(req, res, next) {
 };
 
 
-exports.mod_user = function(req, res, next){
-    async.parallel({
-        update: function(callback) {
-            updateUser(callback, req, res)
-        }
-    }, function(err, result) {
-        if(err) { return next(err);}
-        req.session.save( function(err) {
-            req.session.reload( function (err) {
-                res.redirect('/user');
-            });    
-        });
-    });
-};
+exports.mod_user = [
 
-exports.change_pass = function(req, res, next){
-    async.parallel({
-        errors: function(callback) {
-            changePass(callback, req, res)
-        }
-    }, function(err, result) {
-        if(err) { return next(err);}
-        req.session.save( function(err) {
-            req.session.reload( function (err) {
-                res.redirect('/user');
-            });    
-        });
-    });
-};
+    validator.body('f_name').trim(),
+    validator.body('l_name').trim(),
+    validator.body('email').trim(),
+    validator.sanitizeBody('*').escape(),
+    
+    (req, res, next) => {
+
+        const errors = validator.validationResult(req);
+
+        if (!errors.isEmpty()){ 
+            req.flash('pass_error', errors.errors);
+            req.session.save(function(){
+                req.session.reload(function(){
+                    res.redirect('/user');
+                });    
+            });
+
+        } else {
+            async.parallel({
+                update: function(callback) {
+                    updateUser(callback, req, res)
+                }
+            }, function(err) {
+                if(err) { return next(err);}
+                req.session.save( function(err) {
+                    req.session.reload( function(err) {
+                        res.redirect('/user');
+                    });    
+                });
+            });
+        };
+    }
+];
+
+exports.change_pass = [
+
+    validator.body('old_pass').trim(),
+    validator.body('new_pass1').trim(),
+    validator.body('new_pass2').trim(),
+    validator.sanitizeBody('*').escape(),
+    
+    (req, res, next) => {
+
+        const errors = validator.validationResult(req);
+
+        if (!errors.isEmpty()){ 
+            req.flash('pass_error', errors.errors);
+            req.session.save(function(){
+                req.session.reload(function(){
+                    res.redirect('/user');
+                });    
+            });
+
+        } else {
+            async.parallel({
+                errors: function(callback) {
+                    changePass(callback, req, res)
+                }
+            }, function(err, result) {
+                if(err) { return next(err);}
+                req.session.save( function(err) {
+                    req.session.reload( function (err) {
+                        res.redirect('/user');
+                    });    
+                });
+            });
+        };
+    }
+];
 
 exports.change_subs = function(req, res, next) {
     async.parallel({
@@ -165,4 +208,157 @@ exports.remove_favorite = function(req, res, next) {
         if(err) {return next(err);}
         res.sendStatus(200);
     });
+}
+
+exports.upvote = function(req, res, next) {
+    var found = false;
+    for(vote of req.user.voted_on) {
+        if(req.params.id == vote.article) {
+            found = true;
+            if(vote.vote == 1) {
+                async.parallel({
+                    update_user: function(callback) {
+                        Users.updateOne({"_id": req.user.id}, {
+                            $pull: {
+                                "voted_on": {
+                                    "article": req.params.id,
+                                    "vote": 1
+                                }
+                            }
+                        }).exec(callback);
+                    },
+                    update_article: function(callback) {
+                        Article.updateOne({"_id": req.params.id}, {
+                            $inc: {"rank": -1}
+                        }).exec(callback);
+                    }
+                }, function(err, result) {
+                    if(err) {return next(err);}
+                    return res.sendStatus(201);
+                });
+            } else {
+                console.log("Case 2: Changing Vote");
+                async.parallel({
+                    update_user: function(callback) {
+                        Users.updateOne({"_id": req.user.id}, {
+                            $pull: {
+                                "voted_on": {
+                                    "article": req.params.id,
+                                    "vote": -1
+                                }
+                            }
+                        }).then(function(){
+                            Users.updateOne({"_id": req.user.id}, {
+                                $push: {"voted_on": {"article": req.params.id, "vote": 1}}
+                            }).exec(callback);
+                        });
+                    },
+                    update_article: function(callback) {
+                        Article.updateOne({"_id": req.params.id}, {
+                            $inc: {"rank": 2}
+                        }).exec(callback);
+                    }
+                }, function(err, result) {
+                    if(err) {return next(err);}
+                    return res.sendStatus(202);
+                });
+            }
+        }
+    }
+
+    if(!found){
+        async.parallel({
+            update_user: function(callback) {
+                Users.updateOne({"_id": req.user.id}, {
+                    $push: {"voted_on": {"article": req.params.id, "vote": 1}}
+                }).exec(callback);
+            },
+            update_article: function(callback) {
+                Article.updateOne({"_id": req.params.id}, {
+                    $inc: {"rank": 1}
+                }).exec(callback);
+            }
+        }, function(err, result) {
+            if(err) {return next(err);}
+            return res.sendStatus(203);
+        });
+    }
+}
+
+exports.downvote = function(req, res, next) {
+    var found = false;
+    for(vote of req.user.voted_on) {
+        if(req.params.id == vote.article) {
+            found = true;
+            if(vote.vote == -1) {
+                async.parallel({
+                    update_user: function(callback) {
+                        Users.updateOne({"_id": req.user.id}, {
+                            $pull: {
+                                "voted_on": {
+                                    "article": req.params.id,
+                                    "vote": -1
+                                }
+                            }
+                        }).exec(callback);
+                    },
+                    update_article: function(callback) {
+                        Article.updateOne({"_id": req.params.id}, {
+                            $inc: {"rank": 1}
+                        }).exec(callback);
+                    }
+                }, function(err, result) {
+                    if(err) {return next(err);}
+                    return res.sendStatus(201);
+                });
+            } else if(vote.vote == 1){
+                async.parallel({
+                    update_user: function(callback) {
+                        Users.updateOne({"_id": req.user.id}, {
+                            $pull: {
+                                "voted_on": {
+                                    "article": req.params.id,
+                                    "vote": 1
+                                }
+                            }
+                        }).then(function(){
+                            Users.updateOne({"_id": req.user.id}, {
+                                $push: {"voted_on": {"article": req.params.id, "vote": -1}}
+                            }).exec(callback);
+                        });
+                    },
+                    update_article: function(callback) {
+                        Article.updateOne({"_id": req.params.id}, {
+                            $inc: {"rank": -2}
+                        }).exec(callback);
+                    }
+                }, function(err, result) {
+                    if(err) {return next(err);}
+                    return res.sendStatus(202);
+                });
+            }
+        }
+    }
+
+    if(!found) {
+        async.parallel({
+            update_user: function(callback) {
+                Users.updateOne({"_id": req.user.id}, {
+                    $push: {"voted_on": {"article": req.params.id, "vote": -1}}
+                }).exec(callback);
+            },
+            update_article: function(callback) {
+                Article.updateOne({"_id": req.params.id}, {
+                    $inc: {"rank": -1}
+                }).exec(callback);
+            }
+        }, function(err, result) {
+            if(err) {return next(err);}
+            return res.sendStatus(203);
+        });
+    }
+}
+
+exports.removevote = function(req, res, next) {
+    res.sendStatus(200);
 }

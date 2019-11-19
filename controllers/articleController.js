@@ -28,6 +28,14 @@ function sidebar(callback) {
     ).exec(callback);
 }
 
+function votes_to_dict(votes) {
+    v_dict = {};
+    for(vote of votes) {
+        v_dict[vote.article] = vote.vote;
+    }
+    return v_dict;
+}
+
 exports.index = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
@@ -38,18 +46,24 @@ exports.index = function(req, res, next) {
         },
         list_articles: function(callback) {
             Article.find()
-            .sort([['date', 'ascending'],['rank','ascending']])
+            .sort([['date', 'descending'],['rank','descending']])
             .exec(callback);
         }
     }, function(err, result) {
         if(err) { return next(err);}
         //var username = null;
+        if(req.user) {
+            var v = votes_to_dict(req.user.voted_on);
+        } else {
+            var v = "";
+        }
         res.render('article_view', {
             title: 'NewW-B News Aggregator', 
             tag_list: result.tags, 
             sidebar: result.sidebar,
             article_list: result.list_articles, 
-            user: req.user, 
+            user: req.user,
+            votes: v,
             name: "/"
         });
     });
@@ -115,7 +129,7 @@ exports.author_detail = function(req, res, next) {
             for(var i = 1; i < auth_split.length; i++) {
                 author += " " + auth_split[i];
             }
-            console.log(author);
+            //console.log(author);
             Article.find({author: author})
             .exec(callback);
         }
@@ -141,7 +155,7 @@ exports.article_detail = function(req, res, next) {
             findTags(callback, req.user);
         },
         details: function(callback) {
-            Article.findById(req.params.id, {'title': 1, 'filepath':1, 'comments': 1})
+            Article.findById(req.params.id)
             .exec(callback);
         },
         users: function(callback) {
@@ -176,6 +190,7 @@ exports.article_detail = function(req, res, next) {
             users: u,
             user: req.user,
             comments: details.comments,
+            article: details,
             article_text: contents,
             tag_list: results.tags,
             sidebar: results.sidebar,
@@ -232,12 +247,21 @@ exports.submit_comment = [
         if(!errors.isEmpty()) {
             res.send('INVALID COMMENT GO BACK AND TRY AGAIN');
         } else {
-            Article.updateOne({"_id": req.params.id}, {
-                $push: {comments: comment}
-            }).exec(function(err, article){
+            async.parallel({
+                article_update: function(callback) {
+                    Article.updateOne({"_id": req.params.id}, {
+                        $push: {comments: comment}
+                    }).exec(callback);
+                },
+                user_update: function(callback) {
+                    Users.updateOne({"_id": req.user.id},{
+                        $push: {commented_on: req.params.id}
+                    }).exec(callback);
+                }
+            }, function(err, result) {
                 if(err) {return next(err);}
-            })
-            res.redirect('/article/'+req.params.id);
+                res.redirect('/article/'+req.params.id);
+            });
         }
     }
 ]
@@ -270,7 +294,7 @@ exports.search = [
             }
         }, function(err, result) {
             if(err) {return next(err);}
-            console.log(result.list_articles);
+            //console.log(result.list_articles);
             res.render('article_view',{
                 tag_list: result.tags,
                 sidebar: result.sidebar,

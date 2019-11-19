@@ -115,15 +115,16 @@ block content
           form(action='/user/change_pass' id='mod_pass' class='form-inline' method="post")
             fieldset
               div(class="form-group row")
+                input(type='text' name='username' autocomplete="username" style="display:none;")
                 label(for="f_name" class="col-sm-2 col-form-label") Old Password
                 div(class="col-sm-10")
-                  input(type='password' class="form-control-plaintext" name="old_pass" required)
+                  input(type='password' class="form-control-plaintext" name="old_pass" required autocomplete='current-password')
                 label(for="l_name" class="col-sm-2 col-form-label") New Password
                 div(class="col-sm-10")
-                  input(type='password' class="form-control-plaintext" name="new_pass1" required)
+                  input(type='password' class="form-control-plaintext" name="new_pass1" required autocomplete='new-password')
                 label(for="email" class="col-sm-2 col-form-label") Repeat New Password
                 div(class="col-sm-10")
-                  input(type='password' class="form-control-plaintext" name="new_pass2" required)
+                  input(type='password' class="form-control-plaintext" name="new_pass2" required autocomplete='new-password')
                 input(type = 'submit', style='display:none')
         div(class="modal-footer")
           button(type="submit" form='mod_pass' class="btn btn-primary") Save changes
@@ -181,13 +182,8 @@ block content
                   onclick="document.getElementById('mod04').style.display='none'" 
                   data-dismiss="modal") Close
 
-
-
   if(pass_error.length > 0)
+    -console.log(pass_error)
     script(type='text/javascript').
-      $(window).onload(function(){
-        $('#mod02').modal('show');
-      });
-
+      $(document.getElementById('mod02').style.display='block')
  
-  

@@ -1,5 +1,6 @@
 const assert = require('assert');
 const myUsers = require('../modules/myUsers');
+const User = require('../models/users');
 
 var myUsersInstance = new myUsers()
 
@@ -32,5 +33,4 @@ describe('Testing Project Modules', function(){
             });
         });
     });
-
 });

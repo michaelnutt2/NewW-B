@@ -10,25 +10,18 @@ describe('Nesting records', function(){
 
     // create tests
 
-    this.beforeEach(function(done){
-        mongoose.connection.collections.users.drop(function(){
-            mongoose.connection.collections.articles.drop(function(){
-                done();
-            });
-        });
-    });
-
     it('Creates a user with sub-documents', function(done){
 
         var test_doc = new Article({title:'test article', author:'john doe'});
 
         test_doc.save().then(function(result){
             var robin = new User({
-                u_id : 'RM',
+                u_id : 'crm',
                 pw : 'rm123',
                 f_name : 'Robin', 
                 favorites : [result._id] 
             });
+
             robin.save().then(function(){
                 User.findOne({f_name:'Robin'}).then(function(record){
                     assert(record.favorites.length === 1);
@@ -37,7 +30,6 @@ describe('Nesting records', function(){
             });
 
         });
-
     });
 
     it('Add an article to a users favorites', function(done){
@@ -46,18 +38,19 @@ describe('Nesting records', function(){
 
         test_doc_1.save().then(function(result){
             var robin = new User({
-                u_id : 'RM',
+                u_id : 'crm',
                 pw : 'rm123',
                 f_name : 'Robin', 
                 favorites : [result._id] 
             });
+
             robin.save().then(function(){
-                var test_doc_2 = new Article({title:'test article', author:'john doe'});
+                var test_doc_2 = new Article({title:'test article 2', author:'john doe'});
 
                 test_doc_2.save().then(function(result){
                     User.findOne({f_name:'Robin'}).then(function(record){
                         // add an article to the favorites array
-                        record.favorites.push(result.a_id);
+                        record.favorites.push(result._id);
                         record.save().then(function(){
                             User.findOne({f_name:'Robin'}).then(function(result){
                                 assert(result.favorites.length == 2);
@@ -76,9 +69,10 @@ describe('Nesting records', function(){
 
         test_doc_1.save().then(function(result){
             var robin = new User({
-                u_id : 'RM',
+                u_id : 'crm',
                 pw : 'rm123',
                 f_name : 'Robin',
+                comments: []
             });
             robin.save().then(function(record){
                 var comment = new Comment({u_id:record._id, text:'LOL, PmP!!!!'})
@@ -86,12 +80,12 @@ describe('Nesting records', function(){
                     record.comments.push(comment);
                     record.save().then(function(){
                         Article.findOne({title:'test article'}).then(function(result){
-                                assert(result.comments.length === 1);
-                                robin.comments.push(result._id);
-                                robin.save().then(function(record){
-                                    assert(record.comments.length === 1);
-                                    done();
-                                });
+                            assert(result.comments.length >= 1);
+                            robin.commented_on.push(result._id);
+                            robin.save().then(function(record){
+                                assert(record.commented_on.length >= 1);
+                                done();
+                            });
                         });
                     });
                 });
