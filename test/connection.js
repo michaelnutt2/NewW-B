@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+const User  = require('../models/users');
+const Article  = require('../models/articles');
 
 // ES6 promises
 // mongoose.Promise = global.Promise
@@ -18,11 +20,26 @@ before(function(done){
 
 });
 
-// Drop the user collection before each test
+// Drop the test user and test articles after each test
 
-beforeEach(function(done){
-    //Drop the collection
-    mongoose.connection.collections.users.drop(function(){
-        done();
+// beforeEach(function(done){
+//     //Drop the test user
+//     User.findOneAndRemove({u_id:'crm'}).then(function(){
+//         Article.findOneAndRemove({title:'test article'}).then(function(){
+//             Article.findOneAndRemove({title:'test article'}).then(function(){
+//                 done();
+//             });
+//         });
+//     });
+// });
+
+afterEach(function(done){
+    //Drop the test user
+    User.findOneAndRemove({u_id:'crm'}).then(function(){
+        Article.findOneAndRemove({title:'test article'}).then(function(){
+            Article.findOneAndRemove({title:'test article'}).then(function(){
+                done();
+            });
+        });
     });
 });

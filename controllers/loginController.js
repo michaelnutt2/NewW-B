@@ -55,7 +55,8 @@ exports.create_user = [
                 update: function(callback) {
                     createUser(callback, req, res);
                 }
-            }, function(){
+            }, function(err){
+                if(err) { return next(err);}
                 req.session.save(function(){
                     req.session.reload(function(){
                         res.redirect('/article');

@@ -7,12 +7,13 @@ mixin cards(article, user)
             h5(class="card-title") !{article.summary}
             h6(class="card-subtitle text-muted")
                 a(href=article.author_url)= article.author
-            p(class="card-text")= article.tags.tag
-            ul(class="list-group list-group-flush")
-                each key in article.keywords
-                    - var key_url = "/article/keywords/" + key
-                    li(class="list-group-item")
-                        a(href=key_url)= key
+            -if (article.tags)
+                p(class="card-text")= article.tags.tag
+                ul(class="list-group list-group-flush")
+                    each key in article.keywords
+                        - var key_url = "/article/keywords/" + key
+                        li(class="list-group-item")
+                            a(href=key_url)= key
         div(class="card-footer" style="text-align:center;")
             if user
                 div(class="btn-group btn-group-toggle" style="margin:10px;" data-toggle="buttons")

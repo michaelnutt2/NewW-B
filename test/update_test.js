@@ -22,9 +22,9 @@ describe('Update records', function(){
     // create tests
     it('Find and update one record from the database', function(done){
 
-        User.findOneAndUpdate({u_id:'crm'}, {u_id:'crmV'}).then(function(){
+        User.findOneAndUpdate({u_id:'crm'}, {f_name:'bob'}).then(function(){
             User.findOne({_id:user._id}).then(function(result){
-                assert(result.u_id === 'crmV');
+                assert(result.f_name === 'bob');
                 done();
             });
         });
