@@ -15,6 +15,7 @@ class TestLoginLogout():
     self.vars = {}
   
   def teardown_method(self, method):
+    self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
     self.driver.quit()
   
   def test_login_logout(self):

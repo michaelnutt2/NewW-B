@@ -9,36 +9,33 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 
-
-
 class TestCreateuser():
+
   def setup_method(self, method):
-    options = webdriver.ChromeOptions()
-    #options.add_argument('headless')
-    options.add_argument('window-size=1200x600')
-    self.driver = webdriver.Chrome(options=options)
+    self.driver = webdriver.Chrome()
     self.vars = {}
+    self.users = ['test'+str(n) for n in range(100)]
+    self.driver.get("http://localhost:3000/article")
+    self.driver.set_window_size(1536, 835)
   
   def teardown_method(self, method):
+    self.driver.find_element(By.NAME, "user_area").click()
+    # self.driver.find_element(By.LINK_TEXT, "Hello*").click()
+    self.driver.find_element(By.CSS_SELECTOR, ".btn:nth-child(3)").click()
+    self.driver.find_element(By.CSS_SELECTOR, ".btn-danger").click()
+    #self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
     self.driver.quit()
-
-  def test_createuser1(self, benchmark):
-    benchmark(self.createuser)
-
-  @pytest.mark.nondestructive
+  
   def createuser(self):
-    self.driver.get("http://10.125.187.72:8000/article")
-    #self.driver.set_window_size(1536, 835)
     self.driver.find_element(By.CSS_SELECTOR, ".my-2:nth-child(2)").click()
     self.driver.find_element(By.NAME, "email").click()
-    self.driver.find_element(By.NAME, "email").send_keys("test1@email.com")
-    self.driver.find_element(By.CSS_SELECTOR, ".form-control-plaintext:nth-child(4)").send_keys("test1")
-    self.driver.find_element(By.NAME, "new_pass1").send_keys("test")
-    self.driver.find_element(By.NAME, "new_pass2").send_keys("test")
-    self.driver.find_element(By.NAME, "new_pass2").send_keys(Keys.ENTER)
-    # self.driver.find_element(By.NAME, "username").click()
-    # self.driver.find_element(By.NAME, "username").send_keys("test1")
-    # self.driver.find_element(By.NAME, "password").send_keys("test")
-    # self.driver.find_element(By.NAME, "password").send_keys(Keys.ENTER)
-    # self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
+    self.driver.find_element(By.NAME, "email").send_keys("test2")
+    self.driver.find_element(By.CSS_SELECTOR, ".form-control-plaintext:nth-child(4)").send_keys("test2")
+    self.driver.find_element(By.CSS_SELECTOR, ".form-control-plaintext:nth-child(5)").send_keys("test2")
+    self.driver.find_element(By.NAME, "password2").send_keys("test2")
+    self.driver.find_element(By.NAME, "password2").send_keys(Keys.ENTER)
+    #assert self.driver.find_element(By.NAME, "user_area").text == "Hello"
+
+  def test_createuser(self, benchmark):
+    benchmark(self.createuser)
   

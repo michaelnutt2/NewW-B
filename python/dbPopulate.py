@@ -179,7 +179,7 @@ def removeDuplicates():
          
 
 if __name__ == "__main__":
-    #update_articles()
+    update_articles()
     articles, tags = getArticlesAndTags()
     users = genUsers(articles, tags,n_users=20, drop_users=False,test_user=False)
     users = list(user_col.find({}))
