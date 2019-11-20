@@ -2,8 +2,10 @@ var Users = require('../models/users');
 var async = require('async');
 const Entities = require('html-entities').AllHtmlEntities
 const validator= require('express-validator');
+var passport = require('passport');
+require('../config/passport')(passport)
 
-function createUser(callback, req){
+function createUser(callback, req, res){
 
   Users.findOne({u_id:req.body.username}).then(function(result){
         if (result === null) {
@@ -12,8 +14,9 @@ function createUser(callback, req){
                                         f_name:req.body.f_name, 
                                         l_name:req.body.l_name, 
                                         email:req.body.email,
-                                        pw:req.body.new_pass1});
+                                        pw:req.body.password});
                 user.save();
+
                 } else{
                     req.flash('user_error','Passwords do not match');
                 };
@@ -34,8 +37,8 @@ exports.create_user = [
     validator.body('l_name').trim(),
     validator.body('email').isLength({ min: 1 }).trim(),
     validator.body('username', 'User name must not be empty').isLength({ min: 1 }).trim(),
-    validator.body('new_pass1','Password must not be empty').isLength({ min: 1 }).trim(),
-    validator.body('new_pass2','Password must not be empty').isLength({ min: 1 }).trim(),
+    validator.body('password','Password must not be empty').isLength({ min: 1 }).trim(),
+    validator.body('password2','Password must not be empty').isLength({ min: 1 }).trim(),
     validator.sanitizeBody('*').escape(),
 
     (req, res, next) => {
@@ -59,7 +62,10 @@ exports.create_user = [
                 if(err) { return next(err);}
                 req.session.save(function(){
                     req.session.reload(function(){
-                        res.redirect('/article');
+                        //res.redirect('/article');
+                        passport.authenticate('local-login')(req, res, function () {
+                            res.redirect('/article');     
+                        });
                     });    
                 });
             });

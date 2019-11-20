@@ -26,7 +26,7 @@ mixin navbar(tag_list, name, user)
       else
         ul(class="navbar-nav")
           li(class="nav-item")
-            a(href="/user" placeholder=user class=(name==="/user" ? "nav-link active" : "nav-link"))='Hello ' + user.f_name
+            a(name='user_area' href="/user" placeholder=user class=(name==="/user" ? "nav-link active" : "nav-link"))='Hello ' + user.f_name
           form(action='/login/logout' class= 'form-inline my-2 my-lg-0' method="post")
             li(class="nav-item") 
             button(class="btn btn-secondary my-2 my-sm-0" type="submit") Logout
@@ -61,10 +61,10 @@ mixin navbar(tag_list, name, user)
                 input(type="text" class="form-control-plaintext" name="username" placeholder='username' required autocomplete='username')
                 
                 //- label(for="email" class="col-sm-2 col-form-label") Password
-                input(type="password" class="form-control-plaintext" name="new_pass1" placeholder='password' required autocomplete='new-password')
+                input(type="password" class="form-control-plaintext" name="password" placeholder='password' required autocomplete='new-password')
                 
                 //- label(for="email" class="col-sm-2 col-form-label") Repeat Password
-                input(type="password" class="form-control-plaintext" name="new_pass2" placeholder='repeat password' required autocomplete='new-password')
+                input(type="password" class="form-control-plaintext" name="password2" placeholder='repeat password' required autocomplete='new-password')
                 input(type = 'submit', style='display:none')
         div(class="modal-footer")
           button(type="button" class="btn btn-primary") Save changes

@@ -38,6 +38,10 @@ class ArticleLoader():
         articles = []
 
         for entry in f['entries']:
+            if BeautifulSoup(entry.content[0].value, 'html.parser').img == None:
+                img_src = BeautifulSoup(entry.content[0].value, 'html.parser').find('div', {'class':'video'}).div.get('src')
+            else:
+                img_src = BeautifulSoup(entry.content[0].value, 'html.parser').img['src']
             article = {
                 'newsgroup': f.feed.title,
                 'title': entry.title,
@@ -48,7 +52,7 @@ class ArticleLoader():
                 'content': entry.content[0].value,
                 'category': entry.tags[0]['term'],
                 'tags':  [tag['term'] for tag in entry.tags[1:]],
-                'img': BeautifulSoup(entry.content[0].value, 'html.parser').img['src']
+                'img': img_src
             }
             articles.append(article)
         return self.exportData(articles)
@@ -58,7 +62,7 @@ class ArticleLoader():
         for article in articles:
 
             stripped_title = "".join([c for c in article['title'] if c.isalpha() or c.isdigit() or c==' ']).rstrip()
-            filename = PATH + stripped_title + ".html"
+            filename = PATH + '/' + stripped_title + ".html"
             metadata.append({
                 'newsgroup': article['newsgroup'],
                 'title': article['title'],

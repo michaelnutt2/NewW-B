@@ -18,13 +18,15 @@ class TestDeleteuser():
     self.driver.quit()
   
   def test_deleteuser(self):
-    self.driver.get("http://10.125.187.72:8000/article")
+    self.driver.get("http://localhost:3000/article")
     self.driver.set_window_size(1536, 835)
     self.driver.find_element(By.NAME, "username").click()
-    self.driver.find_element(By.NAME, "username").send_keys("test1")
-    self.driver.find_element(By.NAME, "password").send_keys("test")
+    self.driver.find_element(By.NAME, "username").send_keys("test2")
+    self.driver.find_element(By.NAME, "password").send_keys("test2")
     self.driver.find_element(By.NAME, "password").send_keys(Keys.ENTER)
-    self.driver.find_element(By.LINK_TEXT, "Hello").click()
+    self.driver.find_element(By.NAME, "user_area").click()
+    # self.driver.find_element(By.LINK_TEXT, "Hello*").click()
     self.driver.find_element(By.CSS_SELECTOR, ".btn:nth-child(3)").click()
     self.driver.find_element(By.CSS_SELECTOR, ".btn-danger").click()
+    assert self.driver.find_element(By.CSS_SELECTOR, ".my-2:nth-child(2)").text == "CREATE ACCOUNT"
   

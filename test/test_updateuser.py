@@ -15,28 +15,23 @@ class TestUpdateuser():
     self.vars = {}
   
   def teardown_method(self, method):
+    self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
     self.driver.quit()
   
   def test_updateuser(self):
-    self.driver.get("http://10.125.187.72:8000/article")
+    self.driver.get("http://localhost:3000/article")
     self.driver.set_window_size(1536, 835)
-    self.driver.find_element(By.NAME, "username").click()
-    self.driver.find_element(By.NAME, "username").send_keys("test")
-    self.driver.find_element(By.NAME, "password").send_keys("test")
-    self.driver.find_element(By.NAME, "password").send_keys(Keys.ENTER)
-    self.driver.find_element(By.PARTIAL_LINK_TEXT, "Hello").click()
+    self.driver.find_element(By.NAME, "username").send_keys("test2")
+    self.driver.find_element(By.NAME, "password").send_keys("test2")
+    self.driver.find_element(By.CSS_SELECTOR, ".btn-secondary:nth-child(1)").click()
+    self.driver.find_element(By.NAME, "user_area").click()
     self.driver.find_element(By.CSS_SELECTOR, ".btn-sm:nth-child(1)").click()
-    self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(2) > .form-control-plaintext").click()
-    toClear = self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(2) > .form-control-plaintext")
-    toClear.clear()
-    self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(2) > .form-control-plaintext").send_keys("Testy1")
-    self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(4) > .form-control-plaintext").click()
-    toClear = self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(4) > .form-control-plaintext")
-    toClear.clear()
-    self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(4) > .form-control-plaintext").send_keys("Tester1")
-    self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(6) > .form-control-plaintext").click()
-    toClear = self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(6) > .form-control-plaintext")
-    toClear.clear()
-    self.driver.find_element(By.CSS_SELECTOR, "#mod_user .col-sm-10:nth-child(6) > .form-control-plaintext").send_keys("test@email.com1")
+    self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(2) > .form-control-plaintext").click()
+    self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(2) > .form-control-plaintext").clear()
+    self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(2) > .form-control-plaintext").send_keys("Test")
+    self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(4) > .form-control-plaintext").clear()
+    self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(4) > .form-control-plaintext").send_keys("Test")
     self.driver.find_element(By.CSS_SELECTOR, "#mod01 .btn-primary").click()
+    assert self.driver.find_element(By.LINK_TEXT, "Hello Test").text == "Hello Test"
+    #self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
   
