@@ -12,7 +12,7 @@
 	<atom:link href="https://arstechnica.com/feed/?t=c951724f17882c293435a61d10002d8b" rel="self" type="application/rss+xml" />
 	<link>https://arstechnica.com</link>
 	<description>Serving the Technologist for more than a decade. IT news, reviews, and analysis.</description>
-	<lastBuildDate>Wed, 20 Nov 2019 16:37:58 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 21 Nov 2019 13:58:13 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -26,6 +26,410 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>No, Apple isn’t opening a new manufacturing plant in Texas</title>
+		<link>https://arstechnica.com/?p=1605137</link>
+		<pubDate>Thu, 21 Nov 2019 05:06:57 +0000</pubDate>
+		<dc:creator><![CDATA[Timothy B. Lee]]></dc:creator>
+				<category><![CDATA[Policy]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[Donald Trump]]></category>
+		<category><![CDATA[Mac Pro]]></category>
+		<category><![CDATA[tariffs]]></category>
+		<category><![CDATA[texas]]></category>
+		<category><![CDATA[Tim Cook]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1605137</guid>
+		<description><![CDATA[“I opened a major Apple manufacturing plant in Texas,” Trump wrote Wednesday.]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/GettyImages-1183652419-800x534.jpg" alt="Donald Trump speaks at Apple's Mac Pro manufacturing facility in Austin, Texas."/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/GettyImages-1183652419.jpg" class="enlarge-link" data-height="3416" data-width="5120">Enlarge</a> <span class="sep">/</span> Donald Trump speaks at Apple's Mac Pro manufacturing facility in Austin, Texas. (credit: MANDEL NGAN / Getty)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p>President Donald Trump toured Apple's Mac Pro manufacturing facility in Austin, Texas, with CEO Tim Cook on Wednesday.</p>
+<p>"We're seeing the beginning of a very powerful and important plant," Trump said during the visit. "I want to see Apple building plants in the United States. That's what's happening."</p>
+<p>Trump echoed that theme in a <a href="https://twitter.com/realDonaldTrump/status/1197293250115014656">tweet</a> after the tour. "Today I opened a major Apple manufacturing plant in Texas that will bring high paying jobs back to America," he wrote.</p>
+<p>Trump neglected to mention a couple of key facts about the facility. First, it's technically owned by Apple contractor Flex, not Apple itself. More important, it's not new. Apple has been building the Mac Pro at the same location since 2013.</p>
+<p>Apple <em>is</em> opening a new facility in Austin—a 3 million-square-foot office complex where <a href="https://www.apple.com/newsroom/2018/12/apple-to-build-new-campus-in-austin-and-add-jobs-across-the-us/">Apple says</a> its employees will perform a variety of functions, including "engineering, R&amp;D, operations, finance, sales and customer support." In remarks at the Mac Pro plant Wednesday, Cook touted it as a $1 billion investment that will create Apple's second-biggest site after Apple's home base in Cupertino.</p>
+<p>But that new facility isn't a manufacturing plant. It will create some high-paying jobs, but they'll mostly be white-collar jobs in areas like engineering, finance, and sales.</p>
+<h2>Tariff relief helped Apple stay in the US</h2>
+<p>Apple's decision to keep Mac Pro manufacturing in the United States follows contentious negotiations with the Trump administration. Back in June, a <a href="https://arstechnica.com/information-technology/2019/06/apple-moves-mac-pro-production-from-texas-to-china/">Wall Street Journal story</a> suggested that Apple was preparing to move Mac Pro manufacturing to China.</p>
+<p>The Journal story included remarks from an Apple spokesman that didn't dispute plans to move to China. Instead, the spokesman emphasized that "final assembly is only one part of the manufacturing process."</p>
+<p>Behind the scenes, Apple was seeking tariff concessions that would make it more affordable to assemble the Mac Pro in the United States. Several key components of the Mac Pro were made in China, and Apple would incur tariffs if it shipped those parts to the US for assembly.</p>
+<p>Donald Trump <a href="https://twitter.com/realdonaldtrump/status/1154774656861257732">took a hard line</a> on the issue in a July tweet. "Apple will not be given Tariff waiver, or relief, for Mac Pro parts that are made in China," he wrote. "Make them in the USA, no Tariffs!"</p>
+<p>But then in September, <a href="https://arstechnica.com/tech-policy/2019/09/apple-says-itll-make-the-new-mac-pro-in-texas/">Apple announced</a> that it would continue making the Mac Pro in Austin after all—and the company credited the Trump administration for the shift.</p>
+<p>"The US manufacturing of Mac Pro is made possible following a federal product exclusion Apple is receiving for certain necessary components," Apple wrote in its September announcement. Despite Trump's threats, his administration <a href="https://www.bloomberg.com/news/articles/2019-09-19/apple-s-chinese-tariff-requests-advance-despite-trump-opposition">granted 10 out of 15 Apple requests</a> for relief from Trump's 25% tariff on Chinese imports.</p>
+
+<p><a href="https://arstechnica.com/?p=1605137&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
+		<title>Report: Sacklers using fake doctors, false marketing to sell OxyContin in China</title>
+		<link>https://arstechnica.com/?p=1605115</link>
+		<pubDate>Thu, 21 Nov 2019 02:19:57 +0000</pubDate>
+		<dc:creator><![CDATA[Beth Mole]]></dc:creator>
+				<category><![CDATA[Science]]></category>
+		<category><![CDATA[opioids]]></category>
+		<category><![CDATA[oxycontin]]></category>
+		<category><![CDATA[prudue]]></category>
+		<category><![CDATA[sacklers]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1605115</guid>
+		<description><![CDATA[As Purdue files for bankruptcy, business in China is ramping up.]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2018/09/GettyImages-598733690-800x463.jpg" alt="Consumer-sized bottles of prescription drugs sit on a shelf."/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2018/09/GettyImages-598733690.jpg" class="enlarge-link" data-height="2575" data-width="4448">Enlarge</a> <span class="sep">/</span> Bottles of Purdue Pharma L.P. OxyContin medication sit on a pharmacy shelf in Provo, Utah, on Wednesday, Aug. 31, 2016. (credit: <a rel="nofollow" class="caption-link" href="https://www.gettyimages.com/license/598733690">Getty | Bloomberg</a>)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p>The mega-rich family behind the OxyContin-maker Purdue Pharma is back to selling its highly addictive pain-killer with underhanded tactics and deceptive advertising—this time in China, via its international company, Mundipharma. That’s all according to a searing <a href="https://apnews.com/3ff1dfa05dac46ebb2615f729d947c0f">new investigation by the Associated Press</a>.</p>
+<p>The Sackler family, which owns both Purdue and Mundipharma, is embroiled in litigation in the United States over its alleged role in sparking the country’s epidemic of opioid abuse and overdoses. Thousands of plaintiffs—many state and local governments—claim that Purdue and the Sacklers misled patients, doctors, and regulators on the addictiveness of their drugs, aggressively marketed them, and wooed doctors into over-prescribing them.</p>
+<p>While <a href="https://arstechnica.com/science/2019/09/purdue-files-for-bankruptcy-as-states-claim-sacklers-are-hiding-money/">Purdue has since declared bankruptcy</a> and <a href="https://arstechnica.com/science/2018/02/purdue-will-stop-forcefully-pushing-oxycontin-focus-on-constipation-instead/">stopped promoting OxyContin in the US</a>, the Sacklers seem to be employing the same practices in China.</p>
+<p>Based on documents and interviews with multiple Mundipharma representatives in China, the AP investigation found that reps were at times posing as doctors, providing debunked information that its long-acting opioids are safe and less addictive, and even illegally copying private medical records of patients to inform sales tactics.</p>
+<p>When an AP reporter informed one of the Mundipharma reps that some of the marketing information was incorrect, she replied: “I’m shocked... Why after more than 10 years would they still do the same thing and go against the laws and regulations of society?”</p>
+<p>In a response to the AP, Mundipharma said it promotes ethical behavior and legal compliance. It added: “We have detailed policies covering interactions with healthcare professionals, grants and donations, and sponsorships and incentives.”</p>
+<p>The AP reported that China’s National Health Commission, National Medical Products Administration, State Administration for Market Regulation, and National Development and Reform Commission declined to comment. The Sackler family representatives did not respond to a request for comments.</p>
+<p>Mundipharma, meanwhile, is still hiring in China.</p>
+
+<p><a href="https://arstechnica.com/?p=1605115&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
+		<title>Ubiquiti’s new “Amplifi Alien” is a mesh-capable Wi-Fi 6 router</title>
+		<link>https://arstechnica.com/?p=1604879</link>
+		<pubDate>Wed, 20 Nov 2019 22:30:12 +0000</pubDate>
+		<dc:creator><![CDATA[Jim Salter]]></dc:creator>
+				<category><![CDATA[Tech]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1604879</guid>
+		<description><![CDATA[Amplifi Alien’s specs look pretty good, but $380 is a lot to ask for a router.]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/FB-1200x628static-800x419.png" alt="We were also provided an animated version of this image, in which the Alien router bobs up and down gently while levitating. We elected not to use that one."/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/FB-1200x628static.png" class="enlarge-link" data-height="628" data-width="1200">Enlarge</a> <span class="sep">/</span> We were also provided an animated version of this image, in which the Alien router bobs up and down gently while levitating. We elected not to use that one. (credit: <a rel="nofollow" class="caption-link" href="https://amplifi.com/">Amplifi</a>)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p>Ubiquiti's consumer brand Amplifi has launched a new Wi-Fi 6 product line called "AmpliFi Alien." The original Amplifi products were typically sold as three-piece Wi-Fi mesh kits, so we got a little excited when we saw a price tag of $380 for <a href="https://amplifi.com/alien">Alien</a>.</p>
+<p>Unfortunately, that price is for a single router, not a kit—which means that Amplifi Alien, like <a href="https://amzn.to/2QAETX2">Orbi AX6000</a>, is still in stratospheric "you probably don't want this yet" territory where price is concerned. We have a sneaking suspicion both these price points are a bit of a gouge, since TP-Link's Broadcom <a href="https://www.broadcom.com/products/wireless/wireless-lan-infrastructure/bcm6750">BCM6750</a>-based <a href="https://amzn.to/2XDbkpd">AX1500</a> Wi-Fi 6 router is already available for under $100.</p>
+<p>Like Amplifi's earlier products, Alien features a small touchscreen on the router which can display the time, speed-test results, and offer some simple direct network control. Its power and WAN ports are recessed inside the base of the unit with a cable-management tunnel, but the four LAN ports are arranged along the back side of the barrel, opposite the touchscreen.</p>
+      <ul class="gallery shortcode-gallery gallery-wide">
+          <li>
+        <div class="gallery-item-content">  
+        <div class="gallery-image"><img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/AFi-ALN-R_Front_Top_Angle-980x980.png" alt=""></div>
+        <p>
+          In this front/top shot of Alien, we can see the 274x1268 color touchscreen—and, of course, the glowing green ring at the bottom, which can be disabled if you don't like the look.                      [credit:
+                        <a href="https://amplifi.com/">Amplifi</a>
+                        ]
+                  </p>
+        </div>
+      </li>
+      </ul>
+  
+
+<p>Under the hood, Alien offers 5GHz 8x8 and 2.4GHz 4x4 radios, and—curiously—a Wi-Fi 5-only 5GHz 4x4 radio. Given the marketing copy, we expect that Alien will use the Wi-Fi 6 radio for backhaul in a multiple-router mesh setup. We think it's an odd choice to include a Wi-Fi 5-only radio instead of sticking with Wi-Fi 6 on all three bands, though.</p>
+<p>Amplifi describes these radios as delivering 7685Mbps total capacity and Alien as covering "twice the square footage" of Amplifi's previous mesh Wi-Fi efforts, complete with a bar chart demonstrating the difference between 2 and 1. However, as we have exhaustively covered in the past, Wi-Fi marketing numbers are <a href="https://arstechnica.com/information-technology/2017/03/802-eleventy-what-a-deep-dive-into-why-wi-fi-kind-of-sucks/">useless</a>. We won't really have any idea of how good Alien is until we've gotten a unit or two to test.</p>
+<p>Alien hasn't shown up on Amazon yet, but it's available directly at the Amplifi <a href="https://amplifi.com/alien">website</a>.</p>
+
+<p><a href="https://arstechnica.com/?p=1604879&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
+		<title>Ars talks fighting games with Guilty Gear creator Daisuke Ishiwatari</title>
+		<link>https://arstechnica.com/?p=1604559</link>
+		<pubDate>Wed, 20 Nov 2019 22:09:18 +0000</pubDate>
+		<dc:creator><![CDATA[Aurich Lawson]]></dc:creator>
+				<category><![CDATA[Gaming & Culture]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1604559</guid>
+		<description><![CDATA[Daisuke talks netcode, game development, and the future of the franchise]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/daisuke-arcrevo-800x450.jpg" alt="Daisuke Ishiwatari takes the stage at ArcRevo 2019 in Irvine, CA"/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/daisuke-arcrevo.jpg" class="enlarge-link" data-height="563" data-width="1000">Enlarge</a> <span class="sep">/</span> Daisuke Ishiwatari takes the stage at ArcRevo 2019 in Irvine, CA (credit: Arc System Works / Aurich Lawson)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p>A little over 20 years ago, when Daisuke Ishiwatari created <em>Guilty Gear</em>, popular fighting games like <em>Street Fighter</em> or <em>King of Fighters</em> tended to have a similar premise: gather the strongest warriors in the world and pit them against each other in a test of skill. Daisuke wanted a fighting game that was less grounded in the real world and reflected the wilder possibilities of manga and anime. (<em>Guilty Gear</em> was less grounded in a literal sense, too: characters could practically fly about the screen with mid-air moves, later leading to people referring to this style of anime-based fighters as "air dashers.") His vision was a war-torn future, full of magic, man-made bioweapons that turned on their creators (the eponymous Gears), and a diverse cast of heavy-metal-inspired characters players could choose from.</p>
+<p><em>Guilty Gear</em> games are both very difficult to master and also very rewarding for those who put in the hours of study. If fighting games are music, <em>Guilty Gear</em> is jazz, free form and technical, allowing players to improvise and develop their own styles and personalities. It's beautiful in motion but difficult for outsiders to follow, and the hardcore reputation has led to many feeling intimidated about learning or following the games.</p>
+<p>In summer 2019, a new <em>Guilty Gear</em> game was announced, and Daisuke began hinting that this time around, the game would be simpler and more accessible. He wanted more players to pick up the game, more people to be able to follow along with tournaments and play. That perhaps comes as welcome news for those curious about the game but put off by the effort required to learn. The long-time player base, however, expressed consternation. Was the game they know and love going to be dumbed down? Was the freedom of expression they adore going to be removed?</p>
+<p>Last weekend's <a href="https://www.arcsystemworks.com/awt2019/en/">ArcRevo World Tour</a> in Irvine, California, was the final stop of a world tour for <em>Guilty Gear</em> and other Arc System Works games. There, the public got a first hands-on with a beta the new game, titled <em>Guilty Gear Strive</em>. I played a few sets but not enough to give detailed impressions (look for that in a later article when I get more time with it). I did get to sit down with Daisuke and talk about where he sees the series going, how to balance making the game accessible for new players while still keeping the hardcore happy, and what he thought about the <a href="https://arstechnica.com/gaming/2019/10/explaining-how-fighting-games-use-delay-based-and-rollback-netcode/">state of fighting-game netcode</a>.</p>
+<p>You can watch the announcement trailer below, featuring the first six characters revealed for the game, and get a sense for how the game looks in motion (in a word, gorgeous) before reading Daisuke's thoughts.</p>
+<div class="video"><div class="wrapper"<iframe style="display:block" type="text/html" width="980" height="550" src="https://www.youtube.com/embed/DQSC4w_zMWQ?start=0&wmode=transparent" frameborder="0" allowfullscreen></iframe></div></div>
+<p><em>(This interview was conducted through a Japanese translato and has been lightly edited for clarity).</em></p>
+<p><strong><em>You've been working on </em>Guilty Gear<em> for over 20 years. As the original creator, can you talk about what the game means to you now? What keeps it fresh and interesting to you as a creator?</em></strong></p>
+<p>For me—and this is gonna be kind of fighting games in general, and I think <em>Guilty Gear</em> is definitely part of that—in the PlayStation One era it was really kind of an extension of action games. And in fact, internally, we would call games like fighting games, what we know of them as now, more of like a "battle tool." It's like a tool, a programming tool, specifically for the battle portion of something. But nowadays, I really feel fighting games have turned into a tool to connect people and to make friends. So like here, the reason I am able to come to the US right now, we have people from around the world gathered here trying to make friends and building a community. I think it's a tool to connect people, especially with the Internet and networks evolving the way they have. So that's kind of what I think keeps it fresh for me.</p>
+<p><strong><div class="image shortcode-img right full transbkg"><img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/sol-idle.gif"></div><em>As the arcades becoming less relevant in Japan and the home audience becomes the primary focus for fighting games, does that affect how you think about developing </em>Guilty Gear<em>?</em></strong></p>
+<p>I wouldn't necessarily say what I'm doing is related to the arcade's performance. Really what it was for me was when I went to a lot of overseas events because of <em>Guilty Gear's</em> rising popularity. I saw a lot of fans who were, of course, not Japanese. And then these fans would then come to Japanese events and meet other people. And the way they were making friends to me was really kind of the purpose and the big motivator of how I felt this was a tool to connect people, not necessarily what was happening with the arcade.</p>
+<p><strong><em>When designing a new </em>Guilty Gear<em>, how do you think about the balance of bringing back old characters versus making new ones?</em></strong></p>
+<p>Especially for the existing characters, when we consider the balance, like with Sol or Ky, I think people have a way they imagine they're supposed to be played, a way that they feel that they're designed to be played. And when we make a completely new <em>Guilty Gear</em> like this one, I think we need to both shift and kind of reset that mindset. So it kind of opens up the possibility of, well, maybe Sol could be played like this, or maybe he's more of a character that would do those type of things. With a new game, it's a reexamination of all the existing characters and then adding other ways to play the game in addition. So that's how we maintain overall balance.</p>
+<p><strong><em>Was it tempting to throw the old characters out, like Capcom did with </em><a href="https://arstechnica.com/tag/street-fighter/">Street Fighter</a> III<em>, when it was Ken and Ryu returning and everyone else was new?</em></strong></p>
+<p>Incidentally, <em>Street Fighter III</em> is one of my favorite fighting games. And I wouldn't necessarily say we're going to that extent. Kind of the approach for this is—let's say you take Ryu, the protagonist of the story, something we imagine a lot of the players are going to pick. And he was kind of really based around his shoryuken [Ryu's dragon-punch uppercut]. So the idea is, well, what if we take that away from his toolkit? And I'm sure most of the conversation would be "No, it's impossible, etc." But at least posing those questions and seeing what they might lead to is kind of the process we're going through.</p>
+<p><strong>Guilty Gear<em> players are very passionate about the game, and some have been playing for 20 years. What do you think keeps them playing it?</em></strong></p>
+<p>That might frankly go a little bit beyond my understanding of human psychology [laughs]. What we are creating is a very honed and a very fine-tuned game, stuff for the true mania of the world. I think the people who are able to follow that development and evolution are the ones who are naturally attracted to it.</p>
+
+<p><em><strong>If I was a long-time player who was worried that the game is changing too much, what would you say to me?</strong></em></p>
+<p>I think in a lot of interviews and when we speak with the public, the words "simple" or "simplified" or "accessibility" have been tossed around a lot. That's not necessarily the intent of the development team. I think that's just, in the limited language and vocabulary that exists, the only way that we were able to describe what's actually going on. That's certainly not the dev team's intent or my intent. I think it's very important to kind of understand the difference which feel we like we really do, in terms of what makes our games different from other company's games. So the high-level concept is to make it look easy, make it easier to spectate. But by no means does that mean that we're shaving away level of depth. That's not our solution to make it easier to watch. That's a big topic of discussion for the development team.</p>
+<p><strong><em>To follow that up, if I'm a new player, not a </em>Guilty Gear<em> player, what's your pitch to me? Why should I play your game?</em></strong></p>
+<p>Because we're dealing with a video game, I believe that it's impossible to convince someone or pitch someone strictly verbally to bring them onto the side of playing <em>Guilty Gear</em>. I don't think there's any amount of explanation or pitches that's going to work. My suggestion would be, as they walk past, they see the game play. And they'll want to play it. I think that the old style of Arc System Works games and how we made them would fail in that department. Especially because it's overly complex, the HUD is overwhelming, you can't tell what is happening on the screen. A large part of our current development philosophy is simplifying it for the spectator. Making it look really fun, and that's the thing I think that's going to attract players.</p>
+<div class="image shortcode-img center full"><img alt='&lt;em&gt;Guilty Gear Strive&lt;/em&gt;&#039;s name is a bit of a visual pun; being the fourth game in the series, the IV in the logo is highlighted.'  src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/guilty-gear-strive-logo.jpg" alt='&lt;em&gt;Guilty Gear Strive&lt;/em&gt;&#039;s name is a bit of a visual pun; being the fourth game in the series, the IV in the logo is highlighted.' ><p class="caption" style="font-size:0.8em"><em>Guilty Gear Strive</em>'s name is a bit of a visual pun; being the fourth game in the series, the IV in the logo is highlighted. </p></div>
+<p><strong><em>Not just </em>Guilty Gear—<em>you've been thinking about fighting games for 20 years. ArcSys is also making games like </em>GranBlue Fantasy Versus<em> and </em>Dragon Ball Fighterz<em>. How do you get more people to not be scared of trying fighting games?</em></strong></p>
+<p>I think there are a lot of people who just by looking at a game, with it being a fighting game, will say, "Nah, I don't do fighting games." You really can't explain it to someone and expect them to want to play something. It's kind of related to the previous question as well. My job is, I feel, is to show people that it's accessible. It's like, "Oh, well, I think I could do what that guy just did on the screen." So while they're spectating, give them the perception that "Oh, this is more possible than I thought it was."</p>
+<p><strong><em>You said in a <a href="https://www.destructoid.com/daisuke-ishiwatari-creator-of-guilty-gear-opens-up-about-arc-s-legacy-his-crazy-inspirations-and-the-switch-487855.phtml">2018 interview with Destructoid</a> that "</em>Dragon Ball Fighterz<em> was developed based on the lessons learned through previous </em>Guilty Gear<em> and </em>BlazBlue<em> titles." Were there lessons from those games that informed the new </em>Guilty Gear<em>?</em></strong></p>
+<p>I would probably say "no," at least with respect to the gameplay aspects. Each director and person overseeing their project has their own policy, if you will, on how they want to sculpt the game and shape the experience. So in terms of that infusing itself back into <em>Guilty Gear</em>, I would say there isn't much. If anything, it's more the experience of the game itself, like lobbies for example, or match-making. We'll share that type of information, the stuff that isn't related to once you enter the game, the overall experience. And that is something that they'll say, "hey, you know I tried this kind of style and it worked" or "this wasn't very effective." And that kind of information we share.</p>
+
+<p><em><strong>The big hot topic in the fighting-game community now is rollback netcode. I interviewed French Bread battle director Kamone Serizawa earlier this year at Evo, and he said that adding rollback netcode to his company's game would require a "super programmer." What is the ArcSys response to the demand for rollback netcode?</strong></em></p>
+<p>Where we are right now at ArcSys, in terms of rollback netcode, is we haven't really arrived at the conclusion that we'll need a super programmer as much, as the engineering team is kind of divided, actually. There are some that say this would be really good and others that say, you know, implementing this wouldn't really work with the <em>Guilty Gear</em> system. And it makes sense for a game like <em>Street Fighter</em>, but how <em>Guilty Gear</em> is designed—this wouldn't really fit the bill. So we're actually right in the middle of investigating on the engineering team how that might look.</p>
+<p>[The current game, <em>Guilty Gear Xrd</em>, used delay-based netcode, which creates generally inferior results to rollback netcode. For more on the differences, and how rollback works, you can <a href="https://arstechnica.com/gaming/2019/10/explaining-how-fighting-games-use-delay-based-and-rollback-netcode/">check out our deep dive</a>. Here's a video clip from that article showing how the frame delay can fluctuate.]</p>
+<figure class="video ars-wp-video">
+    <div class="wrapper" style="padding-bottom: 56.333333333333%;">
+        <div style="width: 600px;" class="wp-video"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-1604559-1" width="600" height="338" autoplay="1" preload="metadata" controls="controls"><source type="video/mp4" src="https://cdn.arstechnica.net/wp-content/uploads/2019/10/UnripeCheapIbisbill.mp4?_=1" /><em>Guilty Gear Xrd</em> changes the input delay on the fly to hopefully avoid needing to pause the game and wait for inputs. Sometimes the fluctuations are small, and sometimes they can get out of control.<a href="https://cdn.arstechnica.net/wp-content/uploads/2019/10/UnripeCheapIbisbill.mp4">https://cdn.arstechnica.net/wp-content/uploads/2019/10/UnripeCheapIbisbill.mp4</a></video></div>    </div>
+        <figcaption class="caption">
+        <div class="caption-text"><em>Guilty Gear Xrd</em> changes the input delay on the fly to hopefully avoid needing to pause the game and wait for inputs. Sometimes the fluctuations are small, and sometimes they can get out of control. </div>
+    </figcaption>
+    </figure>
+<p><strong><em>Another big conversation in the fighting game community right now, partially because of the new </em>Guilty Gear<em>, is the topic of chip kill [dying when you have no health left and are hit by a special move even when you are blocking] and how chip kill has been taken out of this build of </em>Guilty Gear<em>, even though there are defensive tools to mitigate it, and it feels too simple. You are a </em>Street Fighter: Third Strike<em> fan, and the big famous moment in that game, <a href="https://www.youtube.com/watch?v=JzS96auqau0">Evo Moment 37</a>—the Daigo parry versus Justin Wong—only occurred because of the threat of chip kill. What's the thinking behind removing it?</em></strong></p>
+<p>Again, nothing you see in this game is completely locked in. So to your point, it's still in a very experimental stage, and really, we're kind of testing a lot of different angles. If you ask me personally, I'm the guy who definitely errs on the side of hardcore. So I love these complex mechanics and systems, and you know, with everything kind of going into a lot of network-based fighting and communities, we accept the input queue, like pre-inputs [referring to modern fighting games having a larger input buffer, making button timing less strict] which you didn't need in the arcades. And that's something that I personally kind of like. So I think there's definitely two schools of thought with regard to this. But you know, we're always trying to balance the hardcore experience versus the easy-to-spectate side of things. We're experimenting—we're taking surveys and seeing where the consensus is going to be. It's just one experiment for now.</p>
+<div class="image shortcode-img center full"><img alt='The beta build of &lt;em&gt;Guilty Gear Strive&lt;/em&gt;&#039;s UI is not &quot;close to being final whatsoever,&quot; and it shows.'  src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/guilty-gear-strive-ui.jpg" alt='The beta build of &lt;em&gt;Guilty Gear Strive&lt;/em&gt;&#039;s UI is not &quot;close to being final whatsoever,&quot; and it shows.' ><p class="caption" style="font-size:0.8em">The beta build of <em>Guilty Gear Strive</em>'s UI is not "close to being final whatsoever," and it shows. </p></div>
+<p><em><strong>How final is the user interface right now? Is it very, very early? Is it too early to talk about? Are there things that are being tried that might stay?</strong></em></p>
+<p>With respect to the thought process behind the interface, what I had told our UI design team was that I want something that, again, goes back to the very high-level philosophy and concept of being easy to spectate and watch. It's kind of become <em>Guilty Gear's</em> identity, but the very complex HUD, you know, it's very intricate and very detailed. We're trying to deviate from that a bit and see what a different approach might be. With respect to the version you see right now, I don't think that's close to being final whatsoever. But to kind of explain the thought process or the inception of that, it is to make it easier to watch for the viewer.</p>
+<p><em><strong>The one question I will ask, then, and then we can leave the UI topic since it's unfinished: what is the thinking behind having the character portrait move with the life bar?</strong></em></p>
+<p>With the <em>Guilty Gear</em> interface, especially with <em>Guilty Gear</em> players—I don't know where this was done, but I read an article or a survey that found that <em>Guilty Gear</em> players compared to other fighting games have a tendency to look all around the screen at any given time. They have the most eye movement of any other fighting game. We thought this was because there is a lot of vital information scattered across screen. So one thing we're trying to do—and to their credit, this is probably what makes <em>Guilty Gear</em> players <em>Guilty Gear</em> players, they're able to look around and absorb all the information and make decisions—but with that said, we're trying to reduce the number of focal points on the screen at any given time. So this is, again, another experiment to bring everything toward a more single focal point.</p>
+<p><div class="image shortcode-img right full transbkg"><img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/kykiske-xrd-stance.gif"></div><strong><em>Last question, and then I think I've probably taken enough of your time. When </em>Guilty Gear Xrd<em> first game out, it was very cutting-edge with regards to doing 3D graphics that looked like hand-drawn sprites. That was taken a little further with </em>Dragon Ball Fighterz<em>, which almost looks better than the source anime. With the new </em>Guilty Gear<em>, the engine is obviously being taken a step further. What sort of things are you exploring visually that you couldn't do before?</em></strong></p>
+<p>That's a very interesting and good point that you bring up because I agree with you that <em>Dragon Ball Fighterz</em> and even <em>Granblue Versus</em> are kind of evolution of what we've done with <em>Xrd</em>. So if you take that expression and then crank it up to 11, that's what you're going to get. With that said, you know, it's already been done. So there's no point in <em>Guilty Gear</em> going back to that point, and we needed to find a new form of expression, something else that we could do. Unlike <em>Xrd</em>, where we relied heavily on anime-type expressions, the big reference point has been live-action movies. We're really trying to push the seamless experience really hard. So we won't suddenly cut to the character's face; [instead] we're trying to make all the camera movement dynamic and seamless. That I think is a huge step in our visual expression and experimentation.</p>
+<p><em><strong>Thank you very much for your time!</strong></em></p>
+<p><em>Guilty Gear Strive</em> is currently expected for release in late 2020.</p>
+
+<p><a href="https://arstechnica.com/?p=1604559&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
+		<title>It’s the user’s fault if a Ring camera violates your privacy, Amazon says</title>
+		<link>https://arstechnica.com/?p=1604635</link>
+		<pubDate>Wed, 20 Nov 2019 21:58:50 +0000</pubDate>
+		<dc:creator><![CDATA[Kate Cox]]></dc:creator>
+				<category><![CDATA[Policy]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[amazon ring]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[ring]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1604635</guid>
+		<description><![CDATA[The company’s answers to congressional questioning only earned it more questions]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/07/Ring_doorbell-800x415.jpg" alt="Your local police might like to interest you in this product."/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/07/Ring_doorbell.jpg" class="enlarge-link" data-height="779" data-width="1500">Enlarge</a> <span class="sep">/</span> Your local police might like to interest you in this product. (credit: <a rel="nofollow" class="caption-link" href="https://www.amazon.com/dp/B00N2ZDXW2/?tag=arstech20-20">Amazon</a>)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p>Amazon subsidiary Ring, which makes home surveillance equipment and cameras, has "partnerships" with more than 600 law enforcement agencies nationwide, allowing those police access to users' footage. And while Ring says it sets terms around how and when it will share that footage with police, anything the police do with it afterward is entirely out of its hands, the company says.</p>
+<p>The partnerships between Ring and police, and the terms of the agreements, have not been transparent to the general public. Instead, they've come out in bits and pieces in media reports throughout the year. Sen. Ed Markey (D-Mass.) in September <a href="https://arstechnica.com/tech-policy/2019/09/senator-pushes-amazon-for-details-about-ring-partnerships-with-police/">demanded clearer answers</a> from Amazon about Ring and published the company's responses this week.</p>
+<p>In the pair of replies (<a href="https://www.markey.senate.gov/imo/media/doc/Response%20Letter_Ring_Senator%20Markey%209.26.19.pdf">PDF 1</a>, <a href="https://www.markey.senate.gov/imo/media/doc/Response%20Letter_Ring_Senator%20Markey%2011.01.2019.pdf">PDF 2</a>), Ring repeatedly deflects responsibility for the contents of captured footage to the consumers who capture it and the police departments that acquire it.</p>
+<h2>Who <em>else</em> watches the watchers?</h2>
+<p>Amazon in the last week of August agreed to share publicly a list of where it has police partnerships. At that time, there were <a href="https://arstechnica.com/tech-policy/2019/08/ring-has-more-than-400-police-partnerships-company-finally-says/">405 such agreements</a>. As of November 15, however, that map now boasts <a href="https://www.google.com/maps/d/viewer?mid=1eYVDPh5itXq5acDT9b0BVeQwmESBa4cB&amp;usp=sharing">630 police partnerships</a>, a greater than 50% increase.</p>
+<p>Customers who buy Ring systems for their homes can connect to an app called Neighbors. Police who work in partnerships with Ring have a companion app to Neighbors that allows them to request footage from users in a given geographic area when it's pertinent to an investigation.</p>
+<p>What police do after that, however, is a mystery in which Ring says it has no part.</p>
+<p>"Ring does not require law enforcement to delete materials shared through a video request after a certain period of time," the company said. Law enforcement departments set their own terms for record retention in accordance with the laws of their jurisdiction and can keep it as long as they see fit.</p>
+<p>Amazon and Ring also do not have any minimum security requirements for the use of user footage. Partners use their own "requirements, protocols, and security measures" for protecting any Ring data they acquire. And they can share it with whomever they like: "If videos are downloaded by law enforcement, Ring does not require police departments to agree to additional restrictions," the company said, citing potential public records law and police investigative procedures.</p>
+<p>"Ring is constantly seeking ways to maximize transparency and user control, including adding additional information on how video footage may be used when a customer consents," the company added.</p>
+<h2>“Volunteered” data and privacy</h2>
+<p>Amazon has repeatedly said throughout the year that Ring users must volunteer to share their footage in response to a police request. In August, the company told Ars that participating law enforcement agencies must go through Ring to request footage, adding, "Customers can choose to opt out or decline any request, and law enforcement agencies have no visibility into which customers have received a request and which have opted out or declined."</p>
+<p>The minimum region for requesting footage is 0.025 square miles, Ring told Sen. Markey, in order to prevent police from targeting specific individuals. The maximum region is 0.5 square miles, in order to prevent broad blanketing. The maximum time frame of data police can ask for is 12 hours, and they can only get footage less than 45 days old.</p>
+<p>In some neighborhoods, housing may be dense enough to effectively mask the identity of someone in a radius of a few blocks. But in lower-density neighborhoods zoned for single-family homes, it could be trivial for police to figure out which residence in a 0.025-square-mile radius is using a camera, regardless of if it shares footage willingly, and which residents they may wish to talk to.</p>
+<p>All that said, however, Ring said it believes that "state and federal procedures, regulations, and statutes serve to ensure that police departments do not open investigations or seek information for improper purposes."</p>
+<p>Respecting users and non-users' privacy is also the camera owner's problem, Amazon said.</p>
+<p>"Ring's Terms of Service state that users are responsible for their use of our products and services, including use in accordance with any applicable privacy laws," the company said in response to a question about cameras pointed at public space such as municipal sidewalks that aren't part of a homeowner's property. "Ring includes a door/window sticker in the box with each device that is equipped with audiovisual recording capabilities" so that homeowners can prominently notify anyone in the neighborhood that they may be recorded, Amazon added. It has no oversight or compliance program in place for owners, however.</p>
+<p>"Amazon Ring’s policies are an open door for privacy and civil liberty violations," Markey said in a statement following Amazon's response. "If you're an adult walking your dog or a child playing on the sidewalk, you shouldn't have to worry that Ring's products are amassing footage of you and that law enforcement may hold that footage indefinitely or share that footage with any third parties."</p>
+<h2>Especially the kids</h2>
+<p>Ring's privacy policy says it does not knowingly collect personal information from anyone under the age of 13. But the cameras, of course, collect footage of whoever happens to be nearby. "Ring has no way to know or verify that a child has come within range of a device," Amazon wrote. "Customers own and control their video recordings."</p>
+<p>And yet Ring itself seems to have no compunction about showing children under 13 in footage if it's good for their marketing. For example: 15.8 million Ring doorbells rang in the 24 hours of Halloween, the company said in <a href="https://blog.ring.com/2019/11/04/ring-video-doorbells-get-15-million-dings-this-halloween-and-capture-cute-costumes-and-fun-pranks/">a blog post</a>.</p>
+<p>The company shared some harmless data about all those trick-or-treaters. (Peak time on the East Coast was around 6:30pm, while West Coast kids peaked about 20 minutes later, apparently.) But the company also released a <a href="https://twitter.com/ring/status/1190058611738841090">promotional video</a> using captured Halloween footage, including several very clear images of children both with and without their parents present.</p>
+<p>Website Mashable <a href="https://mashable.com/article/ring-halloween-surveillance/">asked Ring</a> whether parents consented to their children's appearance in the advertisement video, but the company did not respond.</p>
+<p>Ring's terms of service allow for it, BuzzFeed <a href="https://www.buzzfeednews.com/article/daveyalba/amazon-ring-doorbell-company-using-security-footage-for-ads">pointed out</a> earlier this year:</p>
+<blockquote><p>You hereby grant Ring and its licensees an unlimited, irrevocable, fully paid and royalty-free, perpetual, worldwide right to re-use, distribute, store, delete, translate, copy, modify, display, sell, create derivative works from and otherwise exploit such Shared Content for any purpose and in any media formats in any media channels without compensation to you.</p></blockquote>
+<h2>All your face are belong to us</h2>
+<p>Markey also pressed Ring several times about the use of facial-recognition technology. The company responded that it does not use any facial recognition yet but may do so in the future.</p>
+
+<p>A sentence in its privacy policy to the effect that Ring may "obtain certain facial feature information about the visitors you ask your Ring product to recognize" refers to "a contemplated, but unreleased feature," the company said. "If our customers want these features in Ring security cameras," it added, "we will only release these features with thoughtful design including privacy, security, and user control; and we will clearly communicate with our customers as we offer new features."</p>
+<p>What Ring users choose, however, affects not just homeowners who buy the systems but also anyone who gets close enough to their house for any reason.</p>
+<p>"Connected doorbells are well on their way to becoming a mainstay of American households, and the lack of privacy and civil rights protections for innocent residents is nothing short of chilling," Markey said in his statement—a sentiment echoed by civil liberties organizations and advocates.</p>
+<p>"Through consumer products like Ring, Amazon is collecting footage and all the data needed to build a nationwide surveillance network," Fight for the Future deputy director Evan Greer said in a statement.</p>
+<p>"They leverage government relationships to promote their own products, gain consumer trust, and secure their position in the market. This is an unprecedented assault on our security, constitutionally protected rights, and communities," Greer added, calling on Congress to launch an investigation.</p>
+<p>The American Civil Liberties Union and Electronic Frontier Foundation have also both repeatedly expressed concerns about Ring, about facial recognition, and about both of them together.</p>
+<p>Staff attorney Mohammad Tajsar of the ACLU of Southern California told the <a href="https://apnews.com/651059b843294fd28ad959b33804d46f">Associated Press</a> that the potential for facial recognition in Ring products raised significant concerns. "Even if you don't sell data or provide data to law enforcement, you're creating a mechanism whereby people can express latent biases and racism and classism in a portal that encourages it," he said.</p>
+<h2>We’re not through</h2>
+<p>A group of senators, including Markey, found Amazon's response insufficient. Senators Ron Wyden (D-Ore.), Chris Van Hollen (D-Md.), Chris Coons (D-Del.), and Gary Peters (D-Mich.) joined Markey in a new letter (<a href="https://www.wyden.senate.gov/imo/media/doc/112019%20Wyden%20Markey%20Can%20Hollen%20Coons%20Peters%20Ring%20Letter%20to%20Amazon.pdf">PDF</a>) dated today asking pointed follow-up questions, particularly about Amazon's handling of consumer data.</p>
+<p>"Ring's emphasis on safety and security has not always extended to the massive amount of data it amasses, retains, and shares," the senators wrote, referring to <a href="https://arstechnica.com/information-technology/2019/11/ring-patches-total-lack-of-password-security-during-setup/">a vulnerability</a> that sent WiFi network passwords in plaintext. </p>
+<p>Additionally, the senators wrote, Amazon has reportedly <a href="https://theintercept.com/2019/01/10/amazon-ring-security-camera/">sent footage to contractors in Ukraine</a> and apparently is still doing so. "Please describe the process by which Americans' data is accessed by employees or contractors in Ukraine or any other country" outside the United States, the letter asks.</p>
+<p>Amazon is also told to provide data on how many consumers own Ring devices; what kind of encryption Ring uses for the data; what data retention or deletion policy is used on the data; what employees, and where, have access to what content, and why; what consumer-identifying data might be included in that content; and what the company plans to do about facial recognition in the future.</p>
+<p>Amazon has until January 6 to respond to the latest round of questions.</p>
+
+<p><a href="https://arstechnica.com/?p=1604635&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
+		<title>EverQuest lead producer and designer Brad McQuaid has passed away</title>
+		<link>https://arstechnica.com/?p=1604819</link>
+		<pubDate>Wed, 20 Nov 2019 20:25:20 +0000</pubDate>
+		<dc:creator><![CDATA[Samuel Axon]]></dc:creator>
+				<category><![CDATA[Gaming & Culture]]></category>
+		<category><![CDATA[Brad McQuaid]]></category>
+		<category><![CDATA[EverQuest]]></category>
+		<category><![CDATA[game development]]></category>
+		<category><![CDATA[MMO]]></category>
+		<category><![CDATA[obituary]]></category>
+		<category><![CDATA[Pantheon]]></category>
+		<category><![CDATA[Vanguard]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1604819</guid>
+		<description><![CDATA[Developers and industry figures publicly shared feelings of loss and mourning.]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/Screen-Shot-2019-11-20-at-11.49.11-AM-800x448.png" alt="Promotional image for fantasy adventure video game."/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/Screen-Shot-2019-11-20-at-11.49.11-AM.png" class="enlarge-link" data-height="659" data-width="1176">Enlarge</a> <span class="sep">/</span> The original promotional art for <em>EverQuest</em>. (credit: <a rel="nofollow" class="caption-link" href="https://www.everquest.com/news/eq-anniversary-producers-letter-january-2019">Daybreak Games</a>)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p>Brad McQuaid, the lead developer for the groundbreaking massively multiplayer online (MMO) game <em>EverQuest</em>, has died, according to an update from his development team. He was 51.</p>
+<p>Details about the circumstances of his death have not been shared publicly, other than a mention that he passed away in his home. The Twitter account for <em>Pantheon</em>, McQuaid's project at the time of his death, and Visionary Realms, the company behind it, <a href="https://twitter.com/PantheonMMO/status/1196943965028802561">tweeted</a> out the following announcement:</p>
+<blockquote><p>It is with deep regret we share that Brad McQuaid passed away last night. He will be deeply missed and forever remembered by gamers worldwide.</p>
+<p>Thank you for bringing us together through your worlds. Rest in peace <a class="PrettyLink profile customisable h-card" href="https://twitter.com/Aradune"><span class="PrettyLink-prefix">@</span><span class="PrettyLink-value">Aradune</span></a>.</p>
+<p>VR offers our deepest condolences to Brad’s family.</p></blockquote>
+<p><a href="https://www.mobygames.com/developer/sheet/view/developerId,13586/">McQuaid</a> worked as a game programmer and designer starting back in the late 1980s, but he is most well-known for his role as lead programmer, producer, and designer (at various times) on <a href="https://arstechnica.com/gaming/2019/06/everquests-long-strange-20-year-trip-still-has-no-end-in-sight/"><em>EverQuest</em></a>, the 1999 massively multiplayer online role-playing game (MMORPG) that defined the genre to this day. <em>EQ</em>, which adapted the DikuMUD formula from text games for a 3D persistent graphical virtual world, was a breakthrough moment for MMORPGs. Its success codified that model for the genre as other, different ideas of what MMORPGs might look like (such as those posited by <em>Meridian 59</em>, <em>Underlight</em>, or <em>Ultima Online</em>) largely faded into memory.</p>
+<p>McQuaid was involved in designing some of the very first raids as we know them today, and his work had significant influence on later games like <a href="https://arstechnica.com/tag/world-of-warcraft/"><em>World of Warcraft</em></a>, <a href="https://arstechnica.com/tag/final-fantasy/"><em>Final Fantasy XIV</em></a>, <em>The <a href="https://arstechnica.com/tag/elder-scrolls/">Elder Scrolls</a> Online</em>, <a href="https://arstechnica.com/tag/destiny/"><em>Destiny</em></a>, and many more.</p>
+<p>He later went on to co-found Sigil Games, which developed and launched the hardcore MMO <em>Vanguard: Saga of Heroes</em>. The game found a niche audience seeking demanding, group-oriented content—a focus of McQuaid's work over the years—amidst a market of increasingly casual and solo-friendly MMOs. Most recently, McQuaid was working at Visionary Realms on the above-mentioned <em>Pantheon</em>, which marries that model to some newer game-design ideas. <em>Pantheon</em> is still in development.</p>
+<p>Visionary Realms communications chief BenD shared these notes <a href="https://www.pantheonmmo.com/content/forums/topic/11315/with-deepest-regrets-aradune-has-passed-away/view/post_id/219996">on the <em>Pantheon</em> forums</a>:</p>
+<blockquote><p>Brad was a visionary, a mentor, an artist, a trailblazer, a friend, a husband, a father. He touched thousands of lives with his dreams and concepts. He changed the landscape of video games forever. He will be deeply missed and forever remembered in life and in Pantheon.</p>
+<p>Thank you, Brad, for bringing us together through your worlds. Rest in peace, Aradune.</p>
+<p>All of us at Visionary Realms offer our deepest condolences to Brad’s family and during this most difficult time, we kindly ask that you respect the privacy of Brad’s family.</p></blockquote>
+<p>McQuaid's passing resulted in an outpouring of mourning and memories from other notable online game developers such as <a href="https://twitter.com/raphkoster/status/1196952262616088576">Raph Koster</a> (<em>Ultima Online, Star Wars: Galaxies</em>), <a href="https://twitter.com/ZenOfDesign/status/1196969230157135872">Damion Schubert</a> (<em>Meridian 59</em>, <a href="https://arstechnica.com/tag/star-wars-the-old-republic/"><em>Star Wars: The Old Republic</em></a>), <a href="https://twitter.com/EveOnline/status/1197104476689195014">the <em>EVE Online</em> team</a>, and former Sony Online and <em>EverQuest</em> boss <a href="https://twitter.com/j_smedley/status/1196945326583607297">John Smedley.</a></p>
+
+<p><a href="https://arstechnica.com/?p=1604819&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
+		<title>Nikki Haley lost her password, so she sent confidential info over unclassified system</title>
+		<link>https://arstechnica.com/?p=1604835</link>
+		<pubDate>Wed, 20 Nov 2019 19:41:44 +0000</pubDate>
+		<dc:creator><![CDATA[Dan Goodin]]></dc:creator>
+				<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Policy]]></category>
+		<category><![CDATA[classified]]></category>
+		<category><![CDATA[operational security]]></category>
+		<category><![CDATA[opsec]]></category>
+		<category><![CDATA[US State Department]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1604835</guid>
+		<description><![CDATA[Former US Ambassador to the UN was responding to North Korea nuke testing.]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/nikki-haley-800x529.jpg" alt="A serious woman listens intently to an earpiece."/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/nikki-haley.jpg" class="enlarge-link" data-height="677" data-width="1023">Enlarge</a> <span class="sep">/</span> Ambassador Nikki Haley listens at the United Nations. (credit: <a rel="nofollow" class="caption-link" href="https://www.flickr.com/photos/us-mission/35043214691">United States Mission Geneva / Eric Bridiers / Flickr</a>)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p>Former US Ambassador to the United Nations Nikki Haley sent confidential material over a network reserved only for unclassified material because she forgot her password for classified communications, <a href="https://www.thedailybeast.com/nikki-haley-used-system-for-unclassified-material-to-send-confidential-information">The Daily Beast reported</a>.</p>
+<p>The event happened on July 4 and July 5, 2017, after North Korea had tested an intercontinental ballistic missile capable of hitting Alaska. As she and her staff scrambled to draft a statement responding to the test, Haley reportedly used her BlackBerry 10 to trade comments over the <a href="https://en.wikipedia.org/wiki/Classified_United_States_website#OpenNet">OpenNet</a>, a State Department network for communicating sensitive, but not classified, information.</p>
+<p>“Can’t find my password,” she wrote on July 5. Other messages instructed staff to make changes to the preliminary statement versions they had drafted.</p>
+<p>The revelation was disclosed in emails watchdog organization American Oversight obtained under the Freedom of Information Act. The incident comes after Haley’s boss, President Donald Trump, castigated his campaign rival Hillary Clinton for sending classified material over her private email server. His chant to “lock her up” became a constant refrain for him and his supporters.</p>
+<p>It’s arguable that the OpenNet is more secure than a private email address. Still, there’s a reason the State Department system isn’t suitable for transmitting classified material. Last year, <a href="https://www.politico.com/story/2018/09/17/state-department-email-personal-information-792665">Politico reported</a> that the State Department’s unclassified email system suffered a breach that exposed the personal information of a small number of employees.</p>
+<p>Watchdog groups have repeatedly criticized the State Department for what they say is insufficient network security. By the time the 2018 breach came to light, a bipartisan group of senators had already asked Secretary of State Mike Pompeo what the department was doing to improve things.</p>
+<p>Given the <a href="https://arstechnica.com/tech-policy/2019/07/microsoft-warns-10000-customers-theyre-targeted-by-nation-sponsored-hackers/">growing determination and skill of hackers</a> sponsored by the governments of North Korea, Iran, Russia, and China, unclassified systems are increasingly vulnerable to espionage. Staff members for Haley, who resigned her ambassador post in October of last year, didn’t provide a comment to Politico.</p>
+<p><em>Post updated on 11/20/2019, 6:49 PM to change "sensitive" to "confidential" per original article.</em></p>
+
+<p><a href="https://arstechnica.com/?p=1604835&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
+		<title>New antibiotic found in bacteria inside a worm inside an insect egg</title>
+		<link>https://arstechnica.com/?p=1604435</link>
+		<pubDate>Wed, 20 Nov 2019 18:00:40 +0000</pubDate>
+		<dc:creator><![CDATA[Diana Gitig]]></dc:creator>
+				<category><![CDATA[Science]]></category>
+		<category><![CDATA[antibiotics]]></category>
+		<category><![CDATA[Biology]]></category>
+		<category><![CDATA[Gram-negative bacteria]]></category>
+		<category><![CDATA[medicine]]></category>
+		<category><![CDATA[microbiome]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1604435</guid>
+		<description><![CDATA[It comes from the microbiome of parasitic worms.]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/GettyImages-925864520-800x534.jpg" alt="False color microscope image of bacteria."/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/GettyImages-925864520.jpg" class="enlarge-link" data-height="683" data-width="1024">Enlarge</a> (credit: BSIP/Universal Images Group)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p><span style="font-weight: 400">The last antibiotics generated against Gram-negative bacteria—which tend to be the more dangerous type—were developed in the 1960s. Thanks to the rise of antibiotic resistance, we need more. But rather than going through the trouble of trying to make our own, scientists have looked to other species that might need to kill the same bacteria that we do—we can just swipe theirs. </span><a href="https://arstechnica.com/science/2016/10/new-antibiotic-mined-from-human-gut-reverses-drug-resistance-in-superbugs/"><span style="font-weight: 400">Our own guts</span></a><span style="font-weight: 400"> and </span><a href="https://arstechnica.com/science/2015/01/a-new-kind-of-antibiotic-that-kills-many-drug-resistant-bacteria/"><span style="font-weight: 400">soil bacteria</span></a><span style="font-weight: 400"> have yielded a few recent hits.</span></p>
+<p><span style="font-weight: 400">The latest organisms that researchers have looked to are bacteria in the microbiomes of roundworms that parasitize insects (technically termed enteropathogenic nematodes). They were considered promising candidates because the worms invade insect larvae and release bacteria. Those bacteria then have to fend off the ones already living in the insect larva, as well as all the other bacteria the nematodes just spewed out. Conveniently for us, those species include common pathogens in our own guts, like </span><i><span style="font-weight: 400">E. coli</span></i><span style="font-weight: 400">. </span></p>
+<p><span style="font-weight: 400">Usually, when microorganisms are being screened to see if they make effective antibiotics, they are grown on a plate along with the pathogenic bacteria to see if the ones being screened thwart the growth of the ones being targeted. The species taken from the nematodes’ guts did not stop the growth of </span><i><span style="font-weight: 400">E. coli </span></i><span style="font-weight: 400">in this traditional assay. But the scientists speculated that maybe they still made antibiotics, just not at high enough levels. </span></p>
+<p><span style="font-weight: 400">And they were right. Concentrated extracts of the nematode gut cultures <em>did</em> stop </span><i><span style="font-weight: 400">E. coli</span></i><span style="font-weight: 400"> from growing.</span></p>
+<p><span style="font-weight: 400">The active compound in the extracts was a seven-amino-acid-long peptide chain, a shorter version of a protein. The peptide chain isn't typically made when the bacteria are grown under laboratory conditions and is made only slowly and at low levels in other contexts. The discoverers named it darobactin. It is made by a number of different bacterial species, including </span><i><span style="font-weight: 400">Yersinia pestis</span></i><span style="font-weight: 400">, the Gram-negative bacteria that causes plague.</span></p>
+<p><span style="font-weight: 400">Darobactin is too big to get across the outer membrane of the Gram-negative bacteria it targets. To figure out how it worked, the researchers generated mutant </span><i><span style="font-weight: 400">E. coli</span></i><span style="font-weight: 400"> that were resistant to it by growing the</span><span style="font-weight: 400">m </span><span style="font-weight: 400">in its presence. Generating resistance took all of a week. The resistant strains all had mutations in a protein called BamA, which encodes a chaperone protein. This chaperone's job is to shepherd proteins that belong in the bacterial outer membrane to their proper spot and, once there, help them fold into the correct three-dimensional orientations. </span></p>
+<p><span style="font-weight: 400">Darobactin binds to BamA after it's stuck to one of these outer membrane proteins locking it in place and thereby preventing the formation of a functional outer membrane. BamA is one of only two essential proteins expressed on the outer surface of Gram-negative bacteria. If these nematode commensals make a molecule that targets it that we can exploit, perhaps other microorganisms do, too.</span></p>
+<p><em>Nature</em>, 2019. DOI: <a href="http://dx.doi.org/10.1038/s41586-019-1791-1">10.1038/s41586-019-1791-1</a> (<a href="http://arstechnica.com/ science/news/2010/03/dois-and-their-discontents-1.ars">About DOIs</a>).</p>
+
+<p><a href="https://arstechnica.com/?p=1604435&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
+		<title>Google Earth gets content creation tools for geography-focused presentations</title>
+		<link>https://arstechnica.com/?p=1604733</link>
+		<pubDate>Wed, 20 Nov 2019 17:21:27 +0000</pubDate>
+		<dc:creator><![CDATA[Ron Amadeo]]></dc:creator>
+				<category><![CDATA[Tech]]></category>
+
+		<guid isPermaLink="false">https://arstechnica.com/?p=1604733</guid>
+		<description><![CDATA[Build a presentation with text, images, videos, and terabytes of Google Earth imagery.]]></description>
+				<content:encoded><![CDATA[
+<figure class="intro-image intro-left">
+  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/18-1-800x450.jpg" alt="A Google Earth presentation in action. "/>
+      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/18-1.jpg" class="enlarge-link" data-height="1080" data-width="1920">Enlarge</a> <span class="sep">/</span> A Google Earth presentation in action.  (credit: Google)</p>  </figure>
+
+
+
+
+
+
+<div><a name='page-1'></a></div>
+<p>Google Earth is getting a <a href="https://blog.google/products/earth/new-google-earth-creation-tools/">new content creation feature set</a>. You'll now be able to make presentations using Google's vast 3D Earth imagery and point-of-interest information. It's sort of like a geography-focused Powerpoint.</p>
+<p><a href="https://arstechnica.com/gadgets/2017/04/google-earth-adds-guided-video-tours-from-bbcs-planet-earth-and-others/">Back in 2017</a>, Google Earth was completely rebuilt from a desktop application to a WebGL-based browser app at <a href="https://earth.google.com/web/">earth.google.com/web</a>. Starting today, on the left side of the website, you'll see a new "Projects" button, which will let you create a presentation. Just like a Google Doc or Sheet or Slide, these Google Earth Projects get saved as files on your Google Drive.</p>
+<p>And like a normal presentation, you can create slides and attach text, images, and videos. Since this is Google Earth, though, all the text and images get overlaid on top of Google's terabytes of Earth imagery. You can pick from Google Earth's 3D views or Street View, set the camera just right, and capture a view. As you click through slides in your presentation, Google Earth will smoothly fly from point to point as your slides pop up.</p>
+<div class="video"><div class="wrapper"<iframe style="display:block" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/5KtwMRedAbc?start=0&wmode=transparent" frameborder="0" allowfullscreen></iframe></div></div>
+<p>Just like with any other Google Drive product, you can collaborate with others in real time. The Google Earth apps for Android and iOS support viewing these presentations, too.</p>
+
+<p><a href="https://arstechnica.com/?p=1604733&comments=1">Read Comments</a></p>]]></content:encoded>
+			</item>
+		<item>
 		<title>Did Neanderthals make eagle talon necklaces 120,000 years ago?</title>
 		<link>https://arstechnica.com/?p=1604577</link>
 		<pubDate>Wed, 20 Nov 2019 16:20:43 +0000</pubDate>
@@ -100,10 +504,10 @@
 
 <div><a name='page-1'></a></div>
 <p>Tax return scammers usually strike early in the year, when they can turn the personal information of victims into fraudulent tax refund claims. But members of Akamai's threat research team <a href="https://blogs.akamai.com/sitr/2019/11/out-of-season-irs-phishing-campaigns.html">found a recent surge in "off-season" phishing attacks</a> masquerading as notices from the Internal Revenue Service, targeting over 100,000 individuals. The attackers used at least 289 different domains hosting fake IRS websites—the majority of them legitimate sites that had been compromised. This wave of attacks came as the October 15 deadline for people who had filed for extensions approached.</p>
-<p>According to a post by Akamai's Or Katz, the phishing campaigns kicked off in the second half of August, with the majority of victims targeted between August 22 and September 5. But the campaigns continued to be launched into early October. Each of the fake websites used visually identical HTML pages, but used randomly generated style tags and other content in an attempt to throw off signature detection by security software.</p>
-<p>Most of the domains were active for under 20 days. However, a significant number of them remained active after a month—undetected by the owners of the sites. "The lack of maintenance on legacy websites, as well as the challenges of patching and removing injected content, explains the duration over which phishing pages can remain active," Katz wrote.</p>
+<p>According to a post by Akamai's Or Katz, the phishing campaigns kicked off in the second half of August, with the majority of victims targeted between August 22 and September 5. But the campaigns continued to be launched into early October. Each of the fake websites used visually identical HTML pages, with randomly generated style tags and other content, in an attempt to throw off signature detection by security software.</p>
+<p>Most of the domains were active for fewer than 20 days. However, a significant number of them remained active after a month—undetected by the owners of the sites. "The lack of maintenance on legacy websites, as well as the challenges of patching and removing injected content, explains the duration over which phishing pages can remain active," Katz wrote.</p>
 <p>This is consistent with <a href="https://arstechnica.com/information-technology/2018/08/how-to-win-or-at-least-not-lose-the-war-on-phishing-enlist-machine-learning/">research into phishing infrastructure done by Ars</a>, as well as <a href="https://www.akamai.com/us/en/multimedia/documents/state-of-the-internet/soti-security-phishing-baiting-the-hook-report-2019.pdf">other research by Akamai</a>. Because of their age—and the lack of attention paid to them by their owners, who often pay someone to set them up and then forget about maintaining them—older sites based on "legacy" versions of WordPress and other content management systems are a prime target for phishing operators, as they have a higher reputation score than freshly minted domains. Depending on the degree to which the site is compromised, they can even create subdomains and register their own certificates for the phishing site.</p>
-<p>With these sorts of scams propagating all year, it's worth reminding friends and family that the IRS will not e-mail you or call you about overdue taxes or any other matter—those notices will only come by paper postal mail, usually by certified mail. So just don't click.</p>
+<p>With these sorts of scams propagating all year, it's worth reminding friends and family that the IRS will not email you or call you about overdue taxes or any other matter—those notices will only come by paper postal mail, usually by certified mail. So just don't click.</p>
 
 <p><a href="https://arstechnica.com/?p=1604679&comments=1">Read Comments</a></p>]]></content:encoded>
 			</item>
@@ -204,7 +608,7 @@
                         </div>
                                                 <h3 class="ars-buy-box-title">Dell XPS 13                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_47369981" class="button button-large button-orange ars-buy-box-button" href="http://www.jdoqocy.com/click-8984087-12578053?sid=TravelGifts2019&amp;url=https%3A%2F%2Fwww.dell.com%2Fen-us%2Fshop%2Flaptops%2Fnew-13%2Fspd%2Fxps-13-7390-laptop" target="_blank">
+                            <a id="bb_button_42427093" class="button button-large button-orange ars-buy-box-button" href="http://www.jdoqocy.com/click-8984087-12578053?sid=TravelGifts2019&amp;url=https%3A%2F%2Fwww.dell.com%2Fen-us%2Fshop%2Flaptops%2Fnew-13%2Fspd%2Fxps-13-7390-laptop" target="_blank">
                                 Starting at $949 from Dell                            </a>
                                                     </div>
                     </div>
@@ -237,7 +641,7 @@
                         </div>
                                                 <h3 class="ars-buy-box-title">Logitech MX Master Anywhere 2s                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_94844339" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2NDodMM" target="_blank">
+                            <a id="bb_button_79110873" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2NDodMM" target="_blank">
                                 $49.99 from Amazon                            </a>
                                                     </div>
                     </div>
@@ -269,7 +673,7 @@
                         </div>
                                                 <h3 class="ars-buy-box-title">Anker PowerCore 10000 PD Redux                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_31490341" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2NZBf7u" target="_blank">
+                            <a id="bb_button_59464693" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2NZBf7u" target="_blank">
                                 $45.99 from Amazon                            </a>
                                                     </div>
                     </div>
@@ -302,9 +706,9 @@
                         </div>
                                                 <h3 class="ars-buy-box-title">Garmin Dash Cam Mini                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_59907213" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/32EjdeQ" target="_blank">
+                            <a id="bb_button_65890100" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/32EjdeQ" target="_blank">
                                 Buy Now                            </a>
-                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_59907213">
+                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_65890100">
                                                                     <option value="https://amzn.to/32EjdeQ">Amazon $129.98</option>
                                                                     <option value="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fgarmin-mini-dash-cam%2F6351243.p%3FskuId%3D6351243&amp;subid1=TravelGifts2019">Best Buy $129.99</option>
                                                                 </select>
@@ -341,9 +745,9 @@
                         </div>
                                                 <h3 class="ars-buy-box-title">Sony WH-1000XM3                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_32503850" class="button button-large button-orange ars-buy-box-button" href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FSony-WH1000XM3-Wireless-Noise-Canceling-Over-the-Ear-Headphones-with-Google-Assistant%2F931234733&amp;subid1=TravelGifts2019" target="_blank">
+                            <a id="bb_button_28716967" class="button button-large button-orange ars-buy-box-button" href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FSony-WH1000XM3-Wireless-Noise-Canceling-Over-the-Ear-Headphones-with-Google-Assistant%2F931234733&amp;subid1=TravelGifts2019" target="_blank">
                                 Buy Now                            </a>
-                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_32503850">
+                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_28716967">
                                                                     <option value="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FSony-WH1000XM3-Wireless-Noise-Canceling-Over-the-Ear-Headphones-with-Google-Assistant%2F931234733&amp;subid1=TravelGifts2019">Walmart $348</option>
                                                                     <option value="https://amzn.to/2qgiZOd">Amazon $348</option>
                                                                     <option value="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fsony-wh-1000xm3-wireless-noise-canceling-over-the-ear-headphones-with-google-assistant-black%2F6280544.p%3FskuId%3D6280544&amp;subid1=TravelGifts2019">Best Buy $349.99</option>
@@ -385,9 +789,9 @@ Apple AirPods Pro</h2>
                         </div>
                                                 <h3 class="ars-buy-box-title">Beats Powerbeats Pro                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_81775022" class="button button-large button-orange ars-buy-box-button" href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FPowerbeats-Pro-Totally-Wireless-Earphones-Black%2F128591554%3Firgwc%3D1%26sourceid%3Dimp_TGh06tQMUxyJWYpwUx0Mo38zUkn1o4RtI2tCQ40%26veh%3Daff%26wmlspartner%3Dimp_1305166%26clickid%3DTGh06tQMUxyJWYpwUx0Mo38zUkn1o4RtI2tCQ40&amp;subid1=TravelGifts2019" target="_blank">
+                            <a id="bb_button_52725240" class="button button-large button-orange ars-buy-box-button" href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FPowerbeats-Pro-Totally-Wireless-Earphones-Black%2F128591554%3Firgwc%3D1%26sourceid%3Dimp_TGh06tQMUxyJWYpwUx0Mo38zUkn1o4RtI2tCQ40%26veh%3Daff%26wmlspartner%3Dimp_1305166%26clickid%3DTGh06tQMUxyJWYpwUx0Mo38zUkn1o4RtI2tCQ40&amp;subid1=TravelGifts2019" target="_blank">
                                 Buy Now                            </a>
-                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_81775022">
+                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_52725240">
                                                                     <option value="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FPowerbeats-Pro-Totally-Wireless-Earphones-Black%2F128591554%3Firgwc%3D1%26sourceid%3Dimp_TGh06tQMUxyJWYpwUx0Mo38zUkn1o4RtI2tCQ40%26veh%3Daff%26wmlspartner%3Dimp_1305166%26clickid%3DTGh06tQMUxyJWYpwUx0Mo38zUkn1o4RtI2tCQ40&amp;subid1=TravelGifts2019">Walmart $249.95</option>
                                                                     <option value="https://amzn.to/3407IA4">Amazon $249.95</option>
                                                                     <option value="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fbeats-by-dr-dre-powerbeats-pro-totally-wireless-earphones-black%2F6341988.p%3FskuId%3D6341988%26ref%3D212%26loc%3D1%26ds_rl%3D1266837%26ds_rl%3D1268709%26ds_rl%3D1268706%26ds_rl%3D1266837%26gclid%3DCjwKCAjwo9rtBRAdEiwA_WXcFryjABP_F_4QNXJKfjN7m2ehRGrqJPfJraIh3Gk0FNUE8SnVWIwdCxoCXIQQAvD_BwE%26gclsrc%3Daw.ds%26irclickid%3DzhV3xYQpIxyJWmr0TWXZ0S3wUkn1o4WVI2tCQ40%26irgwc%3D1%26ref%3D198%26loc%3DzhV3xYQpIxyJWmr0TWXZ0S3wUkn1o4WVI2tCQ40%26acampID%3D614286&amp;subid1=TravelGifts2019">Best Buy $249.99</option>
@@ -421,9 +825,9 @@ Apple AirPods Pro</h2>
                         </div>
                                                 <h3 class="ars-buy-box-title">Apple AirPods Pro                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_43747406" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2pulZ93" target="_blank">
+                            <a id="bb_button_89396217" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2pulZ93" target="_blank">
                                 Buy Now                            </a>
-                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_43747406">
+                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_89396217">
                                                                     <option value="https://amzn.to/2pulZ93">Amazon $234.98</option>
                                                                     <option value="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FApple-AirPods-Pro%2F520468661&amp;subid1=TravelGifts2019">Walmart $249</option>
                                                                     <option value="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fapple-airpods-pro-white%2F5706659.p%3FskuId%3D5706659&amp;subid1=TravelGifts2019">Best Buy $249.99</option>
@@ -460,9 +864,9 @@ Apple AirPods Pro</h2>
                         </div>
                                                 <h3 class="ars-buy-box-title">UE Wonderboom 2                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_23026773" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2XqzX8s" target="_blank">
+                            <a id="bb_button_55204312" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2XqzX8s" target="_blank">
                                 Buy Now                            </a>
-                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_23026773">
+                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_55204312">
                                                                     <option value="https://amzn.to/2XqzX8s">Amazon $79.99</option>
                                                                     <option value="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fultimate-ears-wonderboom-2-portable-bluetooth-speaker-deep-space%2F6344800.p%3FskuId%3D6344800&amp;subid1=TravelGifts2019">Best Buy $79.99</option>
                                                                 </select>
@@ -499,9 +903,9 @@ Apple AirPods Pro</h2>
                         </div>
                                                 <h3 class="ars-buy-box-title">DJI Osmo Mobile 3                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_82599952" class="button button-large button-orange ars-buy-box-button" href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FDJI-Osmo-Mobile-3-Foldable-Mobile-Gimbal%2F562970196&amp;subid1=TravelGifts2019" target="_blank">
+                            <a id="bb_button_57198873" class="button button-large button-orange ars-buy-box-button" href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FDJI-Osmo-Mobile-3-Foldable-Mobile-Gimbal%2F562970196&amp;subid1=TravelGifts2019" target="_blank">
                                 Buy Now                            </a>
-                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_82599952">
+                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_57198873">
                                                                     <option value="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FDJI-Osmo-Mobile-3-Foldable-Mobile-Gimbal%2F562970196&amp;subid1=TravelGifts2019">Walmart $119</option>
                                                                     <option value="https://amzn.to/2qLYjx3">Amazon $119</option>
                                                                     <option value="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fdji-osmo-mobile-3-combo-3-axis-gimbal-stabilizer-for-mobile-phones-gray%2F6362961.p%3FskuId%3D6362961&amp;subid1=TravelGifts2019">Best Buy $139.99</option>
@@ -539,7 +943,7 @@ Apple AirPods Pro</h2>
                         </div>
                                                 <h3 class="ars-buy-box-title">Amazon Kindle Paperwhite                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_46418814" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2KaQp7u" target="_blank">
+                            <a id="bb_button_64407318" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2KaQp7u" target="_blank">
                                 $129.99 from Amazon                            </a>
                                                     </div>
                     </div>
@@ -573,9 +977,9 @@ Apple AirPods Pro</h2>
                         </div>
                                                 <h3 class="ars-buy-box-title">Nintendo Switch Lite                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_89905897" class="button button-large button-orange ars-buy-box-button" href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FNintendo-Switch-Lite-Console-Gray%2F907697007&amp;subid1=TravelGifts2019" target="_blank">
+                            <a id="bb_button_41955838" class="button button-large button-orange ars-buy-box-button" href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FNintendo-Switch-Lite-Console-Gray%2F907697007&amp;subid1=TravelGifts2019" target="_blank">
                                 Buy Now                            </a>
-                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_89905897">
+                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_41955838">
                                                                     <option value="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FNintendo-Switch-Lite-Console-Gray%2F907697007&amp;subid1=TravelGifts2019">Walmart $199.96</option>
                                                                     <option value="https://amzn.to/2CAIPia">Amazon $199.96</option>
                                                                     <option value="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fnintendo-switch-lite-gray%2F6257135.p%3FskuId%3D6257135&amp;subid1=TravelGifts2019">Best Buy $199.99</option>
@@ -616,9 +1020,9 @@ Apple AirPods Pro</h2>
                         </div>
                                                 <h3 class="ars-buy-box-title">Apple iPad Air (3rd gen)                                                </h3>
                         <div class="ars-buy-box-button-container">
-                            <a id="bb_button_87149974" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2KvQCCb" target="_blank">
+                            <a id="bb_button_40184549" class="button button-large button-orange ars-buy-box-button" href="https://amzn.to/2KvQCCb" target="_blank">
                                 Buy Now                            </a>
-                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_87149974">
+                                                            <select class="ars-link-select ars-link-select-buy-box" data-target-btn="bb_button_40184549">
                                                                     <option value="https://amzn.to/2KvQCCb">Amazon $469</option>
                                                                     <option value="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2F10-5-inch-iPad-Air-Wi-Fi-64GB-Silver%2F426123983%3Fselected%3Dtrue&amp;subid1=TravelGifts2019">Walmart $499.99</option>
                                                                     <option value="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fapple-ipad-air-latest-model-with-wi-fi-64gb-space-gray%2F5985600.p%3FskuId%3D5985600&amp;subid1=TravelGifts2019">Best Buy $499.99</option>
@@ -716,7 +1120,7 @@ Apple AirPods Pro</h2>
 		<category><![CDATA[website hack]]></category>
 
 		<guid isPermaLink="false">https://arstechnica.com/?p=1604573</guid>
-		<description><![CDATA[GetMonero.com delivers Linux and Windows binaries that steal users' funds.]]></description>
+		<description><![CDATA[GetMonero.org delivers Linux and Windows binaries that steal users' funds.]]></description>
 				<content:encoded><![CDATA[
 <figure class="intro-image intro-left">
   <img src="https://cdn.arstechnica.net/wp-content/uploads/2015/08/hacked-640x438.jpg" alt="Image of ones and zeros with the word "Hacked" superimposed."/>
@@ -728,7 +1132,7 @@ Apple AirPods Pro</h2>
 
 
 <div><a name='page-1'></a></div>
-<p>The official site for the Monero digital coin was hacked to deliver currency-stealing malware to users who were downloading wallet software, officials with GetMonero.com said on Tuesday.</p>
+<p>The official site for the Monero digital coin was hacked to deliver currency-stealing malware to users who were downloading wallet software, officials with GetMonero.org said on Tuesday.</p>
 <p>The supply-chain attack came to light on Monday when a site user reported that the <a href="https://github.com/monero-project/monero/issues/6151">cryptographic hash for a command-line interface wallet downloaded from the site didn't match the hash listed on the page</a>. Over the next several hours, users discovered that the miss-matching hash wasn't the result of an error. Instead, it was an attack designed to infect GetMonero users with malware. Site officials later confirmed that finding.</p>
 <p>"It's strongly recommended to anyone who downloaded the CLI wallet from this website between Monday 18th 2:30 AM UTC and 4:30 PM UTC, to check the hashes of their binaries," GetMonero officials <a href="https://web.getmonero.org/2019/11/19/warning-compromised-binaries.html">wrote</a>. "If they don't match the official ones, delete the files and download them again. <strong>Do not run the compromised binaries for any reason.</strong>"</p>
 <p>An <a href="https://bartblaze.blogspot.com/2019/11/monero-project-compromised.html">analysis of the malicious Linux binary</a> found that it added a few new functions to the legitimate one. One of the functions was called after a user opened or created a new wallet. It sent the wallet seed—which is the cryptographic secret used to access wallet funds—to a server located at node.hashmonero[.]com. The malware then sent wallet funds to the servers located at node.xmrsupport[.]co and 45.9.148[.]65.</p>
@@ -774,7 +1178,7 @@ Apple AirPods Pro</h2>
 
 <p>It seems like Google is working hard to update and upstream the Linux kernel that sits at the heart of every Android phone. The company was a big participant in this year's <a href="https://www.linuxplumbersconf.org/">Linux Plumbers Conference</a>, a yearly meeting of the top Linux developers, and Google <a href="https://www.youtube.com/watch?v=f2C-gA8jEyY">spent a lot of time</a> talking about getting Android to work with a generic Linux kernel instead of the highly customized version it uses now. It even showed an Android phone running a mainline Linux kernel.</p>
 <p>But first, some background on Android's current kernel mess.Currently, three major forks happen in between the "mainline" Linux kernel and a shipping Android device (note that "mainline" here has no relation to Google's own "<a href="https://arstechnica.com/gadgets/2019/09/android-10-the-ars-technica-review/#h8">Project Mainline</a>"). First, Google takes the LTS (Long Term Support) Linux kernel and turns it into the "Android Common kernel"—the Linux kernel with all the Android OS-specific patches applied. Android Common is shipped to the SoC vendor (usually Qualcomm) where it gets its first round of hardware-specific additions, first focusing on a particular model of SoC. This "SoC Kernel" then gets sent to a device manufacturer for even more hardware-specific code that supports every other piece of hardware, like the display, camera, speakers, usb ports, and any extra hardware. This is the "Device Kernel," and it's what actually ships on a device.</p>
-<p>This is an extremely long journey that results in every device shipping millions of lines of out-of-tree kernel code. Every shipping device kernel is different and device specific—basically no device kernel from one phone will work on another phone. The mainline kernel version for a device is locked in at the beginning of an SoC's initial development, so it's typical for a brand-new device to ship with a Linux kernel that is two years old. Even Google's latest <a href="https://arstechnica.com/gadgets/2019/11/google-pixel-4-review-overpriced-uncompetitive-and-out-of-touch/">and, uh, greatest device</a>, the Pixel 4, shipped in October 2019 with Linux kernel 4.14, an LTS release from November 2017. It will be stuck on kernel 4.14 forever, too. Android devices do not get kernel updates, probably thanks to the incredible amount of work needed to produce just a single device kernel and the chain of companies that would need to cooperate to do it. Thanks to kernel updates never happening, this means every new release of Android usually has to support the last three years of LTS kernel releases (the minimum for Android 10 is 4.9, a 2016 release). Google's commitments to support older versions of Android with security patches means the company is still supporting kernel 3.18, which is five years old now. Google's band-aid solution for this so far has been to team up with the Linux community and support mainline Linux LTS releases for longer, and they're now up to <a href="https://arstechnica.com/gadgets/2017/09/android-users-rejoice-linux-kernel-lts-releases-are-now-good-for-6-years/">six years of support</a>.</p>
+<p>This is an extremely long journey that results in every device shipping millions of lines of out-of-tree kernel code. Every shipping device kernel is different and device specific—basically no device kernel from one phone will work on another phone. The mainline kernel version for a device is locked in at the beginning of an SoC's initial development, so it's typical for a brand-new device to ship with a Linux kernel that is two years old. Even Google's latest <a href="https://arstechnica.com/gadgets/2019/11/google-pixel-4-review-overpriced-uncompetitive-and-out-of-touch/">and, uh, greatest device</a>, the Pixel 4, shipped in October 2019 with Linux kernel 4.14, an LTS release from November 2017. It will be stuck on kernel 4.14 forever, too. Android devices usually do not get kernel updates, probably thanks to the incredible amount of work needed to produce just a single device kernel and the chain of companies that would need to cooperate to do it. Thanks to kernel updates never happening, this means every new release of Android usually has to support the last three years of LTS kernel releases (the minimum for Android 10 is 4.9, a 2016 release). Google's commitments to support older versions of Android with security patches means the company is still supporting kernel 3.18, which is five years old now. Google's band-aid solution for this so far has been to team up with the Linux community and support mainline Linux LTS releases for longer, and they're now up to <a href="https://arstechnica.com/gadgets/2017/09/android-users-rejoice-linux-kernel-lts-releases-are-now-good-for-6-years/">six years of support</a>.</p>
 <p>Last year, at Linux Plumbers Conference 2018, <a href="https://lwn.net/Articles/771974/">Google announced</a> its initial investigation into bringing the Android kernel closer to mainline Linux. This year it shared a bit more detail on its progress so far, but it's definitely still a work in progress. "Today, we don't know what it takes to be added to the kernel to run on a [specific] Android device," Android Kernel Team lead Sandeep Patil told the group at LPC 2019. "We know what it takes to run <em>Android</em> but not necessarily on any given hardware. So our goal is to basically find all of that out, then upstream it and try to be as close to mainline as possible."</p>
 <div class="image shortcode-img center full"><img alt='Google says that &quot;compared to [Linux] LTS (4.14.0), the Android common kernel has 355 changes, 32,266 insertions, and 1,546 deletions (as of February 2018).&quot; Progress is being made here every year, but keep in mind there are still two more forks after this.'  src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/kernel_lts_diff.png" alt='Google says that &quot;compared to [Linux] LTS (4.14.0), the Android common kernel has 355 changes, 32,266 insertions, and 1,546 deletions (as of February 2018).&quot; Progress is being made here every year, but keep in mind there are still two more forks after this.' ><p class="caption" style="font-size:0.8em">Google says that "compared to [Linux] LTS (4.14.0), the Android common kernel has 355 changes, 32,266 insertions, and 1,546 deletions (as of February 2018)." Progress is being made here every year, but keep in mind there are still two more forks after this. (credit: <a rel="nofollow" class="caption-link" href="https://source.android.com/devices/architecture/kernel/android-common">Google </a>)</p></div>
 <p>While there is still work to be done for getting the wider Android ecosystem and myriad device configurations on board, for specific models of device, things seem to be progressing well. Tom Gall, the director of the Linaro Consumer Group, showed off a Xiaomi Poco F1 <em>actually running</em> the mainline Linux kernel under the usual Android OS. Gall told the audience, "There are major, major props to be given to the Google Kernel Team in particular for getting their code upstream so that we can boot devices with a mainline kernel."</p>
@@ -986,515 +1390,6 @@ Apple AirPods Pro</h2>
 <p>To ward off the growing threat of credential stuffing attacks, users of both sites should also change passwords for any other sites that used the compromised credentials. Users should also be on the alert for spear phishing and other forms of attack that make use of their personal information.</p>
 
 <p><a href="https://arstechnica.com/?p=1604305&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>“Where the Wi-Fi sucks” is where a new wireless protocol does its magic</title>
-		<link>https://arstechnica.com/?p=1604007</link>
-		<pubDate>Tue, 19 Nov 2019 21:03:51 +0000</pubDate>
-		<dc:creator><![CDATA[Jim Salter]]></dc:creator>
-				<category><![CDATA[Tech]]></category>
-		<category><![CDATA[WiFi]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1604007</guid>
-		<description><![CDATA[ONPC won't help you browse the Internet, but it's a good way to monitor devices.]]></description>
-				<content:encoded><![CDATA[
-<figure class="intro-image intro-left">
-  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/lundrigan-800x535.jpeg" alt="A man operates an elaborate computer interface."/>
-      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/lundrigan.jpeg" class="enlarge-link" data-height="562" data-width="840">Enlarge</a> <span class="sep">/</span> BYU assistant professor of computer engineering Phil Lundrigan is looking at an ONPC heartbeat on an RF signal analyzer. (credit: <a rel="nofollow" class="caption-link" href="https://www.byu.edu/">Brigham Young University</a>)</p>  </figure>
-
-
-
-
-
-
-<div><a name='page-1'></a></div>
-<p>Researchers at Brigham Young University have created a new RF protocol that runs on top of existing consumer Wi-Fi at significantly greater range. But before you get too excited, the protocol's bandwidth is extremely low—so much so that it makes <a href="https://arstechnica.com/gadgets/2019/10/lostik-usb-lora-radios/">LoRa</a> look like an <a href="https://en.wikipedia.org/wiki/Optical_Carrier_transmission_rates#OC-24">OC-24</a>. The protocol, called <a href="https://dl.acm.org/citation.cfm?id=3345436">ONPC</a>—short for On-Off Noise Power Communication—currently only specifies a single bit per second.</p>
-<p>Although ONPC only conveys one bit per second of data, its range is 60m or more beyond Wi-Fi—and it runs in software alone, on unmodified Wi-Fi hardware. An ONPC device can connect to standard Wi-Fi when range permits, fall back to ONPC mode if the connection drops, and then re-connect to the Wi-Fi when it becomes available again.</p>
-<h2>Disconnected versus unpowered</h2>
-<p>BYU Associate Professor of Computer Engineering Phil Lundrigan told Ars that ONPC was inspired by problems in an otherwise unrelated health care research project he'd worked on. The project required placing IoT sensors in the homes of study participants so that BYU's control over the environment was minimal to nonexistent. The project also required the sensors to report back to the researchers over the Internet, using whatever Wi-Fi the study participants had in place.</p>
-<p>Unsurprisingly, participants' home Wi-Fi tended to have problems. The sensors didn't need much of a connection, since they only needed to report small amounts of data over a time series—so placing them at the dubious edges of coverage was basically OK. The problem the researchers ran into was that at the edge of coverage, their sensors would frequently drop off the Wi-Fi for hours or even days at a time.</p>
-<p>Dropping off the Wi-Fi wasn't necessarily a big problem. The sensors were perfectly capable of continuing to store data locally, and they would send all the collected data in a batch whenever they managed to reconnect to the Wi-Fi again. But if the sensor was truly powered off or broken—and thus not collecting data—this posed real problems for the study.</p>
-<p>This left researchers balancing the need to make sure sensors worked against the likelihood of annoying participants badly enough that they might drop out of the study. In one memorable case, a basket of laundry in front of a sensor was all that kept it from transmitting its data to the researchers. When the laundry basket was moved, the device almost immediately reconnected to the house's Wi-Fi and began transmitting its stored data.</p>
-<h2>Shave and a haircut, two bits</h2>
-<p>The desire to know whether their sensors were <em>working</em>, even if they weren't connected, led the researchers to the idea of ONPC. 802.11 Wi-Fi requires a bi-directional signal strong and clean enough to establish a 1Mbps PHY rate, and if such a signal can't be established, the client device and Wi-Fi infrastructure are effectively invisible to one another.</p>
-<p>Although a Wi-Fi AP (Access Point) can't actually receive <a href="https://en.wikipedia.org/wiki/802.11_Frame_Types">frames</a> sent by a STA (Station, or Wi-Fi client device) outside its range, it's still possible for it to detect them by looking for changes in the RF noise floor. When a STA outside the AP's range transmits a frame, the noise floor increases. When the STA stops transmitting, the noise floor decreases.</p>
-      <ul class="gallery shortcode-gallery gallery-wide">
-          <li>
-        <div class="gallery-item-content">  
-        <div class="gallery-image"><img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/ONPC-overview.png" alt=""></div>
-        <p>
-          This is an overview of an ONPC-capable Wi-Fi network. Whenever possible, the devices just use normal Wi-Fi. When the network isn't available, they transmit ONPC frames instead.                      [credit:
-                        <a href="https://www.byu.edu/">Brigham Young University</a>
-                        ]
-                  </p>
-        </div>
-      </li>
-      </ul>
-  
-
-<p>ONPC isn't looking for data inside Wi-Fi frames at all—it deduces its data from the presence or absence of the frames themselves, much like plugging and unplugging a device into a switch. ONPC also looks for Morse Code in the pattern the link-light blinks in.</p>
-<p>A Wi-Fi AP configured as an ONPC receiver has pre-configured and shared pseudo-random patterns which associate it with STAs configured as ONPC transmitters. When the AP detects a matching pattern in the RF noise floor—like Roger Rabbit hearing a famous ditty <a href="https://youtu.be/xWdCQqAJxS0?t=70">knocked</a> on the wall of his hideout—it knows it's receiving a communication from one of its ONPC partners.</p>
-<p>In the BYU researcher's testing, ONPC transmissions had minimal effect on the Wi-Fi network they rode. Test laptops near the edge of the Wi-Fi network saw no distinguishable drop in speed, as the lost-frame overhead was greater than the impact of the ONPC transmitter. Test laptops very near the AP, with near-flawless signal, might see throughput drop by 20% due to CSMA interruptions caused by ONPC transmission.</p>
-<p>The 20% decrease BYU measured is as compared to no transmission at all—not compared to a Wi-Fi device connected to the same AP and moving data at extreme range. It's not unreasonable to suspect that the ONPC transmission still consumes no more airtime (and therefore impacts performance no worse than) an actual Wi-Fi connection would have.</p>
-      <ul class="gallery shortcode-gallery gallery-wide">
-          <li>
-        <div class="gallery-item-content">  
-        <div class="gallery-image"><img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/onpc-locations.png" alt=""></div>
-        <p>
-          Even the closest of these ONPC test locations is well over a football field away.                      [credit:
-                        <a href="https://www.byu.edu/">Brigham Young University</a>
-                        ]
-                  </p>
-        </div>
-      </li>
-      </ul>
-  
-
-<h2>Stayin’ Alive</h2>
-<p>Since ONPC is designed to supplement standard 802.11 Wi-Fi, not replace it, there's one more piece to the puzzle—a controller that decides when to fall back from Wi-Fi to ONPC. The BYU team named that controller "Stayin' Alive."</p>
-<p>When an ONPC-capable STA gets disconnected from the Wi-Fi network, it begins transmitting its ONPC identifying symbol. Similarly, when a controller realizes that it hasn't received data from that STA for a longer than normal interval, it turns on the ONPC receiver functionality and looks for that missing device's symbol on the noise floor. If the missing device's symbol is present, the controller knows the sensor is OK; if the symbol is missing, the controller can set an alarm condition to notify a human to investigate.</p>
-<h2>Why ONPC?</h2>
-<p>Numerous alternatives are competing for low-rate, long-range RF data transmission, including but not limited to <a href="https://arstechnica.com/gadgets/2019/10/lostik-usb-lora-radios/">LoRa</a>, cellular broadband, <a href="https://www.wi-fi.org/discover-wi-fi/wi-fi-halow">HaLow</a>, and <a href="https://en.wikipedia.org/wiki/IEEE_802.11af">White-Fi</a>. However, these protocols achieve their long range in large part by operating at lower frequencies than consumer Wi-Fi, and they require an entirely separate infrastructure to operate.</p>
-<p>ONPC allows for much greater economy through the use of existing, widely mass-marketed consumer Wi-Fi gear. Ars spent $46 apiece on a pair of <a rel="nofollow" href="http://www.amazon.com/dp/B07NL2Y6LL/?tag=arstech20-20">LoStik</a> LoRa radios; the ONPC project used <a rel="nofollow" href="http://www.amazon.com/dp/B076F52NQD/?tag=arstech20-20">Wemos D1 mini</a> WLAN boards, which cost about $3 apiece.</p>
-
-<p><a href="https://arstechnica.com/?p=1604007&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>Company claims breakthrough in concentrating the Sun’s rays</title>
-		<link>https://arstechnica.com/?p=1604265</link>
-		<pubDate>Tue, 19 Nov 2019 20:00:22 +0000</pubDate>
-		<dc:creator><![CDATA[John Timmer]]></dc:creator>
-				<category><![CDATA[Science]]></category>
-		<category><![CDATA[Energy]]></category>
-		<category><![CDATA[heliogen]]></category>
-		<category><![CDATA[renewable energy]]></category>
-		<category><![CDATA[solar power]]></category>
-		<category><![CDATA[Solar thermal]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1604265</guid>
-		<description><![CDATA[Company's tech could allow sunlight to power industrial processes.]]></description>
-				<content:encoded><![CDATA[
-<figure class="intro-image intro-left">
-  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/Heliogen_Lancaster_Facility_1_compressed-1080x675-800x500.jpg" alt="Image of a solar thermal tower and its associated mirrors."/>
-      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/Heliogen_Lancaster_Facility_1_compressed-1080x675.jpg" class="enlarge-link" data-height="675" data-width="1080">Enlarge</a> <span class="sep">/</span> Heliogen's demonstration facility. (credit: <a rel="nofollow" class="caption-link" href="https://heliogen.com/press-release-heliogen-achieves-breakthrough-temperatures-from-concentrated-sunlight-for-industrial-processes-with-momentum-toward-commercial-hydrogen-fuel-creation/">Heliogen</a>)</p>  </figure>
-
-
-
-
-
-
-<div><a name='page-1'></a></div>
-<p>The explosion of solar energy capacity has been driven almost entirely by the plunging cost of photovoltaic hardware. That has made the situation difficult for an alternate technology known as solar thermal. Thermal uses mirrors to focus incoming sunlight onto a location that reaches high temperatures, which can then be used to generate electricity by driving a steam turbine. Since heat is relatively easy to store, these plants can continue to produce power long after the Sun has set. In some cases, these plants are able to <a href="https://arstechnica.com/science/2017/03/plans-for-a-24-hour-solar-thermal-plant-earn-environmental-approval-in-chile/">operate around the clock</a>.</p>
-<p>Today, a company backed by tech investors is announcing that it has <a href="https://www.businesswire.com/news/home/20191119005374/en/">developed an enhanced form of solar thermal</a> generation that can push the temperatures at the point of focus much higher. That's significant, because the promised temperatures reach heat needed for industrial processes like concrete production, metallurgy, and hydrogen production. While there are clear advantages when it comes to generating electricity, the key to this technology may be how readily it can be integrated into these industrial processes.</p>
-<h2>A hot startup</h2>
-<p>The company in question is a <a href="https://heliogen.com">startup called Heliogen</a>, which has received backing from several Silicon Valley investors and Bill Gates. But the technology Heliogen has developed does have a rather heavy tech component.</p>
-<p>The tech comes in the form of the control of the mirrors involved. These have to track the Sun's motion and keep its incoming rays focused on a target, often held on a tower. That target contains some material, typically either molten salt or a fluid that transfers heat readily, in order to heat it. Typically, that fluid is heated to about 600°C, which is more than sufficient to generate electricity. But it falls well short of the 1,000°C-plus reached by the new system.</p>
-<p>Heliogen's announcement is that its system has now cleared 1,000°C, and the company expects its system can go even higher. Heliogen claims to do so via finer mirror control. While details of Heliogen's system are sparse, it appears to use cameras to register the pointing of the mirrors and constantly adjust their location to keep the sunlight highly focused. This would be able to produce higher temperatures if either of the following is true: the system can focus more sunlight, or it can focus the same amount of sunlight on a smaller area than competing systems.</p>
-<p>What are the advantages of higher temperatures? There are some for electrical generation. One of them is that it's simpler to generate electricity from a large temperature difference than it is from a smaller one. A high temperature would also allow the same amount of heat to be stored in a smaller volume, which could also simplify solar thermal systems and would cut down on the total materials needed for the system. So, there's some potential to lower the costs of solar thermal and make them somewhat more competitive with photovoltaic hardware.</p>
-<h2>Industrial uses</h2>
-<p>But Heliogen's key difference is that the temperature brings it into play for direct involvement of industrial processes. The company's press focuses on three industrial processes: production of steel, cement, and hydrogen.</p>
-<p>The two former production processes require high temperatures; while these can be met by electrical heating elements, they're often reached by the direct burning of fossil fuels. Obviously, industrial facilities need to run as frequently as possible to recoup the large investments involved in building them, and a Heliogen system is not going to store enough heat for round-the-clock operation. The company realizes that but calculates that its system could prevent over half the cost of fossil fuels, as well as the associated carbon emissions.</p>
-<p>An additional option is to use this temperature for hydrogen production. This can be done at environmental temperatures by the electricity-powered splitting of water. But the process is not especially efficient. Sufficiently high solar thermal temperatures can be used to directly split water, releasing hydrogen and oxygen, although those processes are <a href="https://www.energy.gov/eere/fuelcells/hydrogen-production-thermochemical-water-splitting">currently in the research stage</a>. But it can also be used for the <a href="https://pubs.rsc.org/en/content/articlelanding/2019/se/c8se00565f#!divAbstract">decomposition of biomass</a>, releasing a syngas in the process. The hydrogen produced through these processes could either be used directly or converted into liquid fossil fuel replacement.</p>
-<p>Solar thermal has some distinct advantages for electricity production, notably a built-in storage capability, and its relative lack of success makes shifting to full renewable energy more difficult. Having thermal produce transportation-ready fuels would allow it to tick off another item in our list of needs for getting to a fully renewable energy economy. So, even if Heliogen isn't ultimately successful as a company, it could at least provide a useful reconsideration of the technology it relies on.</p>
-
-<p><a href="https://arstechnica.com/?p=1604265&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>Senators ask if Facebook really lets users opt out of location tracking</title>
-		<link>https://arstechnica.com/?p=1603987</link>
-		<pubDate>Tue, 19 Nov 2019 19:41:29 +0000</pubDate>
-		<dc:creator><![CDATA[Kate Cox]]></dc:creator>
-				<category><![CDATA[Policy]]></category>
-		<category><![CDATA[congress]]></category>
-		<category><![CDATA[Facebook]]></category>
-		<category><![CDATA[privacy]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1603987</guid>
-		<description><![CDATA[Facebook says you can turn off location tracking; two senators have their doubts]]></description>
-				<content:encoded><![CDATA[
-<figure class="intro-image intro-left">
-  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/09/GettyImages-1173369843-800x521.jpg" alt="The Facebook logo is displayed on a TV screen on September 9, 2019 in Paris, France."/>
-      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/09/GettyImages-1173369843.jpg" class="enlarge-link" data-height="3321" data-width="5104">Enlarge</a> <span class="sep">/</span> The Facebook logo is displayed on a TV screen on September 9, 2019 in Paris, France. (credit: <a rel="nofollow" class="caption-link" href="https://www.gettyimages.com/detail/news-photo/in-this-photo-illustration-the-facebook-logo-is-displayed-news-photo/1173369843">Chesnot | Getty</a>)</p>  </figure>
-
-
-
-
-
-
-<div><a name='page-1'></a></div>
-<p>Back in September, Facebook updated its location privacy settings for users. "Facebook is better with location," the company stressed, but users were free to turn off location tracking, and the company would be happy to tell them how. That setting, however, comes with an enormous loophole, and two US senators want the company to explain itself.</p>
-<p>Senators Chris Coons (D-Del.) and Josh Hawley (R-Mo.) today sent a letter (<a href="https://www.hawley.senate.gov/sites/default/files/2019-11/Hawley-Coons-Letter-Facebook-WiFi-Location-Data-Track.pdf">PDF</a>) to Facebook asking the company how, exactly, it tracks users' locations—even when location access and location history are disabled.</p>
-<p>"We appreciate Facebook's attempt to proactively inform users about their privacy options," the senators wrote. "However, we are concerned that Facebook may not in fact be offering users the level of control that the company suggests these settings provide."</p>
-<p>That choice of language is diplomatic indeed, given how often in the past Facebook has been <a href="https://www.wired.com/story/facebook-data-sharing-privacy-investigation/">accused</a> of <a href="https://fortune.com/2018/06/27/google-facebook-dark-patterns-privacy/">misleading users</a> when it comes to users' privacy, drawing attention from both <a href="https://arstechnica.com/tech-policy/2019/07/ftc-fines-facebook-5-billion-imposes-new-privacy-oversight/">US</a> and <a href="https://www.cnbc.com/2019/10/07/facebook-twitter-investigations-in-ireland-reach-conclusion.html">EU</a> regulators. </p>
-<p>"If a user has decided to limit Facebook's access to his or her location, Facebook should respect these privacy choices," Sens. Coons and Hawley stress, expressing concerns that Facebook does not respect those choices at all.</p>
-<h2>What Facebook does</h2>
-<p>Facebook in September published a <a href="https://about.fb.com/news/2019/09/understanding-updates-to-your-devices-location-settings/">blog post</a> clarifying the way it gathers user location data from its mobile apps. Fall updates in both Android (to Android 10) and iOS (to iOS 13) spurred the changes, Facebook said at the time, with both operating systems allowing for more granular location sharing control.</p>
-<p>For Android users, Facebook said it will "continue to respect your most restrictive settings choice." The social media giant also explained, "if your device location setting is set to 'all of the time' but your Facebook background location setting is off, we won't collect your precise location information when you're not using the Facebook app."</p>
-<p>Facebook also explained the changes for iOS users. In addition to the three existing location settings—always, never, or only when in use—iOS users gained an "allow once" option for location data. That's in addition to additional notifications about when an app is using your precise location, as well as how many times the app accesses that information.</p>
-<h2>What Facebook left out</h2>
-<p>In one line near the end of the blog post, Facebook writes, "We may still understand your location using things like check-ins, events, and information about your Internet connection." That's the element Sens. Coons and Hawley zero in on.</p>
-<p>GPS is great for super-precise pinpointing, but it's not wholly necessary for tracking your movements in a more general sense. You can get a less specific but still pretty accurate read on a device's location by <a href="https://arstechnica.com/information-technology/2014/11/where-have-you-been-your-smartphones-wi-fi-is-telling-everyone/">examining information about the Wi-Fi network</a> or cellular data network it's connected to. Facebook is <a href="https://www.nytimes.com/interactive/2018/12/10/business/location-data-privacy-apps.html">far from the only app</a> to take advantage of this kind of data, but its sheer size and history of <a href="https://arstechnica.com/tech-policy/2019/07/ftc-fines-facebook-5-billion-imposes-new-privacy-oversight/">repeated bad behavior</a> have landed it in Congress's crosshairs. </p>
-<p>Disabling Facebook's granular location settings has very little effect on what ads are targeted to you based on your location, as researcher Aleksandra Korolova <a href="https://medium.com/@korolova/facebooks-illusion-of-control-over-location-related-ad-targeting-de7f865aee78">explained in 2018</a>. Data relating to IP address, Wi-Fi, and Bluetooth connections are enough for the platform to target you for location-based ads.</p>
-<p>"Given that most mobile devices are connected to the Internet nearly all the time, whether through a cellular network or a Wi-Fi connection, this practice would allow Facebook to collect user location data almost constantly, irrespective of the user's privacy preferences," the senators note. They add that users who turn location services off "could reasonably be under the misimpression that their selection limits all of Facebook's efforts to extract location information."</p>
-<p>"How frequently does Facebook collect location data based on information about a user's Internet connection when a user has turned off or limited location services?" the senators ask. They also seek information about how "precise" location information differs from all that other location information. And, importantly, they include: "Is it possible for a user to configure his or her privacy settings such that Facebook never monetizes any location information about that user?"</p>
-<p>Sens. Coons and Hawley give Facebook until December 12 to respond to the request for information.</p>
-
-<p><a href="https://arstechnica.com/?p=1603987&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>Dealmaster: The OnePlus 7 Pro for $549 may be the smartphone deal of the year</title>
-		<link>https://arstechnica.com/?p=1603859</link>
-		<pubDate>Tue, 19 Nov 2019 18:45:49 +0000</pubDate>
-		<dc:creator><![CDATA[Ars Staff]]></dc:creator>
-				<category><![CDATA[Staff]]></category>
-		<category><![CDATA[dealmaster]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1603859</guid>
-		<description><![CDATA[For 256GB of storage, too. Plus tons more early Black Friday deals. ]]></description>
-				<content:encoded><![CDATA[
-<figure class="intro-image intro-left">
-  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/dealmaster111919-800x444.png" alt="Dealmaster: The OnePlus 7 Pro for $549 may be the smartphone deal of the year"/>
-      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/dealmaster111919.png" class="enlarge-link" data-height="1200" data-width="2160">Enlarge</a> (credit: Ars Technica)</p>  </figure>
-
-
-
-
-
-
-<div><a name='page-1'></a></div>
-<p>Greetings, Arsians! The Dealmaster is back with another round of deals to share. Today's deal is headlined by a <a href="https://www.oneplus.com/oneplus-7pro" target="_blank" rel="noopener">$150 discount on the OnePlus 7 Pro</a>, a device we called the "<a href="https://arstechnica.com/gadgets/2019/05/oneplus-7-pro-review-the-fastest-best-designed-best-value-android-phone/" target="_blank" rel="noopener">fastest, best-designed, best-value Android phone</a>" on the market earlier this year.</p>
-<p>The deal applies to unlocked models—which <a href="https://www.verizonwireless.com/unlocked-smartphones/oneplus-7-pro-unlocked/" target="_blank" rel="noopener">work on Verizon</a> and GSM networks like AT&amp;T and T-Mobile—and brings the phone down to $549. OnePlus says this is their official Black Friday discount for the holiday season, and our own Android guru <a href="https://arstechnica.com/author/ronamadeo/" target="_blank" rel="noopener">Ron Amadeo</a> told the Dealmaster it will likely go down as the "smartphone deal of the year."</p>
-<p>You can read Ron's review from this past May for the full details, but the short take is that the OnePlus 7 Pro was already a good value at its standard going rate of $699. Despite being a large phone, it's been efficiently designed, with no notches or overly large borders blocking the the 6.67-inch 3120x1440 display. The in-display fingerprint reader and pop-up selfie camera only add to that efficiency, and both work well. That display supports a 90Hz refresh rate, too, which makes operating the device feel noticeably smoother across the board. The Snapdragon 855 processor, 8GB of RAM, and UFS 3.0 storage keep general performance as snappy as a top-of-the-line phone should. The triple-camera system on the back isn't the absolute best on the market, but it's still a great value for the price. And the "Oxygen OS" software remains a uniquely clean and useful take on Android.</p>
-<p>OnePlus does make a few trade-offs to reach its relatively low price: there's no microSD slot, headphone jack, wireless charging, or always-on display support, and you won't get security updates as quickly as something like a Google Pixel phone. It's also worth noting that OnePlus recently launched a <a href="https://arstechnica.com/gadgets/2019/10/oneplus-7t-review-not-very-new-but-still-one-of-the-best-phones-you-can-buy/" target="_blank" rel="noopener">new phone called the OnePlus 7T</a>, which adds a marginally faster chipset and flatter display than the 7 Pro's slightly curved panel but includes a notch and a more pronounced camera module on the back. The 7T typically starts at $599 outright, but with the deal here, there's little reason to get it over the 7 Pro, which remains a genuine flagship phone at a mid-tier price.</p>
-<p>If $549 is still too much, OnePlus is also offering last year's <a href="https://www.oneplus.com/oneplus-6t?from=6t" target="_blank" rel="noopener">OnePlus 6T for $449</a>, which is another $150 discount. Either way, OnePlus says these offers will last through December 2.</p>
-<p>If you have no need for a new phone, though, we also have plenty more early Black Friday deals in today's roundup, including a ton of discounts on Anker charging gear, a Nintendo Switch bundle, holiday pricing for Sony's DualShock 4 controller, and much more. Have a look at the full rundown below.</p>
-<div class="ars-component-layout ars-newsletter-callbox full" data-list-id="248915">
-    <div class="ars-newsletter-callbox-container">
-        <div class="ars-newsletter-callbox-header">    
-            <h5 class="ars-newsletter-callbox-title">
-                Dealmaster: An Ars newsletter
-            </h5>
-            <span class="ars-dotted-pattern"></span>
-        </div>
-        <div class="ars-newsletter-callbox-content">    
-            <div class="ars-newsletter-callbox-description">The Dealmaster is launching its very own newsletter! Sign up to receive a shorter, tightly curated list of the very best tech deals on the Web—no nonsense, direct to your inbox, and often before they make it to the Ars homepage.</div>
-        </div>
-        <div class="ars-newsletter-callbox-button-container">
-            <a class="button button-orange ars-newsletter-callbox-button" href="https://arstechnica.com/newsletters?subscribe=248915">Sign Me Up!</a>  
-        </div>
-    </div>
-</div>
-
-<p><em>Note: Ars Technica may earn compensation for sales from links on this post through <a href="https://arstechnica.com/affiliate-link-policy/">affiliate programs</a>.</em></p>
-<h2>Top 10 deals of the day</h2>
-<ul>
-<li><a href="https://www.oneplus.com/oneplus-7pro" target="_blank" rel="noopener">OnePlus 7 Pro</a> (256GB) unlocked smartphone for <strong>$549</strong> at OnePlus (normally $699).</li>
-<li><a href="https://www.oneplus.com/oneplus-6t" target="_blank" rel="noopener">OnePlus 6T</a> (256GB) unlocked smartphone for <strong>$449</strong> at OnePlus (normally $549).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FSony-Playstation-4-DualShock-4-Wireless-Controller-Crystal%2F228382645&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Sony DualShock 4</a> (Crystal) controller for PlayStation 4 for <strong>$39.99</strong> at Walmart and <a href="https://amzn.to/37iFimP" target="_blank" rel="noopener">Amazon</a> (normally $46.99).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fco%2FNintendo-Switch-Console-with-Minecraft-Game%2F842043295&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Nintendo Switch</a> (latest model) + <em>Minecraft</em> (Switch) for <strong>$298.47</strong> at Walmart (normally $329.99).</li>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fapple-apple-watch-series-4-gps-cellular-40mm-stainless-steel-case-with-white-sport-band-stainless-steel%2F6139670.p%3FskuId%3D6139670&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Apple Watch Series 4</a> (40mm, GPS + Cellular) for <strong>$399</strong> at Best Buy (normally $649).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FFitbit-Versa-2-Smartwatch%2F172573076%3Fselected%3Dtrue&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Fitbit Versa 2</a> smartwatch for <strong>$149</strong> at Walmart, <a href="https://amzn.to/332oJZ3" target="_blank" rel="noopener">Amazon</a>, and <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Ffitbit-versa-2-smartwatch-40mm-aluminum-black-carbon-with-silicone-band%2F6364307.p%3FskuId%3D6364307&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Best Buy</a> (normally $199.95).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2Fecobee3-Lite-Smart-Thermostat-2-0-No-Hub-Required%2F264743623&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Ecobee3 Lite</a> (2nd gen) smart thermostat for <strong>$139</strong> at Walmart, <a href="https://amzn.to/2KAmm9u" target="_blank" rel="noopener">Amazon</a>, and <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fecobee-ecobee3-lite-smart-thermostat-black%2F5823200.p%3FskuId%3D5823200&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Best Buy</a> (normally $169).</li>
-<li><a href="https://amzn.to/2XthFDt" target="_blank" rel="noopener">Anker PowerCore 10000 PD Redux</a> portable battery - 18W USB-C PD for <strong>$31.99</strong> at Amazon (normally $45.99).</li>
-<li><a href="https://amzn.to/2D0bJZe" target="_blank" rel="noopener">Anker PowerLine</a> (3ft, 3-pack) USB-A to USB-C cable for <strong>$11.99</strong> at Amazon (normally $15.99).</li>
-<li><a href="https://amzn.to/2OhjRK6" target="_blank" rel="noopener">Apple AirPods Pro</a> true wireless noise-cancelling headphones for <strong>$234.98</strong> at Amazon (shipping in 1-4 weeks - normally $249).</li>
-</ul>
-<h2>Laptop and desktop PC deals</h2>
-<ul>
-<li><a href="https://www.microsoft.com/en-us/p/hp-envy-13-aq0011ms-laptop/93tjc4252km8/?activetab=pivot%3aoverviewtab" target="_blank" rel="noopener">HP Envy 13</a> laptop - Intel Core i5-8265U, 13.3-inch 1080p, 8GB RAM, 256GB SSD for <strong>$499</strong> at Microsoft (normally $849).</li>
-<li><a href="https://www.bhphotovideo.com/c/product/1488640-REG/msi_gl75_9sdk_007_gl75_i7_9750h_16gb_512gb.html" target="_blank" rel="noopener">MSI GL75</a> gaming laptop - Intel Core i7-9750H, 17.3-inch 1080p 144Hz, 16GB RAM, 512GB SSD, GeForce GTX 1660 Ti for <strong>$1,099</strong> at B&amp;H (normally $1,299).</li>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fdell-inspiron-2-in-1-13-3-4k-ultra-hd-touch-screen-laptop-intel-core-i7-16gb-memory-512gb-ssd-optane-black%2F6339272.p%3FskuId%3D6339272&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Dell Inspiron 13</a> laptop - Intel Core i7-8565U, 13.3-inch 3840x2160, 16GB RAM, 512GB SSD + Optane for <strong>$979.99 </strong>at Best Buy (normally $1,399.99).</li>
-<li><a href="http://www.tkqlhce.com/click-8984087-12578053?sid=dealmaster111919&amp;url=https%3A%2F%2Fdeals.dell.com%2Fen-us%2Fproductdetail%2F331q" target="_blank" rel="noopener">27-inch Dell UltraSharp U2717D</a> monitor - 1440p, IPS, 60Hz for <strong>$269.99</strong> at Dell (normally $399.99).</li>
-<li><a href="https://amzn.to/33HSHlZ" target="_blank" rel="noopener">24-inch Dell UltraSharp U2415</a> monitor - 1920x1200, IPS, 60Hz for <strong>$199.90</strong> at Amazon (normally $214.99).</li>
-</ul>
-<h2>Video game deals</h2>
-<ul>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FRed-Dead-Redemption-Game-of-the-Year-Edition-Rockstar-Games-Xbox-One-360-710425490071%2F17491140&amp;subid1=dealmaster111919" target="_blank" rel="noopener"><em>Red Dead Redemption: Game of the Year Edition</em></a> (XB1) for <strong>$8.99</strong> at Walmart (normally $14.99).</li>
-<li><em><a href="https://www.nintendo.com/games/detail/hellblade-senuas-sacrifice-switch/" target="_blank" rel="noopener">Hellblade: Senua's Sacrifice</a> </em>(Switch) for <strong>$14.99</strong> at Nintendo eShop (normally $29.99).</li>
-<li><em><a href="https://amzn.to/2CDvp58" target="_blank" rel="noopener">Final Fantasy XV Royal Edition</a> </em>(PS4) for <strong>$14.99</strong> at Amazon (normally $19.99).</li>
-<li>Pre-order: <em><a href="http://goto.walmart.com/c/1305166/565706/9383?subId1=dealmaster091719&amp;veh=aff&amp;sourceid=imp_000011112222333344&amp;u=https%3A%2F%2Fwww.walmart.com%2Fip%2FCyberpunk-2077-Warner-Brothers-PlayStation-4-883929689613%2F786104378" target="_blank" rel="noopener">Cyberpunk 2077</a></em> (PS4, <a href="http://goto.walmart.com/c/1305166/565706/9383?subId1=dealmaster091719&amp;veh=aff&amp;sourceid=imp_000011112222333344&amp;u=https%3A%2F%2Fwww.walmart.com%2Fip%2FCyberpunk-2077-Warner-Bros-Xbox-One-883929689620%2F973645137" target="_blank" rel="noopener">XB1</a>) for <strong>$49.94</strong> at Walmart and <a href="https://amzn.to/2LwLwXn" target="_blank" rel="noopener">Amazon</a> (normally $59.99).</li>
-</ul>
-<h2>Gaming deals</h2>
-<ul>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fco%2FNintendo-Switch-Console-with-Minecraft-Game%2F842043295&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Nintendo Switch</a> (latest model) + <em>Minecraft</em> (Switch) for <strong>$298.47</strong> at Walmart (normally $329.99).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FSony-Playstation-4-DualShock-4-Wireless-Controller-Crystal%2F228382645&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Sony DualShock 4</a> (Crystal) controller for PlayStation 4 for <strong>$39.99</strong> at Walmart and <a href="https://amzn.to/37iFimP" target="_blank" rel="noopener">Amazon</a> (normally $46.99).</li>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fmicrosoft-wireless-controller-for-xbox-one-and-windows-10-black%2F5621843.p%3FskuId%3D5621843&amp;subid1=dealmaster102219" target="_blank" rel="noopener">Microsoft Xbox Wireless Controller</a> for Xbox One and Windows 10 - compatible with iOS 13 for <strong>$39.99</strong> at Best Buy and <a href="https://amzn.to/32EdFSw" target="_blank" rel="noopener">Amazon</a> (normally $49.99).</li>
-<li>New users only: <a href="https://www.microsoft.com/en-us/p/xbox-game-pass-ultimate/CFQ7TTC0KHS0/?activetab=pivot%3aoverviewtab" target="_blank" rel="noopener">Xbox Game Pass Ultimate</a> 3-month membership for <strong>$1</strong> at Microsoft (normally $44.99).</li>
-<li><a href="https://www.ebay.com/itm/121345728193" target="_blank" rel="noopener">Sony PlayStation Plus</a> 12-month membership card for <strong>$39.99</strong> at eBay (normally $59.99).</li>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Finsignia-dock-kit-with-hdmi-and-usb-for-nintendo-switch-black%2F6065700.p%3FskuId%3D6065700&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Insignia Dock Kit</a> for Nintendo Switch - HDMI, USB 2.0 for <strong>$29.99</strong> at Best Buy (normally $49.99).</li>
-<li><a href="https://amzn.to/34a1Y73" target="_blank" rel="noopener">HyperX Cloud II</a> wired gaming headset for <strong>$69.99</strong> at Amazon (normally $89.99).</li>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Flogitech-g920-driving-force-racing-wheel-for-xbox-one-and-windows-black%2F4223402.p%3FskuId%3D4223402&amp;subid1=dealmaster110919" target="_blank" rel="noopener">Logitech G920 Driving Force</a> racing wheel controller for Xbox One and PC for <strong>$199.99</strong> at Best Buy (normally $219.99).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FLogitech-G203-Prodigy-Wired-Gaming-Mouse-Optical-6-Buttons%2F342327342&amp;subid1=dealmaster110519" target="_blank" rel="noopener">Logitech G203 Prodigy</a> wired RGB gaming mouse for <strong>$20.99</strong> at Walmart, <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Flogitech-g203-prodigy-wired-optical-gaming-mouse-with-rgb-lighting-black%2F5799700.p%3FskuId%3D5799700&amp;subid1=dealmaster110519" target="_blank" rel="noopener">Best Buy</a>, and <a href="https://amzn.to/33gIcWV" target="_blank" rel="noopener">Amazon</a> (normally $26.49).</li>
-<li><a href="https://amzn.to/36PuDjd" target="_blank" rel="noopener">Corsair K95 RGB Platinum</a> wired mechanical gaming keyboard - Cherry MX Speed for <strong>$129.99</strong> at Amazon and <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fcorsair-k95-rgb-platinum-mechanical-gaming-keyboard-cherry-mx-speed-rgb-led-backlit-black%2F5713210.p%3FskuId%3D5713210&amp;subid1=dealmaster110919" target="_blank" rel="noopener">Best Buy</a> (normally $164.99).</li>
-<li><em><a href="https://amzn.to/2QhtN9e" target="_blank" rel="noopener">Pandemic</a> </em>board game for <strong>$23.99</strong> at Amazon (normally $35.99).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2F7-Wonders-Strategy-Board-Game%2F30655387&amp;subid1=dealmaster102919" target="_blank" rel="noopener"><em>7 Wonders</em></a> board game for <strong>$29.92 </strong>at Walmart and <a href="https://amzn.to/31PwEs4" target="_blank" rel="noopener">Amazon</a> (normally $36.99).</li>
-</ul>
-<h2>TV and home entertainment deals</h2>
-<ul>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Famazon-fire-tv-stick-with-all-new-alexa-voice-remote-streaming-media-player-black%2F6321069.p%3FskuId%3D6321069&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Amazon Fire TV Stick</a> 1080p media streamer + <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Famazon-echo-dot-3rd-gen-smart-speaker-with-alexa-charcoal%2F6287974.p%3FskuId%3D6287974&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Amazon Echo Dot</a> (3rd gen) smart speaker + TP-Link Kasa Mini smart WiFi plug for <strong>$41.99</strong> at Best Buy (<strong>add both to cart</strong> - normally $88.99).</li>
-<li><a href="https://amzn.to/2Qczm91" target="_blank" rel="noopener">55-inch Vizio M558-G1 M-Series Quantum</a> (2019 model) 4K LED TV for <strong>$479.99</strong> at Amazon (normally $548).</li>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fvizio-65-class-m-series-quantum-led-smart-4k-uhd-2160p-tv-with-hdr%2F6345460.p%3FskuId%3D6345460&amp;subid1=dealmaster111419" target="_blank" rel="noopener">65-inch Vizio M658-G1 M-Series Quantum</a> (2019 model) 4K LED TV for <strong>$649.99</strong> at Best Buy (normally $748).</li>
-<li><a href="https://amzn.to/34ZnGKO" target="_blank" rel="noopener">Polk Audio Command Bar</a> smart soundbar for <strong>$199</strong> at Amazon (normally $239.99).</li>
-</ul>
-<h2>Electronics deals</h2>
-<ul>
-<li><a href="https://www.oneplus.com/oneplus-7pro" target="_blank" rel="noopener">OnePlus 7 Pro</a> (256GB) unlocked smartphone for <strong>$549</strong> at OnePlus (normally $699).</li>
-<li><a href="https://www.oneplus.com/oneplus-6t" target="_blank" rel="noopener">OnePlus 6T</a> (256GB) unlocked smartphone for <strong>$449</strong> at OnePlus (normally $549).</li>
-<li><a href="https://amzn.to/2OhjRK6" target="_blank" rel="noopener">Apple AirPods Pro</a> true wireless noise-cancelling headphones for <strong>$234.98</strong> at Amazon (shipping in 1-4 weeks - normally $249).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FFitbit-Versa-2-Smartwatch%2F172573076%3Fselected%3Dtrue&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Fitbit Versa 2</a> smartwatch for <strong>$149</strong> at Walmart, <a href="https://amzn.to/332oJZ3" target="_blank" rel="noopener">Amazon</a>, and <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Ffitbit-versa-2-smartwatch-40mm-aluminum-black-carbon-with-silicone-band%2F6364307.p%3FskuId%3D6364307&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Best Buy</a> (normally $199.95).</li>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fapple-apple-watch-series-4-gps-cellular-40mm-stainless-steel-case-with-white-sport-band-stainless-steel%2F6139670.p%3FskuId%3D6139670&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Apple Watch Series 4</a> (40mm, GPS + Cellular) for <strong>$399</strong> at Best Buy (normally $649).</li>
-<li><a href="https://amzn.to/2XAhPcw" target="_blank" rel="noopener">Apple Watch Series 4</a> (44mm) for <strong>$329</strong> at Amazon and <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fapple-apple-watch-series-4-gps-44mm-space-gray-aluminum-case-with-black-sport-band-space-gray-aluminum%2F5543300.p%3FskuId%3D5543300&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Best Buy</a> (normally $379).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2Fecobee3-Lite-Smart-Thermostat-2-0-No-Hub-Required%2F264743623&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Ecobee3 Lite</a> (2nd gen) smart thermostat for <strong>$139</strong> at Walmart, <a href="https://amzn.to/2KAmm9u" target="_blank" rel="noopener">Amazon</a>, and <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fecobee-ecobee3-lite-smart-thermostat-black%2F5823200.p%3FskuId%3D5823200&amp;subid1=dealmaster111919" target="_blank" rel="noopener">Best Buy</a> (normally $169).</li>
-<li><a href="https://amzn.to/2CWROKM" target="_blank" rel="noopener">Eufy Video Doorbell</a> - 2560x1920 for <strong>$107.99</strong> at Amazon (use code: <strong>D2EUFYSD</strong> - normally $159.99).</li>
-<li><a href="https://amzn.to/2O8SguG" target="_blank" rel="noopener">TP-Link RE220</a> AC750 Wi-Fi range extender for <strong>$21.99</strong> at Amazon (<strong>clip $8 coupon</strong><span class="postCouponContainer"><span class="code"><strong> </strong>- normally $29.99).</span></span></li>
-<li><a href="https://amzn.to/2KdTZxN" target="_blank" rel="noopener">Tribit XSound Go</a> portable Bluetooth speaker for <strong>$23.39</strong> at Amazon (<strong>clip $3 coupon </strong>and use code: <strong>KBPYCM7E </strong>- normally $32.99).</li>
-<li><a href="https://amzn.to/34ZkHBV" target="_blank" rel="noopener">FiiO μBTR</a> portable Bluetooth headphone adapter for <strong>$21.99</strong> at Amazon (normally $27.99).</li>
-<li><a href="https://amzn.to/34VO1ti" target="_blank" rel="noopener">Eufy RoboVac 30C</a> robot vacuum for <strong>$191.99</strong> at Amazon (<strong>clip $100 coupon</strong> - normally $299.99).</li>
-<li><a href="https://amzn.to/321a2oK" target="_blank" rel="noopener">Chamberlain MyQ Smart Garage Hub</a> smart garage door opener for <strong>$29.98</strong> at Amazon and <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fchamberlain-myq-smart-garage-hub-black%2F5900972.p%3FskuId%3D5900972&amp;subid1=dealmaster103119" target="_blank" rel="noopener">Best Buy</a> (normally $44.99).</li>
-</ul>
-<h2>Storage deals</h2>
-<ul>
-<li><a href="https://amzn.to/2XodvNm" target="_blank" rel="noopener">Samsung T5</a> (2TB) portable SSD for <strong>$247.99</strong> at Amazon (normally $284.99).</li>
-<li><a href="https://amzn.to/2Xvnuk6" target="_blank" rel="noopener">Samsung 860 EVO</a> (2TB) SATA III internal SSD for <strong>$229.99</strong> at Amazon (normally $299.99).</li>
-<li><a href="https://amzn.to/2KCaT9h" target="_blank" rel="noopener">Samsung 970 Evo Plus</a> (2TB) internal NVMe M.2 SSD for <strong>$329.99</strong> at Amazon (normally $479.99).</li>
-<li><a href="https://amzn.to/32XO0nk" target="_blank" rel="noopener">SanDisk Extreme</a> (1TB) microSDXC card - U3, V30 for <strong>$299.99</strong> at Amazon (normally $439.99).</li>
-<li><a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fwd-easystore-5tb-external-usb-3-0-portable-hard-drive-black%2F6356880.p%3FskuId%3D6356880&amp;subid1=dealmaster111919" target="_blank" rel="noopener">WD Easystore</a> (5TB) external portable hard drive for <strong>$89.99</strong> at Best Buy (normally $169.99).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FWD-My-Passport-4TB%2F692843877&amp;subid1=dealmaster102919" target="_blank" rel="noopener">WD My Passport</a> (4TB) portable external hard drive for <strong>$94</strong> at Walmart and <a href="https://amzn.to/34dn43E" target="_blank" rel="noopener">Amazon</a> (normally $109.99).</li>
-<li><a href="https://amzn.to/36xYgpm" target="_blank" rel="noopener">Samsung Evo Select</a> (512GB) microSDXC card for <strong>$77.99</strong> at Amazon (normally $89.99).</li>
-</ul>
-<h2>Accessories and miscellaneous deals</h2>
-<ul>
-<li>New users only: <a href="https://amzn.to/33Pssu3" target="_blank" rel="noopener">Amazon Music Unlimited</a> 4-month membership for <strong>$0.99</strong> at Amazon (normally $39.96).</li>
-<li><a href="https://amzn.to/33T5bHC" target="_blank" rel="noopener">Amazon Kindle Unlimited</a> 6-month membership for <strong>$29.97</strong> at Amazon (normally $59.94).</li>
-<li>New users only: <a href="https://amzn.to/2Cbn9cv" target="_blank" rel="noopener">Amazon Audible</a> 3-month membership for <strong>$6.95/month</strong> at Amazon (normally $14.95/month).</li>
-<li><a href="https://amzn.to/2XthFDt" target="_blank" rel="noopener">Anker PowerCore 10000 PD Redux</a> portable battery - 18W USB-C PD for <strong>$31.99</strong> at Amazon (normally $45.99).</li>
-<li><a href="https://amzn.to/2D0bJZe" target="_blank" rel="noopener">Anker PowerLine</a> (3ft, 3-pack) USB-A to USB-C cable for <strong>$11.99</strong> at Amazon (normally $15.99).</li>
-<li><a href="https://amzn.to/2XvoqVE" target="_blank" rel="noopener">Anker PowerLine II</a> (6ft) USB-C to Lightning cable - MFi-certified for <strong>$11.99</strong> at Amazon (use code: <strong>AKPL6FT2</strong> - normally $16.99).</li>
-<li><a href="https://amzn.to/2XtWD7L" target="_blank" rel="noopener">Anker PowerLine+ II</a> (3ft) braided nylon UB-C to Lightning cable - MFi-certified for <strong>$14.99</strong> at Amazon (normally $21.99).</li>
-<li><a href="https://amzn.to/2KCUKAF" target="_blank" rel="noopener">Anker PowerLine</a> (6ft, 2-pack) USB-A to Lightning cable - MFi-certified for <strong>$13.99</strong> at Amazon (normally $19.99).</li>
-<li><a href="https://amzn.to/2qir9FP" target="_blank" rel="noopener">Anker PowerWave Pad</a> wireless charger - 10W Galaxy phones, 7.5W iPhones for <strong>$8.49</strong> at Amazon (use code: <strong>SDSR45HP </strong>- normally $13.99).</li>
-<li><a href="https://amzn.to/2KC16A4" target="_blank" rel="noopener">Anker PowerWave Pad</a> wireless charger + Anker PowerWave Stand wireless charging stand - 10W Galaxy phones, 7.5W iPhones for <strong>$25.89</strong> at Amazon (normally $36.99).</li>
-<li><a href="https://amzn.to/2XrYcDn" target="_blank" rel="noopener">Anker PowerPort Cube</a> power strip - 3x USB-A, 18W USB, 3x AC for <strong>$19.99</strong> at Amazon (normally $28.99).</li>
-<li><a href="https://amzn.to/2r8Hmgz" target="_blank" rel="noopener">Anker Alkaline</a> AAA batteries (24-pack) for <strong>$6.99</strong> at Amazon (<strong>clip $3 coupon</strong> - normally $11.99).</li>
-<li><a href="https://amzn.to/32BRHP7" target="_blank" rel="noopener">Apple Smart Keyboard</a> for 10.5-inch iPad Pro, 10.2-inch iPad, and iPad Air (3rd gen) for <strong>$99.99</strong> at Amazon and <a href="https://bestbuy.7tiv.net/c/1305166/614286/10014?u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fapple-smart-keyboard-for-apple-ipad10-2-7th-generation-2019-10-5-ipad-pro-and-ipad-air%2F5822276.p%3FskuId%3D5822276&amp;subid1=dealmaster111219" target="_blank" rel="noopener">Best Buy</a> (normally $119.99).</li>
-<li><a href="https://amzn.to/2POBeV6" target="_blank" rel="noopener">Apple Leather Case</a> for iPhone 11 Pro for <strong>$30</strong> at Amazon (normally $49).</li>
-<li><a href="https://amzn.to/34yVMFo" target="_blank" rel="noopener">Apple Leather Case</a> for iPhone 11 Pro Max for <strong>$30.99</strong> at Amazon (normally $49).</li>
-<li><a href="https://amzn.to/2plGAfJ" target="_blank" rel="noopener">Brydge 10.5</a> Bluetooth keyboard for 10.5-inch iPad Pro and iPad Air (3rd gen) for <strong>$69.99</strong> at Amazon (normally $87).</li>
-<li><a href="https://goto.walmart.com/c/1305166/565706/9383?u=https%3A%2F%2Fwww.walmart.com%2Fip%2FLEGO-Star-Wars-20th-Anniversary-Edition-Snowspeeder-75259%2F511638569&amp;subid1=dealmaster111919" target="_blank" rel="noopener">LEGO Star Wars: The Empire Strikes Back Snowspeeder - 20th Anniversary Edition 75259</a> (309 pieces) building kit for <strong>$20.97</strong> at Walmart and <a href="https://amzn.to/37kkYRY" target="_blank" rel="noopener">Amazon</a> (normally $31.99).</li>
-</ul>
-
-<p><a href="https://arstechnica.com/?p=1603859&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>Esports gamers experience same stressors as pro athletes, study finds</title>
-		<link>https://arstechnica.com/?p=1603089</link>
-		<pubDate>Tue, 19 Nov 2019 17:56:45 +0000</pubDate>
-		<dc:creator><![CDATA[Jennifer Ouellette]]></dc:creator>
-				<category><![CDATA[Gaming & Culture]]></category>
-		<category><![CDATA[Science]]></category>
-		<category><![CDATA[esports]]></category>
-		<category><![CDATA[gaming]]></category>
-		<category><![CDATA[psychology]]></category>
-		<category><![CDATA[science]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1603089</guid>
-		<description><![CDATA[Researchers interviewed seven elite players of <em>Counter-Strike Global Offensive</em>.]]></description>
-				<content:encoded><![CDATA[
-<figure class="intro-image intro-left">
-  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esportsTOP-800x533.jpg" alt="A new study by researchers at the University of Chichester in England found that esports players who compete in major tournaments face the same level of stress as pro-athletes."/>
-      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esportsTOP.jpg" class="enlarge-link" data-height="800" data-width="1200">Enlarge</a> <span class="sep">/</span> A new study by researchers at the University of Chichester in England found that esports players who compete in major tournaments face the same level of stress as pro-athletes. (credit: ESL/University of Chichester)</p>  </figure>
-
-
-
-
-
-
-<div><a name='page-1'></a></div>
-<p>Professional athletes at the highest level regularly contend not only with fierce competition from opposing teams or individual athletes but also intense psychological pressures, ranging from performance anxiety, fear of failure, and tensions resulting from miscommunication, particularly in team sports. Professional gamers competing in major esports competitions experience the same kinds of stressors, according to <a href="https://www.researchgate.net/publication/336080393_Identifying_Stressors_and_Coping_Strategies_of_Elite_Esports_Competitors">a new psychology study</a> published in the International Journal of Gaming and Computer-Mediated Simulations.</p>
-<p>Sports psychology has long been an active field, but applying it to esports is a relatively new area of research, one that the University of Chichester in the UK is embracing with its newly launched BA (Hons) esports degree. The program focuses on the scientific study of the physical and psychological impact of esports, including nutrition, coaching, and strategy in an immersive gaming environment, according to co-author Philip Birch, who specializes in sports and exercise performance psychology.</p>
-<p>This is the <a href="https://www.chi.ac.uk/news/elite-esports-gamers-face-equivalent-psychological-pressure-pro-athletes-study-reveals">first study</a> of its kind, per Birch. The objective was to gain a clearer understanding not just of the stresses esports players face but also the coping strategies they use to deal with those stressors. Birch and his colleagues decided to focus on <em>Counter-Strike: Global Offensive</em> (<em>CSGO</em>) because it is similar to physical team sports like football or rugby. It's a multiplayer first-person shooter game that pits two teams against each other: Terrorists and Counter-Terrorists. The Terrorists try to plant bombs or take hostages, for example, while the Counter-Terrorists strive to defuse those bombs and rescue any hostages, as both sides try to eliminate the other. Players who do well are rewarded after each round with in-game currency; those who screw up can incur penalties.</p>
-<p>The winning team takes home the prize pool. Prize pools for <em>CSGO</em> competitions range from $75,000 to as much as $1 million. More than 380 million people watched esports competitions in 2018 alone, according to the authors, and it's becoming increasingly professionalized, including the formation of a trade union for players in 2015. As esports has grown into a nearly $1 billion enterprise, so has interest in exploring the psychological factors affecting game play.</p>
-<p>In fact, in 2016, one <em>CSGO</em> elite team, Astralis, actually hired a sports psychologist to help its members cope with the psychological pressures of competing in such a high-stakes environment. Astralis went on to win the ELEAGUE Major in January 2017, and members credited the team psychologist with improving their ability to cope with the competitive pressures. The use of sports psychologists by esport teams is likely to become more common, and that means more research like that conducted at Chichester is needed to provide an evidence-based foundation.</p>
-<div class="image shortcode-img center large"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esports3.jpg"><img alt='Gamers compete in a Valve Corp. &lt;em&gt;Counter-Strike: Global Offensive&lt;/em&gt; esports tournament at the Gaming Stadium in Vancouver, British Columbia, on July 14, 2019. '  src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esports3-640x427.jpg" srcset="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esports3.jpg 2x" alt='Gamers compete in a Valve Corp. &lt;em&gt;Counter-Strike: Global Offensive&lt;/em&gt; esports tournament at the Gaming Stadium in Vancouver, British Columbia, on July 14, 2019. ' ></a><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esports3.jpg"class="caption-link" rel="nofollow">Gamers compete in a Valve Corp. <em>Counter-Strike: Global Offensive</em> esports tournament at the Gaming Stadium in Vancouver, British Columbia, on July 14, 2019. </a> (credit:  James MacDonald/Bloomberg/Getty Images)</p></div>
-<p>"We thought [the study] was a good opportunity to see how esports players cope in front of live audiences and how they get along as a team," Birch told Ars. Many elite teams are more like families, often rooming together as well as training and competing in <em>CSGO</em> together. "Sometimes families get along really well, and sometimes they don't," he said. And unresolved tensions can potentially affect overall team performance.</p>
-<p>Since this was the first study, laying the groundwork for future research, the researchers adopted more of a qualitative, rather than quantitative, approach. According to Birch, the qualitative nature of the study was better suited to an initial exploration of the various stress factors and coping mechanisms common to esports players. Future studies might opt for a more quantitative approach, although that would require many more participants.</p>
-<p>The sample size is admittedly small, involving seven elite male players competing at the ESP Premiership <em>CSGO</em> Spring finals. The players had between two and six years' experience in competitive esports. Lead researcher Matt Smith attended an esports competition to better understand both the gameplay and the competitive environment, and he used that knowledge to develop the interview guide used in the study. Interviews were conducted by Skype within three weeks of the competition and were transcribed verbatim for later analysis.</p>
-<p>Birch <em>et al</em>. concluded that esports players faced 51 different stress factors, most notably team communication problems and anxiety about competing in front of live audiences, akin to stage fright. Those are the same stressors typically experienced by professional sports athletes competing at the highest levels. Communication issues included players not listening, or not following instructions, or aggressively negative (often profane) verbal criticism from the in-game leader (IGL) during gameplay.</p>
-<p>"His way of motivating players is to destroy them," one study participant said of an IGL in one of the milder examples. "He said to me, 'You are so stupid, and so dumb, and so incapable of doing anything that once you go into the real world you'll find it too difficult.'"</p>
-<div class="image shortcode-img center large"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esports1.jpg"><img alt='Researchers found esports players faced 51 different stress factors—including worries about competing in front of live audiences.'  src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esports1-640x427.jpg" srcset="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esports1.jpg 2x" alt='Researchers found esports players faced 51 different stress factors—including worries about competing in front of live audiences.' ></a><p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/esports1.jpg"class="caption-link" rel="nofollow">Researchers found esports players faced 51 different stress factors—including worries about competing in front of live audiences.</a> (credit: ESL/University of Chichester)</p></div>
-<p>Other internal team issues included lack of confidence in one's teammates—especially in terms of maintaining emotional control under pressure—and being overly risk averse for fear of failing and letting down the team. Some players are more focused on besting their individual scores rather than increasing the team's performance as a whole, and tensions arose when some team members didn't take practice sessions seriously.</p>
-<p>External stressors included trash talk from opposing teams, social media attacks, and the anxiety associated with playing a fast-paced, high-pressure game in front of a large live audience. "Like, you have whiffed, and you have no idea if the camera's on you, but in your head, they've just watched and it just makes you feel so much worse," one study participant admitted. Some participants reported feeling stressed over having to do media interviews—particularly players who speak English as a second language.</p>
-<p>Birch <em>et al</em>. also identified several common coping strategies employed by esports athletes. These include techniques for managing emotional distress, like taking a break between maps, mentally blocking out the cameras, and trying to get into "the zone" so that one's sole focus is on the game. Other coping strategies were more oriented to solving problems, such as boosting a flagging teammate's confidence or having a group discussion after a competition to review what worked and what went wrong. Players may also practice so-called "avoidance coping," declining media interviews if they are press-shy, for instance, or staying off social media.</p>
-
-<p>In addition to the study's small sample size, Birch <em>et al</em>. acknowledged another shortcoming: there were no female study participants. This was largely because the competition was heavily male dominated; the only women were on the hospitality and production teams. Female gamers are likely to face additional stressors; prior studies have shown that female gamers experience more sexual harassment, for example. The authors hope future research will remedy that omission.</p>
-<p>The team would also like to look more closely at extra psychological stressors affecting in-game leaders. Additional studies might also explore how personality traits—like neuroticism, narcissism, and extraversion—can affect gamers' ability to cope in high-stress competitive environments. "We may be able to infer some predictions from their personality about how they're likely to respond to certain situations," said Birch. "And we'd love to get esports athletes to do some kind of training scenario where we try to improve their performance with things like breathing and relaxation techniques."</p>
-<p>"As an industry, we've known for a long time that stressors on top-level players can negatively affect their performance," said ESL's chief operating officer, Rob Black, <a href="https://www.chi.ac.uk/news/elite-esports-gamers-face-equivalent-psychological-pressure-pro-athletes-study-reveals">in a statement</a>. “This study proves this and reinforces what we have been saying for years. Further developments are needed in this area, and that will be key in ensuring the number of professional players continues to grow worldwide.”</p>
-<p>DOI: <em>International Journal of Gaming and Computer-Mediated Simulations</em>, 2019. <a href="http://dx.doi.org/10.4018/IJGCMS.2019040102">10.4018/IJGCMS.2019040102</a>  (<a href="http://arstechnica.com/science/news/2010/03/dois-and-their-discontents-1.ars">About DOIs</a>).</p>
-
-<p><a href="https://arstechnica.com/?p=1603089&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>Sweden drops Julian Assange rape investigation after nine years</title>
-		<link>https://arstechnica.com/?p=1604085</link>
-		<pubDate>Tue, 19 Nov 2019 17:21:39 +0000</pubDate>
-		<dc:creator><![CDATA[Jon Brodkin]]></dc:creator>
-				<category><![CDATA[Policy]]></category>
-		<category><![CDATA[Julian Assange]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1604085</guid>
-		<description><![CDATA[Assange is in prison for skipping bail, and he faces hacking-conspiracy charge.]]></description>
-				<content:encoded><![CDATA[
-<figure class="intro-image intro-left">
-  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/getty-julian-assange-800x537.jpg" alt="Julian Assange speaks to the media from the balcony of the Embassy Of Ecuador on May 19, 2017 in London, England."/>
-      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/getty-julian-assange.jpg" class="enlarge-link" data-height="687" data-width="1024">Enlarge</a> <span class="sep">/</span> Julian Assange speaks to the media from the balcony of the Embassy Of Ecuador on May 19, 2017 in London, England.   (credit: Getty Images | Jack Taylor)</p>  </figure>
-
-
-
-
-
-
-<div><a name='page-1'></a></div>
-<p>Swedish prosecutors have dropped a nine-year-old rape investigation into Julian Assange, saying that "the evidence has weakened considerably due to the long period of time that has elapsed since the events in question."</p>
-<p>"I would like to emphasize that the injured party has submitted a credible and reliable version of events," Deputy Director of Public Prosecution Eva-Marie Persson said, according to a <a href="https://www.bbc.com/news/world-europe-50473792">BBC report today</a>. "Her statements have been coherent, extensive and detailed; however, my overall assessment is that the evidential situation has been weakened to such an extent that there is no longer any reason to continue the investigation."</p>
-<p>Prosecutors said they interviewed seven witnesses before deciding to stop the investigation, according to the BBC.</p>
-<p>"Memories fade for natural reasons," Persson also said, <a href="https://www.nytimes.com/2019/11/19/world/europe/sweden-julian-assange.html">according to The New York Times</a>.</p>
-<p>The large amount of media coverage of the case over the past nine years apparently also affected the decision. "You have to consider how much the witnesses will have read and heard from the media," Persson said.</p>
-<h2>Assange in prison, faces other charges</h2>
-<p>Two women made sexual-assault accusations against Assange, including a rape allegation, in August 2010. He was <a href="https://www.bbc.com/news/uk-19281492">granted asylum</a> in the Ecuadorian embassy in London in 2012, allowing him to avoid extradition.</p>
-<p>In April 2019, British police <a href="https://arstechnica.com/tech-policy/2019/04/british-police-arrest-julian-assange-on-behalf-of-the-us-government/">arrested Assange</a> after the Ecuadorian government invited the Metropolitan Police Service into the embassy to remove him. A British court later <a href="https://arstechnica.com/tech-policy/2019/05/julian-assange-gets-50-weeks-for-jumping-bail/">sentenced</a> Assange to 50 weeks in prison for fleeing to the Ecuadorian embassy in London while on bail in 2012.</p>
-<p>Assange also faces an indictment in the US that charges him with conspiring with Chelsea Manning to crack a hashed password belonging to a Pentagon computer in 2010. If convicted, he could spend <a href="https://www.justice.gov/usao-edva/pr/wikileaks-founder-charged-computer-hacking-conspiracy">up to five years in a US prison</a>. </p>
-<p>The statute of limitations on sexual-assault allegations against Assange <a href="https://arstechnica.com/tech-policy/2015/08/clock-runs-out-on-some-sexual-assault-allegations-against-assange/">expired in 2015</a>, but the rape charge's statute of limitations doesn't expire until August 2020.</p>
-<p>Sweden dropped the rape investigation once before, <a href="https://arstechnica.com/tech-policy/2017/05/sweden-drops-rape-allegation-against-wikileaks-founder-julian-assange/">in 2017</a>, but didn't rule out the possibility of reopening the case. Swedish prosecutors reopened the rape investigation <a href="https://arstechnica.com/tech-policy/2019/05/swedish-authorities-re-open-rape-investigation-against-julian-assange/">in May 2019</a> and conducted interviews over the past few months before announcing today that there isn't enough evidence to pursue it further.</p>
-<p>WikiLeaks, the document-publishing group that Assange founded, issued a statement after the Swedish prosecutor's announcement today.</p>
-<p>"Let us now focus on the threat Mr. Assange has been warning about for years: the belligerent prosecution of the United States and the threat it poses to the First Amendment," WikiLeaks Editor-in-Chief Kristinn Hrafnsson said, according to the BBC.</p>
-
-<p><a href="https://arstechnica.com/?p=1604085&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>Microsoft says yes to future encrypted DNS requests in Windows</title>
-		<link>https://arstechnica.com/?p=1604097</link>
-		<pubDate>Tue, 19 Nov 2019 17:11:54 +0000</pubDate>
-		<dc:creator><![CDATA[Sean Gallagher]]></dc:creator>
-				<category><![CDATA[Biz & IT]]></category>
-		<category><![CDATA[DNS over HTTPS]]></category>
-		<category><![CDATA[microsoft]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1604097</guid>
-		<description><![CDATA[In highly hedged post, Microsoft pledges support for DoH and other schemes, eventually.]]></description>
-				<content:encoded><![CDATA[
-<figure class="intro-image intro-left">
-  <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/GettyImages-1027924112-800x463.jpg" alt="Microsoft will (eventually) support secure DNS requests over the DoH protocol, and maybe over some others at some point."/>
-      <p class="caption" style="font-size:0.8em"><a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/GettyImages-1027924112.jpg" class="enlarge-link" data-height="1317" data-width="2275">Enlarge</a> <span class="sep">/</span> Microsoft will (eventually) support secure DNS requests over the DoH protocol, and maybe over some others at some point. (credit:  Yuichiro Chino via Getty Images)</p>  </figure>
-
-
-
-
-
-
-<div><a name='page-1'></a></div>
-<p>In <a href="https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-will-improve-user-privacy-with-DNS-over-HTTPS/ba-p/1014229">a post yesterday </a>to the Microsoft Tech Community blog, Microsoft Windows Core Networking team members Tommy Jensen, Ivan Pashov, and Gabriel Montenegro announced that Microsoft is planning to adopt support for <a href="https://arstechnica.com/information-technology/2018/04/how-to-keep-your-isps-nose-out-of-your-browser-history-with-encrypted-dns/">encrypted Domain Name System queries</a> in order to "close one of the last remaining plain-text domain name transmissions in common web traffic."</p>
-<p>That support will first take the form of integration with DNS over HTTPS (DoH), a standard proposed by the <a href="https://tools.ietf.org/html/rfc8484">Internet Engineering Task Force</a> and supported by Mozilla, Google, and Cloudflare, among others. "As a platform, Windows Core Networking seeks to enable users to use whatever protocols they need, so we’re open to having other options such as DNS over TLS (DoT) in the future," wrote Jensen, Pashov, and Montenegro. "For now, we're prioritizing DoH support as the most likely to provide immediate value to everyone. For example, DoH allows us to reuse our existing HTTPS infrastructure."</p>
-<p>But Microsoft is being careful about how it deploys this compatibility given the current political fight over DoH being waged by Internet service providers concerned that they'll lose a lucrative source of customer behavior data.</p>
-<p>ISPs give a number of reasons for their opposition to DoH. Since it prevents them from viewing plain-text DNS requests, it prevents filtering and blocking of some content—including, in the United Kingdom, the enforcement of content-filtering requirements placed on them by UK law. Because of its adoption of DoH as part of the Firefox Web browser, the UK's Internet Services Providers Association named Mozilla an "Internet Villain."</p>
-<p>In the US, ISP lobbyists <a href="https://arstechnica.com/tech-policy/2019/11/isps-lied-to-congress-to-spread-confusion-about-encrypted-dns-mozilla-says/">have pressed Congress to prevent Google from deploying DoH</a> on Chrome on antitrust grounds. Part of that lobbying is based on claims that Google would, as a letter from Comcast to members of Congress put it, "centraliz[e] a majority of worldwide DNS data with Google" and "give one provider control of Internet traffic routing and vast amounts of new data about consumers and competitors."</p>
-<h2>Administrator’s choice</h2>
-<p>According to the authors of the Microsoft post, the Windows implementation of DoH support will not change the status quo for corporate users or many ISP customers. "We will not be making any changes to which DNS server Windows was configured to use by the user or network," Jensen et al wrote:</p>
-<blockquote><p>…[W]e will look for opportunities to encrypt Windows DNS traffic without changing the configured DNS resolvers set by users and system administrators.</p>
-<p>Today, users and admins decide what DNS server to use by picking the network they join or specifying the server directly; this milestone won’t change anything about that. Many people use ISP or public DNS content filtering to do things like block offensive websites. Silently changing the DNS servers trusted to do Windows resolutions could inadvertently bypass these controls and frustrate our users. We believe device administrators have the right to control where their DNS traffic goes.</p></blockquote>
-<p>However, Microsoft's implementation will also not "get in the way" of applications that use DoH or other encrypted DNS requests themselves. And it will have to provide for fallbacks when DoH requests fail. "DoH use will be enforced so that a server confirmed by Windows to support DoH will not be consulted via classic DNS," the Core Networking team members wrote. "If this preference for privacy over functionality causes any disruption in common Web scenarios, we’ll find out early."</p>
-<p>All of this is for the future, however. Microsoft is announcing its intent now before making early versions of the capability available to Windows Insiders, because, as the three wrote, "With encrypted DNS gaining more attention, we felt it was important to make our intentions clear as early as possible. We don’t want our customers wondering if their trusted platform will adopt modern privacy standards or not."</p>
-<p>It also seems that Microsoft is staking out a position friendly to ISPs—and to enterprises as well, where what might be hiding in encrypted DNS traffic from individual computers might be a security concern.</p>
-
-<p><a href="https://arstechnica.com/?p=1604097&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>Sony controller patent points to potential PS5 permutations</title>
-		<link>https://arstechnica.com/?p=1604013</link>
-		<pubDate>Tue, 19 Nov 2019 16:18:31 +0000</pubDate>
-		<dc:creator><![CDATA[Kyle Orland]]></dc:creator>
-				<category><![CDATA[Gaming & Culture]]></category>
-		<category><![CDATA[controller]]></category>
-		<category><![CDATA[patent]]></category>
-		<category><![CDATA[playstation 5]]></category>
-		<category><![CDATA[ps5]]></category>
-		<category><![CDATA[Sony]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1604013</guid>
-		<description><![CDATA[Images show missing light bar, potential microphone opening.]]></description>
-				<content:encoded><![CDATA[
-
-
-
-
-
-<div><a name='page-1'></a></div>
-      <ul class="gallery shortcode-gallery gallery-wide">
-          <li>
-        <div class="gallery-item-content">  
-        <div class="gallery-image"><img src="https://cdn.arstechnica.net/wp-content/uploads/2019/11/ps5controlfixed1-980x462.png" alt=""></div>
-        <p>
-          Patent images showing a potential PlayStation 5 controller design. Perspective view.                      [credit:
-                        <a href="https://www.j-platpat.inpit.go.jp/d0200">Sony / Japanese patent office</a>
-                        ]
-                  </p>
-        </div>
-      </li>
-      </ul>
-  
-
-<p>New images from a Japanese Sony patent, first filed in March and <a href="https://www.j-platpat.inpit.go.jp/d0200">recently published by the Japanese patent office</a>, seem to show a new version of Sony's DualShock controller. The patent images display some potential changes to the hardware for next year's planned release of the PlayStation 5.</p>
-<p>Sony system architect Mark Cerny previously discussed the PlayStation 5's new controller <a href="https://arstechnica.com/gaming/2019/10/sony-confirms-the-playstation-5-is-coming-in-2020-reveals-new-hardware-details/">in an interview with Wired last month</a>. That interview mentioned that the new system's controller would sport a USB-C connector for charging and a potential wired data connection. And while the newly published patent images resemble the PS4's existing DualShock 4 in many ways, the port at the top appears to be USB-C rather than the USB-B micro connector on the DualShock 4.</p>
-<p>There are a few other changes in the patent images that do not reflect potential controller changes Sony has publicly discussed. Chief among them is the apparent omission of <a href="https://arstechnica.com/gaming/2013/02/sony-unveils-new-dualshock-3d-camera-for-playstation-4/">the DualShock 4's lightbar</a>. That lightbar's ability to glow in different colors was often used as a gimmick by game developers to indicate health or other in-game status effects, but it was also positioned in a way that was hard for players to use it or see it effectively. More importantly, many PlayStation VR games used that lightbar in conjunction with the PlayStation Eye camera <a href="https://arstechnica.com/gaming/2016/07/standard-dualshock-controller-will-work-with-all-playstation-vr-games/">to track the controller's position in space</a>, a function that would not be possible in the same form on the patented controller.</p>
-<p>The patent images also show a small strip running along the bottom center of the controller, below the apparent location of the PlayStation button, including small holes in the front and rear of the controller. Wired's October story made specific mention of "a little hole" on the PS5 controller prototype being tested and raised the possibility that the hole could be an opening for a built-in microphone that might integrate with <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019183343&amp;tab=PCTBIBLIO">a recently patented "voice help system using artificial intelligence."</a></p>
-<p><a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019183343&amp;tab=PCTBIBLIO">The recently launched Stadia controller</a> has a similar built-in microphone for integration with the Google Assistant.</p>
-<p>Cerny would only tell Wired "we'll talk more about it another time" regarding the microphone, with a Sony spokesperson adding, "We file patents on a regular basis, and like many companies, some of those patents end up in our products, and some don’t."</p>
-<p>Sony has previously discussed other new features in the PS5 controller, including "adaptive triggers" that provide variable resistance based on in-game situations and more fine-grained haptic feedback that can provide distinct "rumble" profiles when walking across different in-game surfaces, for instance. That last feature was reportedly being considered for inclusion in the PS4 Pro controller but was delayed to avoid creating a "split experience" for PS4 users.</p>
-<p>Sony first discussed the successor to the PS4 <a href="https://arstechnica.com/gaming/2019/04/sonys-ps4-successor-sports-3d-audio-tech-faster-ssd-storage/">back in April</a>. That announcement stressed plans for high-speed SSD storage that will allow for faster loading times, a GPU capable of hardware-accelerated ray-tracing, and a "custom unit for 3D audio."</p>
-
-<p><a href="https://arstechnica.com/?p=1604013&comments=1">Read Comments</a></p>]]></content:encoded>
-			</item>
-		<item>
-		<title>A Nintendo designer reviews your Super Mario Maker 2 levels</title>
-		<link>https://arstechnica.com/?p=1603625</link>
-		<pubDate>Tue, 19 Nov 2019 16:05:55 +0000</pubDate>
-		<dc:creator><![CDATA[Kyle Orland]]></dc:creator>
-				<category><![CDATA[Features]]></category>
-		<category><![CDATA[Gaming & Culture]]></category>
-		<category><![CDATA[feature]]></category>
-		<category><![CDATA[mario maker]]></category>
-		<category><![CDATA[Nintendo]]></category>
-		<category><![CDATA[Switch]]></category>
-		<category><![CDATA[video]]></category>
-
-		<guid isPermaLink="false">https://arstechnica.com/?p=1603625</guid>
-		<description><![CDATA[Video: "You don't need to make a course difficult to make it fun!"]]></description>
-				<content:encoded><![CDATA[
-
-
-
-
-
-<div><a name='page-1'></a></div>
-<div class="video"><div class="wrapper"<iframe style="display:block" type="text/html" width="980" height="550" src="https://www.youtube.com/embed/O6YFhORwXdA?start=0&wmode=transparent" frameborder="0" allowfullscreen></iframe></div><p class="caption" style="font-size:0.8em">Video shot and edited by Justin Wolfson. <a href="https://cdn.arstechnica.net/wp-content/uploads/2019/11/mario_script.txt">Click here for transcript</a>. </p></div>
-<p>There are over 7 million courses available in <em>Super Mario Maker 2</em>. And at least seven of them are pretty fun.</p>
-<p>Seriously, though, making a good Mario level is one of those tasks that's harder than it looks. So what differentiates a satisfying level from a frustrating one?</p>
-<p>To find out, we reached out to both the <em>Mario Maker</em> and Nintendo Switch subreddits and asked readers to submit their favorite homemade levels for review. After sifting through pages and pages of submissions, we picked out a handful of interesting examples for a fuller evaluation by Corey Olcsvary of <a href="https://nintendo.fandom.com/wiki/Nintendo_Treehouse">Nintendo's storied Treehouse product development division</a>.</p>
-<p>In the above video, Olcsvary plays through the levels and gives his real-time assessments of what they did well or badly. It's a good sign, for example, when he says things like "when I've been failing I feel like it's my fault." A strong theme can make a level stand out—as with one example here that looks like the inside of a computer. Another course offers players a "sneak preview of... impending doom" via a quick trip through a clear pipe, a touch Olcsvary appreciated. Then there's the largely enemy-free, theme-park-inspired level that proves "you don't need to make a course difficult to make it fun."</p>
-<p>Olcsvary also took us behind the scenes a bit, showing how the designers at Nintendo Treehouse used playtesting and feedback to refine a level that ended up <a href="//www.youtube.com/watch?v=PwQh6oYH7mk">used in this year's Nintendo's World Championships</a>. That led to what might be his most important piece of advice: "Get someone to playtest [your level]. You might change it up based on their feedback."</p>
-<p>Here are the course IDs for the levels shown in this video, if you want to try them out on your own copy of <em>Super Mario Maker 2</em>:</p>
-<ul>
-<li>Overgrown Grotto, by <a href="https://www.reddit.com/user/newkyd">/u/newkyd</a>: 4RS-WWV-3MF</li>
-<li>Explosive Temper, by <a href="https://reddit.com/user/Vann_Accessible">/u/Vann_Accessible</a>: 9L9-1QD-YGG</li>
-<li>Antivirus: MAR10, by <a href="https://reddit.com/user/IHaeTypos">/u/IHaeTypos</a>: M3Y-S8G-SGG</li>
-<li>Skipsqueak's Switching Spire, by <a href="https://reddit.com/user/ElectroX44">/u/ElectroX44</a>: 653-35J-DKF</li>
-<li>The Mushroom Kingdom Theme Park, by <a href="https://reddit.com/user/CDV_Solrac">/u/CDV_Solrac</a>: HP3-V0C-Q4G</li>
-<li>Mount Kiliman-Dry-Bones, by <a href="https://reddit.com/user/DonkeyMintInc">/u/DonkeyMintInc</a>: DDK-HS3-2YF</li>
-<li>Plateau Platforms, by <a href="https://reddit.com/user/ThirdStrongestBunny">/u/ThirdStrongestBunny</a>: 2GC-LG0-5MG</li>
-<li>Invitational 2019: Round 1, by Nintendo: 641-9CJ-J9G</li>
-</ul>
-<p>Big thanks to the members of <a href="https://reddit.com/r/MarioMaker/">/r/MarioMaker</a> and <a href="https://reddit.com/r/NintendoSwitch/">/r/NintendoSwitch</a> for letting us showcase some of their work!</p>
-
-<p><a href="https://arstechnica.com/?p=1603625&comments=1">Read Comments</a></p>]]></content:encoded>
 			</item>
 	</channel>
 </rss>

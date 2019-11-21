@@ -1,0 +1,182 @@
+{
+    "machine_info": {
+        "node": "PCJHHFSQ2-CSE",
+        "processor": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+        "machine": "AMD64",
+        "python_compiler": "MSC v.1900 64 bit (AMD64)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.6.5",
+        "python_version": "3.6.5",
+        "python_build": [
+            "default",
+            "Mar 29 2018 13:32:41"
+        ],
+        "release": "10",
+        "system": "Windows",
+        "cpu": {
+            "vendor_id": "GenuineIntel",
+            "hardware": "unknown",
+            "brand": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz"
+        }
+    },
+    "commit_info": {
+        "id": "5a1e654b6f5d1b3f87a9f76bd56e287eed2d0273",
+        "time": "2019-11-20T13:21:02-06:00",
+        "author_time": "2019-11-20T13:21:02-06:00",
+        "dirty": true,
+        "project": "NewW-B",
+        "branch": "master"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_createuser[test1]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test1]",
+            "params": {
+                "user": "test1"
+            },
+            "param": "test1",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 1.8993616009285788,
+                "max": 2.3288470368285523,
+                "mean": 2.15575308254097,
+                "stddev": 0.16932754686849105,
+                "rounds": 5,
+                "median": 2.185798517626395,
+                "iqr": 0.24430970524649176,
+                "q1": 2.043155573591892,
+                "q3": 2.2874652788383836,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 1.8993616009285788,
+                "hd15iqr": 2.3288470368285523,
+                "ops": 0.4638750180151929,
+                "total": 10.77876541270485,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test2]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test2]",
+            "params": {
+                "user": "test2"
+            },
+            "param": "test2",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 1.8959531210378842,
+                "max": 2.5646222090343684,
+                "mean": 2.2735728384395086,
+                "stddev": 0.26275051058340354,
+                "rounds": 5,
+                "median": 2.2874187334515383,
+                "iqr": 0.394675304714708,
+                "q1": 2.092685562154335,
+                "q3": 2.487360866869043,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 1.8959531210378842,
+                "hd15iqr": 2.5646222090343684,
+                "ops": 0.43983635936043325,
+                "total": 11.367864192197544,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test3]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test3]",
+            "params": {
+                "user": "test3"
+            },
+            "param": "test3",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 1.852036094008099,
+                "max": 2.7750219029984464,
+                "mean": 2.507920230903906,
+                "stddev": 0.3796507960399099,
+                "rounds": 5,
+                "median": 2.599014886281381,
+                "iqr": 0.38950694859595814,
+                "q1": 2.3762018770396907,
+                "q3": 2.765708825635649,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 1.852036094008099,
+                "hd15iqr": 2.7750219029984464,
+                "ops": 0.3987367651002119,
+                "total": 12.53960115451953,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test5]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test5]",
+            "params": {
+                "user": "test5"
+            },
+            "param": "test5",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 1.8435265306280826,
+                "max": 2.5301262592102773,
+                "mean": 2.1609970991557335,
+                "stddev": 0.2767525111659001,
+                "rounds": 5,
+                "median": 2.2278197898378806,
+                "iqr": 0.4267375611090074,
+                "q1": 1.909655161713701,
+                "q3": 2.3363927228227084,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 1.8435265306280826,
+                "hd15iqr": 2.5301262592102773,
+                "ops": 0.4627493486181374,
+                "total": 10.804985495778666,
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2019-11-21T02:05:56.993462",
+    "version": "3.2.2"
+}

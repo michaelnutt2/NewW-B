@@ -1,0 +1,293 @@
+{
+    "machine_info": {
+        "node": "PCJHHFSQ2-CSE",
+        "processor": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+        "machine": "AMD64",
+        "python_compiler": "MSC v.1900 64 bit (AMD64)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.6.5",
+        "python_version": "3.6.5",
+        "python_build": [
+            "default",
+            "Mar 29 2018 13:32:41"
+        ],
+        "release": "10",
+        "system": "Windows",
+        "cpu": {
+            "vendor_id": "GenuineIntel",
+            "hardware": "unknown",
+            "brand": "Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz"
+        }
+    },
+    "commit_info": {
+        "id": "5a1e654b6f5d1b3f87a9f76bd56e287eed2d0273",
+        "time": "2019-11-20T13:21:02-06:00",
+        "author_time": "2019-11-20T13:21:02-06:00",
+        "dirty": true,
+        "project": "NewW-B",
+        "branch": "master"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_createuser[test1]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test1]",
+            "params": {
+                "user": "test1"
+            },
+            "param": "test1",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 2.0901676264228506,
+                "max": 2.417906301227198,
+                "mean": 2.276880760900712,
+                "stddev": 0.16611665055884273,
+                "rounds": 5,
+                "median": 2.3579015400220023,
+                "iqr": 0.3153772382391704,
+                "q1": 2.1002312481484866,
+                "q3": 2.415608486387657,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 2.0901676264228506,
+                "hd15iqr": 2.417906301227198,
+                "ops": 0.4391973515575799,
+                "total": 11.38440380450356,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test2]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test2]",
+            "params": {
+                "user": "test2"
+            },
+            "param": "test2",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 2.23207238971289,
+                "max": 3.3950646374817453,
+                "mean": 2.578545582721577,
+                "stddev": 0.47137648868229787,
+                "rounds": 5,
+                "median": 2.452112312079059,
+                "iqr": 0.4650838083629427,
+                "q1": 2.2759046895931796,
+                "q3": 2.7409884979561223,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 2.23207238971289,
+                "hd15iqr": 3.3950646374817453,
+                "ops": 0.3878155215485972,
+                "total": 12.892727913607885,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test3]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test3]",
+            "params": {
+                "user": "test3"
+            },
+            "param": "test3",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 2.1981311057486863,
+                "max": 3.085732723782712,
+                "mean": 2.6318443173173565,
+                "stddev": 0.3389659967441888,
+                "rounds": 5,
+                "median": 2.576327888977616,
+                "iqr": 0.48549820291171386,
+                "q1": 2.4048700777647305,
+                "q3": 2.8903682806764444,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 2.1981311057486863,
+                "hd15iqr": 3.085732723782712,
+                "ops": 0.37996168444313677,
+                "total": 13.159221586586781,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test4]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test4]",
+            "params": {
+                "user": "test4"
+            },
+            "param": "test4",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 2.2162518066640473,
+                "max": 2.5146935543851328,
+                "mean": 2.3066581721335666,
+                "stddev": 0.11923180237868873,
+                "rounds": 5,
+                "median": 2.2669227632638496,
+                "iqr": 0.1046151205598349,
+                "q1": 2.2398441359842813,
+                "q3": 2.3444592565441162,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 2.2162518066640473,
+                "hd15iqr": 2.5146935543851328,
+                "ops": 0.43352760806992047,
+                "total": 11.533290860667833,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test5]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test5]",
+            "params": {
+                "user": "test5"
+            },
+            "param": "test5",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 2.1235954565884327,
+                "max": 2.6316378691328026,
+                "mean": 2.4148775541174983,
+                "stddev": 0.18353490294495298,
+                "rounds": 5,
+                "median": 2.430338767992083,
+                "iqr": 0.15930110162264555,
+                "q1": 2.348059493731647,
+                "q3": 2.5073605953542923,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 2.1235954565884327,
+                "hd15iqr": 2.6316378691328026,
+                "ops": 0.4140996707244826,
+                "total": 12.074387770587492,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test6]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test6]",
+            "params": {
+                "user": "test6"
+            },
+            "param": "test6",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 1.9752548238717793,
+                "max": 2.495220128164675,
+                "mean": 2.2655575288860232,
+                "stddev": 0.2499563436064365,
+                "rounds": 5,
+                "median": 2.353680940100446,
+                "iqr": 0.47327300857256915,
+                "q1": 2.0110347718282284,
+                "q3": 2.4843077804007976,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 1.9752548238717793,
+                "hd15iqr": 2.495220128164675,
+                "ops": 0.44139245516828735,
+                "total": 11.327787644430117,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_createuser[test7]",
+            "fullname": "test_createuser.py::TestCreateuser::test_createuser[test7]",
+            "params": {
+                "user": "test7"
+            },
+            "param": "test7",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 2.0005721203799567,
+                "max": 3.203061037971821,
+                "mean": 2.3773077663402207,
+                "stddev": 0.48346228402783065,
+                "rounds": 5,
+                "median": 2.2188932573673696,
+                "iqr": 0.522664451882008,
+                "q1": 2.0631265748462013,
+                "q3": 2.5857910267282094,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 2.0005721203799567,
+                "hd15iqr": 3.203061037971821,
+                "ops": 0.4206438956532178,
+                "total": 11.886538831701102,
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2019-11-21T02:11:21.735535",
+    "version": "3.2.2"
+}

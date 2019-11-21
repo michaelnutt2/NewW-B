@@ -23,7 +23,7 @@ function createUser(callback, req, res){
         }else{
             req.flash('user_error','User already exists'); 
         };
-        //console.log(req.flash());
+        console.log(req.flash());
         callback();
     });
 };

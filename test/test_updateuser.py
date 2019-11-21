@@ -5,26 +5,39 @@ import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
+from pymongo import MongoClient
+from selenium.webdriver.chrome.options import Options
+client = MongoClient('mongodb://newsDev:newB@10.125.187.72:9002/news')
+db = client.news
+user_col = db.users
+
 
 class TestUpdateuser():
   def setup_method(self, method):
-    self.driver = webdriver.Chrome()
+    chrome_options = Options()
+    chrome_options.add_argument("--window-size=1200,800")
+    chrome_options.add_argument("--start-maximized")
+    #chrome_options.add_argument("--headless") 
+    self.driver = webdriver.Chrome('../chromedriver',options=chrome_options)
+    self.driver.implicitly_wait(10)
     self.vars = {}
+    self.driver.get("http://localhost:3000/article")
   
   def teardown_method(self, method):
-    self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
     self.driver.quit()
   
-  def test_updateuser(self):
-    self.driver.get("http://localhost:3000/article")
-    self.driver.set_window_size(1536, 835)
-    self.driver.find_element(By.NAME, "username").send_keys("test2")
-    self.driver.find_element(By.NAME, "password").send_keys("test2")
-    self.driver.find_element(By.CSS_SELECTOR, ".btn-secondary:nth-child(1)").click()
-    self.driver.find_element(By.NAME, "user_area").click()
+  def updateuser(self):
+    self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
+    user = user_col.find_one({'u_id':{'$regex':'test'},'f_name':""})
+    #print(user)
+    self.driver.find_element(By.NAME, "username").send_keys(user['u_id'])
+    self.driver.find_element(By.NAME, "password").send_keys(user['pw'])
+    self.driver.find_element(By.NAME, "password").send_keys(Keys.ENTER)
+    myDynamicContent = self.driver.find_element(By.NAME, "user_area")
+    myDynamicContent.click()
     self.driver.find_element(By.CSS_SELECTOR, ".btn-sm:nth-child(1)").click()
     self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(2) > .form-control-plaintext").click()
     self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(2) > .form-control-plaintext").clear()
@@ -32,6 +45,10 @@ class TestUpdateuser():
     self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(4) > .form-control-plaintext").clear()
     self.driver.find_element(By.CSS_SELECTOR, ".col-sm-10:nth-child(4) > .form-control-plaintext").send_keys("Test")
     self.driver.find_element(By.CSS_SELECTOR, "#mod01 .btn-primary").click()
-    assert self.driver.find_element(By.LINK_TEXT, "Hello Test").text == "Hello Test"
-    #self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
+    myDynamicContent =self.driver.find_element(By.LINK_TEXT, "Hello Test")
+    assert myDynamicContent.text == "Hello Test"
+    self.driver.find_element(By.CSS_SELECTOR, ".my-sm-0").click()
   
+  @pytest.mark.parametrize('test',['test'+str(n) for n in range(10)])
+  def test_updateuser(self, benchmark, test):
+     benchmark(self.updateuser)
