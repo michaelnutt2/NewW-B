@@ -1,10 +1,11 @@
+// Article model
 const mongoose = require('mongoose');
 const Tag = require('./tags');
 const Comment = require('./comments')
 const Schema =  mongoose.Schema;
 var moment = require('moment');
-// Create Schema and Model
 
+// Create Schema
 const ArticleSchema =  new Schema({
     newsgroup: String,
     title : String,
@@ -20,6 +21,8 @@ const ArticleSchema =  new Schema({
     text : String,
     img : String
 });
+
+// Schema methods
 
 ArticleSchema
 .virtual('article_url')
@@ -44,5 +47,6 @@ ArticleSchema
     return '/article/author/' + author;
 });
 
+/// export model
 const Article = mongoose.model('articles', ArticleSchema);
 module.exports = Article;

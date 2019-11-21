@@ -1,3 +1,4 @@
+// Router for index -- simply redirects to /article page
 var express = require('express');
 var router = express.Router();
 
@@ -6,4 +7,5 @@ router.get('/', function(req, res, next) {
   res.redirect('/article');
 });
 
+// export router
 module.exports = router;

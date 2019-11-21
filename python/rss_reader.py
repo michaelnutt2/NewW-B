@@ -16,9 +16,9 @@ PATH = ('../Articles')
 
 class ArticleLoader():
 
+    # downloads rss feed as xml
     def loadRSS(self):
         url = 'https://arstechnica.com/feed/?t=c951724f17882c293435a61d10002d8b'
-
         try:
             r = requests.get(url)
             r.raise_for_status()
@@ -32,6 +32,7 @@ class ArticleLoader():
         with io.open(PATH +'/news.xml', "w", encoding="utf-8") as f:
             f.write(r.text)
 
+    # parse xml document and create list of article dictionaries
     def parseRSS(self):
         f = feedparser.parse(r'../Articles/news.xml')
 
@@ -57,6 +58,7 @@ class ArticleLoader():
             articles.append(article)
         return self.exportData(articles)
 
+    # save the article content to disk and return the polished list of articles for db insertion
     def exportData(self,articles):
         metadata = []
         for article in articles:
@@ -78,18 +80,17 @@ class ArticleLoader():
             })
             with io.open(filename, "w", encoding="utf-8") as f:
                 f.write(article['content'][:-1])
-            # remove last line
+            
+            # remove last line which is the source link
             readFile = open(filename, errors='ignore')
             lines = readFile.readlines()
             readFile.close()
             w = open(filename,'w')
             w.writelines([item for item in lines[:-1]])
             w.close()
-
-        # with open('../Articles/metadata.json', 'w+') as fp:
-        #     json.dump(metadata,fp)
         return metadata
 
+    # return objects 
     def fetchNew(self):
         self.loadRSS()
         return self.parseRSS()

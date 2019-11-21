@@ -1,3 +1,4 @@
+// Router for home -- simply redirects to /article page
 var express = require('express');
 var router = express.Router();
 

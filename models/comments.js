@@ -1,8 +1,8 @@
+// Comments Model
 const mongoose = require('mongoose');
 const Schema =  mongoose.Schema;
 var moment = require('moment');
-// Create Schema and Model
-
+// Create Schema 
 const CommentSchema =  new Schema({
     u_id : {
         type: mongoose.Schema.Types.ObjectId, 
@@ -13,6 +13,7 @@ const CommentSchema =  new Schema({
     rank : Number
 });
 
+// Schema methods
 CommentSchema
 .virtual('user_url')
 .get(function() {
@@ -25,5 +26,6 @@ CommentSchema
     return moment(this.date).format('MMMM Do, YYYY');
 })
 
+// export model
 const Comment = mongoose.model('comments', CommentSchema);
 module.exports = Comment;

@@ -1,3 +1,8 @@
+'''
+this script populates the databses with articles from the ars rss news feed, 
+randomlly generate users, comments, and ranks
+''' 
+
 import json
 from random import randint, sample
 from itertools import combinations
@@ -10,7 +15,7 @@ from datetime import datetime
 from dateutil import parser
 from rss_reader import ArticleLoader
 
-## Connect to Mongo and generatr collection objects
+## Connect to Mongo and generate collection objects
 client = MongoClient('mongodb://newsDev:newB@10.125.187.72:9002/news')
 db = client.news
 user_col = db.users
@@ -21,6 +26,8 @@ tag_col = db.tags
 gen = DocumentGenerator()
 
 
+# calls the ArticleLoader class to pull down articles from the rss news feed
+# save the files html data, and push article dosumtnes to db
 def update_articles():
     AL = ArticleLoader()
     # fetch new articles
@@ -32,6 +39,7 @@ def update_articles():
         article_col.update({'title':article['title']},article, upsert=True)
         #article_col.insert_many(new_articles)
 
+# retrievs all article and tag ids
 def getArticlesAndTags():
     # get all the articles from the db
     article_ids = []
@@ -45,8 +53,14 @@ def getArticlesAndTags():
 
     return article_ids, tags
 
-
+# creates random users and pushes them to the db
 def genUsers(article_ids, tags, n_users=100, drop_users=True,test_user=False):
+    # article_ids [] - list of ids to generate random favorites, votes and comments
+    # list of tags [] - list of tags to to generate random follows
+    # n_users (int)- specifies the number of random users to generate
+    # drop_users (bool) - specifies wether to drop all users before adding more
+    # test_user (bool) - specifeis wether or nad to add the test user
+
     if drop_users:
         # drop users
         db.users.drop()
@@ -71,7 +85,7 @@ def genUsers(article_ids, tags, n_users=100, drop_users=True,test_user=False):
 
         users.append(test_user)
 
-    # 100 random users
+    # n_user random users
     for i in range(n_users):
         m_f = randint(0,1)
         if m_f == 0: 
@@ -103,7 +117,12 @@ def genUsers(article_ids, tags, n_users=100, drop_users=True,test_user=False):
     return users
 
 
+# genrates random comments and calualtes ranks
 def articleCommentAndRank(article_ids, users, comments= True,  drop_comm=True):
+    # article_ids [] - list of ids to generate random favorites, votes and comments
+    # users [] - list of users with comments and votes to update the articles with
+    # comments (bool) - generate comments 
+    # drop_comm (bool) - drop all comments before proceeding
 
     # first drop existing comments
     if drop_comm:
@@ -142,6 +161,7 @@ def articleCommentAndRank(article_ids, users, comments= True,  drop_comm=True):
                         {'_id':ObjectId(article)}, 
                         { '$set' : {'rank':rank}})
 
+# helper function to update article dates to proper format
 def fixDate(article_ids):
     # fix datetime column
     for article in article_ids:
@@ -150,6 +170,7 @@ def fixDate(article_ids):
                         {'_id':ObjectId(article)}, 
                         {"$set": {'date':parser.parse(record['date'])}})
 
+# helper function to fix file path error on some of the documents
 def fixFilePath():
         records = article_col.find({'filepath': {'$regex':'Articles'}})
         for r in records:
@@ -160,7 +181,7 @@ def fixFilePath():
       
 
 
-
+# helper function to remove duplicated in tthe articles db
 def removeDuplicates():
     # removing duplicate articles
     remove_dups = [
@@ -176,8 +197,16 @@ def removeDuplicates():
     for d in duplicates:
         print(d['dups'][0])
         article_col.delete_one({'_id':d['dups'][0]})
+
+# helper function to delete test users        
+def remove_test():
+    # removing duplicate articles
+    tests = user_col.find({'u_id':{'$regex':'test'},'f_name':"Test"})
+    for t in tests:
+        user_col.delete_one({'u_id':t['u_id']})
          
 
+# set parameters here for runtime
 if __name__ == "__main__":
     update_articles()
     articles, tags = getArticlesAndTags()

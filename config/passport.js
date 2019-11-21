@@ -1,3 +1,4 @@
+// default passport local stratgey 
 var LocalStrategy   = require('passport-local').Strategy;
 const User = require('../models/users');
 

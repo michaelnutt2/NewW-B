@@ -1,3 +1,5 @@
+// legacy user methods only required for mocha tests
+
 const User = require('../models/users');
 
 function myUsers() {
