@@ -183,8 +183,15 @@ exports.article_detail = function(req, res, next) {
             u[user._id] = user.u_id;
         }
 
-        p = path.join(__dirname, details.filepath);
-        var contents = fs.readFileSync(p, 'utf8');
+        try {
+            p = path.join(__dirname, details.filepath);
+            var contents = fs.readFileSync(p, 'utf8');
+        } catch(error) {
+            console.error(error);
+            res.sendStatus(404);
+            return;
+        }
+        
         res.render('article_detail', {
             title: details.title,
             users: u,
