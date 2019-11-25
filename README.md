@@ -1,6 +1,12 @@
 # NewW-B
 News Group Aggregation Web App
 
+## How to Run Locally
+
+## How to Access on Server
+
+## Limitations
+
 ## Tests
 __Current Tests__:
 
@@ -26,4 +32,4 @@ can be run with:
 * run python/genUsers.py and python/RssReader.py to generate Users, Articles, and Tags
 * run node modules/populateDB.js to upload collections to DB (note it should drop all previous data)
 
-
+## References
