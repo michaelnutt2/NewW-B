@@ -35,6 +35,7 @@ function sidebar(callback) {
     ).exec(callback);
 }
 
+// Changes vote values to dictionary with article ID as key
 function votes_to_dict(votes) {
     v_dict = {};
     for(vote of votes) {
@@ -222,6 +223,7 @@ exports.article_detail = function(req, res, next) {
     });
 };
 
+// Function to view all articles related to specified keyword
 exports.keyword_detail = function(req, res, next) {
     var key = decodeURI(req.params.id);
     async.parallel({
@@ -248,6 +250,8 @@ exports.keyword_detail = function(req, res, next) {
     });
 };
 
+// Function to submit new comment on article
+// Saves Article ID to user and comment to Article
 exports.submit_comment = [
     // Validate not an empty comment
     validator.body('text', 'Enter text here').isLength({min: 1}).trim(),
@@ -289,6 +293,8 @@ exports.submit_comment = [
     }
 ]
 
+// Function to search articles
+// Searches title, keywords and text
 exports.search = [
     // Validate not an empty comment
     validator.body('search', 'Enter search here').isLength({min: 1}).trim(),
