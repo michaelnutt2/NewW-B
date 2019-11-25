@@ -1,6 +1,9 @@
 # NewW-B
 News Group Aggregation Web App
 
+### Authors
+Constant Marks and Michael Nutt
+
 ## Design
 Our program was built using Node.js and MongoDB with a focus on user experience. The main landing page displays all articles in the system that the user is subscribed to, or all if not logged in. The users can then navigate to specific sections for each tag or search and filter by keyword.
 
@@ -82,31 +85,6 @@ Tags:
 
 ## Limitations
 Main limitation is currently only pulls from one news source, future work would involve adding feature to add other news source RSS feeds by users.
-
-## Tests
-__Current Tests__:
-
-* connect to db
-* saving records to db
-* updating records in db
-* delete record from db
-* find records in db
-* nesting collections in db
-* module test
-    * create user
-    * change user password
-    * modify user (first name, last name, and email)
-
-can be run with:
-> npm run test
-
-## Local web app dev:
-* cd .\express-neww-b\
-* npm start
-
-## Populating DB
-* run python/genUsers.py and python/RssReader.py to generate Users, Articles, and Tags
-* run node modules/populateDB.js to upload collections to DB (note it should drop all previous data)
 
 ## References
 “Express Web Framework (Node.js/JavaScript).” MDN Web Docs, Mozilla, developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs.​
