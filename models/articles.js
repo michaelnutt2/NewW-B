@@ -1,3 +1,6 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
+
 // Article model
 const mongoose = require('mongoose');
 const Tag = require('./tags');

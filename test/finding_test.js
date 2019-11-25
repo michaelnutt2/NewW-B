@@ -1,3 +1,5 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
 const User = require('../models/users');
 const assert = require('assert');
 
@@ -5,7 +7,7 @@ const assert = require('assert');
 describe('Finding records', function(){
 
     var user
-
+    // create a user
     beforeEach(function(done){
         user = new User({
             u_id : 'crm',

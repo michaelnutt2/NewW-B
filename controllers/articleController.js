@@ -1,3 +1,6 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
+
 var Article = require('../models/articles');
 var Tags = require('../models/tags');
 var Users = require('../models/users')
@@ -7,6 +10,8 @@ var path = require('path');
 var fs = require('fs');
 var async = require('async');
 const validator = require('express-validator');
+
+/* Helper functions for controller functions */
 
 // Sets navbar with tags either subscribed to or all tags in db
 function findTags(callback,user) {
@@ -37,6 +42,11 @@ function votes_to_dict(votes) {
     }
     return v_dict;
 }
+
+/* Controller Functions
+   All controller functions inputs are the standard html entitities
+   and outputs are variables required to render web pages
+*/
 
 // Brings up index page, loads navbar, sidebar and article previews
 exports.index = function(req, res, next) {

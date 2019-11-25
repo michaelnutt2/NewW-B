@@ -1,3 +1,6 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
+
 function favorite(id) {
     var btn = document.getElementById(id);
     if(btn.innerHTML === "Favorite") {

@@ -1,15 +1,14 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
 const User  = require('../models/users');
 const Article  = require('../models/articles');
 const Comment = require('../models/comments');
 const assert =  require('assert');
-const mongoose = require('mongoose');
 
 // Describe tests
-
 describe('Nesting records', function(){
 
     // create tests
-
     it('Creates a user with sub-documents', function(done){
 
         var test_doc = new Article({title:'test article', author:'john doe'});

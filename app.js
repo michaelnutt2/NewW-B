@@ -1,3 +1,6 @@
+
+//- Developed By: Constant Marks and Michael Nutt
+//- Last Modified: 11/25/2019
 var createError = require('http-errors');
 var express = require('express');
 var session = require('express-session');

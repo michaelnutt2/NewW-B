@@ -1,9 +1,12 @@
-var Article = require('../models/articles');
-var Users = require('../models/users');
-var Tags = require('../models/tags');
-var Comments = require('../models/comments');
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
 
-var async = require('async');
+var Tags = require('../models/tags');
+
+/* Controller Function
+   All controller functions inputs are the standard html entitities
+   and outputs are variables required to render web pages
+*/
 
 // Redirects to home page
 exports.index = function(req, res) {

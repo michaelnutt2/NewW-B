@@ -3,6 +3,9 @@ this script populates the databses with articles from the ars rss news feed,
 randomlly generate users, comments, and ranks
 ''' 
 
+# // Developed By: Constant Marks and Michael Nutt
+# // Last Modified: 11/25/2019
+
 import json
 from random import randint, sample
 from itertools import combinations
