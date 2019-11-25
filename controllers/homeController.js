@@ -5,6 +5,7 @@ var Comments = require('../models/comments');
 
 var async = require('async');
 
+// Redirects to home page
 exports.index = function(req, res) {
         Tags.find()
         .sort([['tag', 'ascending']])
