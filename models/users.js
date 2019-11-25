@@ -1,3 +1,6 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
+
 // User Model
 const mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');

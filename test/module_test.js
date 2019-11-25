@@ -1,6 +1,8 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
 const assert = require('assert');
 const myUsers = require('../modules/myUsers');
-const User = require('../models/users');
+
 
 var myUsersInstance = new myUsers()
 

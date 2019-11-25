@@ -1,11 +1,15 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
+
 var Article = require('../models/articles');
 var Tags = require('../models/tags');
 var Users = require('../models/users');
 var async = require('async');
-const Entities = require('html-entities').AllHtmlEntities
-const entities = new Entities();
 const validator= require('express-validator');
 
+/* Helper functions for controller functions */
+
+// get all tags that a user follows
 function findTags(callback,user) {
     Users.findOne({'u_id':user.u_id}, {'follows':1}).then(function(follows){
         Tags.find({'tag': { $in: follows.follows}})
@@ -14,12 +18,14 @@ function findTags(callback,user) {
     });
 };
 
+// get all tags
 function allTags(callback) {
     Tags.find({}, {tag:1})
     .sort([['tag', 'ascending']])
     .exec(callback)
 }
 
+// get a users favorites
 function findFavorites(callback,user) {
     Users.findOne({u_id:user.u_id}, {_id:0,favorites:1}).then(function(favorites){
         Article.find({'_id': { $in: favorites.favorites}},{title:1, })
@@ -27,12 +33,14 @@ function findFavorites(callback,user) {
     });
 };
 
+// get a users voted_on 
 function findVotes(callback,user) {
     Users.findOne({u_id:user.u_id},{voted_on:1})
     .populate({path: 'voted_on.article', model: Article, select:'title'})
     .exec(callback) 
 };
 
+// get a useres commented_on
 function findComments(callback,user) {
     Users.findOne({u_id:user.u_id}, {_id:0,commented_on:1}).then(function(commented_on){
         Article.find({_id: { $in: commented_on.commented_on}},{title:1})
@@ -40,6 +48,8 @@ function findComments(callback,user) {
     });
 };
 
+
+// update a users details
 function updateUser(callback, req){
     Users.findOneAndUpdate({u_id:req.user.u_id},
                            {f_name:req.body.f_name, 
@@ -47,6 +57,7 @@ function updateUser(callback, req){
                             email:req.body.email}).exec(callback)
 };
 
+// change a users password
 function changePass(callback,req) {
     Users.findOne({u_id:req.user.u_id}).then(function(record){
         if (record.pw === req.body.old_pass) {
@@ -63,6 +74,7 @@ function changePass(callback,req) {
     });
 };
 
+// change a users follows attribute
 function changeSubs(callback, req, res) {
     var tag_list = [];
     for (tag in req.body){
@@ -72,6 +84,13 @@ function changeSubs(callback, req, res) {
     Users.findOneAndUpdate({u_id:req.user.u_id}, {follows:tag_list}).exec(callback)
 };
 
+
+/* Controller Functions
+   All controller functions inputs are the standard html entities
+   and outputs are variables required to render web pages
+*/
+
+// GET user details when navigating to user page
 exports.user_profile = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
@@ -105,6 +124,7 @@ exports.user_profile = function(req, res, next) {
 };
 
 
+// modify user when user form is POSTed
 exports.mod_user = [
 
     validator.body('f_name').trim(),
@@ -141,6 +161,7 @@ exports.mod_user = [
     }
 ];
 
+// change password when change password form is POSTed
 exports.change_pass = [
 
     validator.body('old_pass').trim(),
@@ -177,6 +198,7 @@ exports.change_pass = [
     }
 ];
 
+// change followed tags when change_subs form is POSTed
 exports.change_subs = function(req, res, next) {
     async.parallel({
         update: function(callback) {
@@ -192,6 +214,7 @@ exports.change_subs = function(req, res, next) {
     });
 };
 
+// POST add_favorite form
 exports.add_favorite = function(req, res, next) {
     Users.updateOne({_id: req.user.id}, {
         $push: { favorites: req.params.id}
@@ -201,6 +224,7 @@ exports.add_favorite = function(req, res, next) {
     })
 }
 
+// POST remove_favorite form
 exports.remove_favorite = function(req, res, next) {
     Users.updateOne({_id: req.user.id}, {
         $pull: { favorites: req.params.id}
@@ -210,6 +234,7 @@ exports.remove_favorite = function(req, res, next) {
     });
 }
 
+// POST upvote form
 exports.upvote = function(req, res, next) {
     var found = false;
     for(vote of req.user.voted_on) {
@@ -285,6 +310,7 @@ exports.upvote = function(req, res, next) {
     }
 }
 
+// post downvote form
 exports.downvote = function(req, res, next) {
     var found = false;
     for(vote of req.user.voted_on) {
@@ -359,6 +385,7 @@ exports.downvote = function(req, res, next) {
     }
 }
 
+// POST remove vote form 
 exports.removevote = function(req, res, next) {
     res.sendStatus(200);
 }

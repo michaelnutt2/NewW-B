@@ -1,5 +1,7 @@
-// legacy user methods only required for mocha tests
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
 
+// legacy user methods only required for mocha tests
 const User = require('../models/users');
 
 function myUsers() {

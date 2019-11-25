@@ -1,3 +1,5 @@
+// Developed By: Constant Marks and Michael Nutt
+// Last Modified: 11/25/2019
 //Router for login methods
 var express = require('express');
 var router = express.Router();

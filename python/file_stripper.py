@@ -1,3 +1,6 @@
+# // Developed By: Constant Marks and Michael Nutt
+# // Last Modified: 11/25/2019
+
 # simple helper script to fix some file names and delete source tags
 import os, io, sys, glob
 
