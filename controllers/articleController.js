@@ -8,6 +8,7 @@ var fs = require('fs');
 var async = require('async');
 const validator = require('express-validator');
 
+// Sets navbar with tags either subscribed to or all tags in db
 function findTags(callback,user) {
     if (user === undefined){
         Tags.find()
@@ -22,6 +23,7 @@ function findTags(callback,user) {
     };
 };
 
+// Loads sidebar with search option and top tags
 function sidebar(callback) {
     Article.aggregate(
         [{"$unwind":"$keywords"}, {"$sortByCount":"$keywords"}, {"$limit":10}]
@@ -36,6 +38,7 @@ function votes_to_dict(votes) {
     return v_dict;
 }
 
+// Brings up index page, loads navbar, sidebar and article previews
 exports.index = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
@@ -69,6 +72,7 @@ exports.index = function(req, res, next) {
     });
 };
 
+// Brings up all articles under specified tag
 exports.tag_detail = function(req, res, next) {
     async.parallel({
         tag: function(callback) {
@@ -88,7 +92,6 @@ exports.tag_detail = function(req, res, next) {
                 });
             });
             tag_promise.then(function(tag) {
-                //console.log(tag.tag);
                 Article.find({tags: tag.tag})
                 .exec(callback);
             });
@@ -115,6 +118,7 @@ exports.tag_detail = function(req, res, next) {
     });
 };
 
+// Brings up all articles by specified author
 exports.author_detail = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
@@ -149,6 +153,8 @@ exports.author_list = function(req, res, next) {
     res.send('NOT IMPLEMENTED: Display for Author List');
 };
 
+
+// Function to create main article page for viewing article
 exports.article_detail = function(req, res, next) {
     async.parallel({
         tags: function(callback) {
