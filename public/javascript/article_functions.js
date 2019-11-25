@@ -1,3 +1,10 @@
+// Last modified Nov 25th
+// Authors: Constant Marks and Michael Nutt
+/*
+*  Function to asynchronously add article to favorites list
+*  Input: Article ID
+*  Output: 
+*/
 function favorite(id) {
     var btn = document.getElementById(id);
     if(btn.innerHTML === "Favorite") {
@@ -35,6 +42,12 @@ function favorite(id) {
     }
 }
 
+/*
+*  Function to upvote article ranking
+*  Input: Article ID
+*  Output: 
+*/
+
 function upvote(id) {
     var rbtn = document.getElementById('rank-'+id);
     fetch('/user/upvote/'+id, {method: 'POST'})
@@ -49,6 +62,12 @@ function upvote(id) {
         }
     });
 }
+
+/*
+*  Function to downvote article ranking
+*  Input: Article ID
+*  Output: 
+*/
 
 function downvote(id) {
     var rbtn = document.getElementById('rank-'+id);
