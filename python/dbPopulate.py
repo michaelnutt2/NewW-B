@@ -210,7 +210,7 @@ def remove_test():
 if __name__ == "__main__":
     update_articles()
     articles, tags = getArticlesAndTags()
-    users = genUsers(articles, tags,n_users=20, drop_users=False,test_user=False)
+    users = genUsers(articles, tags,n_users=5, drop_users=False,test_user=False)
     users = list(user_col.find({}))
     articleCommentAndRank(articles, users,comments=True, drop_comm=False)
     removeDuplicates()
